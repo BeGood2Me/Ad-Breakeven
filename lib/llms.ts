@@ -168,7 +168,7 @@ export function buildLlmsFullTxt(): string {
     ]),
     "## Legal",
     "",
-    "Calculators and guides on Ad Break-even are for informational and educational purposes only. They are not financial, tax, or legal advice. Verify all results with your own data before changing ad spend or budgets.",
+    "Calculators and guides on Ad Breakeven are for informational and educational purposes only. They are not financial, tax, or legal advice. Verify all results with your own data before changing ad spend or budgets.",
     "",
     linkLine("Privacy Policy", "/privacy", "Data collection and local storage"),
     linkLine("Terms of Use", "/terms", "Full terms and disclaimer"),

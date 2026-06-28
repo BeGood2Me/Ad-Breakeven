@@ -8,7 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 const PAGE = {
   title: "Privacy Policy",
   description:
-    "How Ad Break-even handles data: no accounts, no analytics, no tracking cookies. Calculator inputs stay in your browser unless you share a link.",
+    "How Ad Breakeven handles data: no accounts, no analytics, no tracking cookies. Calculator inputs stay in your browser unless you share a link.",
   path: "/privacy",
 };
 

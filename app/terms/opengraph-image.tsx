@@ -11,6 +11,6 @@ export const contentType = ogImageContentType;
 export default function OpenGraphImage() {
   return createOpenGraphImage(
     "Terms of Use",
-    "Ad Break-even calculators — informational tools, not financial or legal advice"
+    "Ad Breakeven calculators — informational tools, not financial or legal advice"
   );
 }

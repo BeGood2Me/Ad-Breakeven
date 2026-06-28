@@ -8,7 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 const PAGE = {
   title: "Terms of Use",
   description:
-    "Terms of use and disclaimer for Ad Break-even calculators. Informational tools only — not financial, tax, or legal advice.",
+    "Terms of use and disclaimer for Ad Breakeven calculators. Informational tools only — not financial, tax, or legal advice.",
   path: "/terms",
 };
 

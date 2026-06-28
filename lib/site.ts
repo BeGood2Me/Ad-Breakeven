@@ -1,6 +1,6 @@
 export const SITE_URL = "https://adbreakeven.com";
-export const SITE_NAME = "Ad Break-even";
-export const FAQ_PAGE_TITLE = "Ad Break-even FAQ";
+export const SITE_NAME = "Ad Breakeven";
+export const FAQ_PAGE_TITLE = "Ad Breakeven FAQ";
 export const SITE_DESCRIPTION =
   "Find break-even ROAS, max CPA, max CPC, and ad profit for ecommerce and lead gen. Free calculators with shareable results and next steps.";
 

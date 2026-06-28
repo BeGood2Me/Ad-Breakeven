@@ -1,4 +1,4 @@
-# Ad Break-even (adbreakeven.com)
+# Ad Breakeven (adbreakeven.com)
 
 Free break-even calculators for paid media: ROAS, CPA, CPC, and ad profit. Built with Next.js App Router, statically generated for fast Vercel deployment.
 

@@ -176,7 +176,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "Is this site financial advice?",
     plainAnswer:
-      "No. Ad Break-even calculators and guides are for informational and educational purposes only — not financial, tax, or legal advice. Verify results with your own data before changing ad spend.",
+      "No. Ad Breakeven calculators and guides are for informational and educational purposes only — not financial, tax, or legal advice. Verify results with your own data before changing ad spend.",
     answer: (
       <>
         No — calculators and guides are for informational purposes only, not
