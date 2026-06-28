@@ -28,6 +28,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    other: {
+      "msvalidate.01": "0B62BB007D99A3FE23D1025DC8BD1F19",
+    },
+  },
 };
 
 export const viewport: Viewport = {
