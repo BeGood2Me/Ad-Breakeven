@@ -8,7 +8,7 @@ import { breadcrumbSchema } from "@/lib/schema";
 const PAGE = {
   title: "Privacy Policy",
   description:
-    "How Ad Breakeven handles data: no accounts, no analytics, no tracking cookies. Calculator inputs stay in your browser unless you share a link.",
+    "How Ad Breakeven handles data: no accounts, privacy-friendly analytics, no ad trackers. Calculator inputs stay in your browser unless you share a link.",
   path: "/privacy",
 };
 
@@ -34,7 +34,8 @@ export default function PrivacyPage() {
         <h2 id="privacy-summary">Summary</h2>
         <ul>
           <li>No account or signup required</li>
-          <li>No analytics or advertising trackers</li>
+          <li>Privacy-friendly page analytics (Vercel Analytics)</li>
+          <li>No advertising or profiling trackers</li>
           <li>No marketing cookies</li>
           <li>Calculator inputs are stored locally in your browser</li>
           <li>We do not sell your personal information</li>
@@ -75,9 +76,14 @@ export default function PrivacyPage() {
       <section className="content-section" aria-labelledby="privacy-cookies">
         <h2 id="privacy-cookies">Cookies</h2>
         <p>
-          We do not set analytics, advertising, or profiling cookies. The site
-          may rely on strictly necessary technical storage (such as localStorage
-          above) for basic functionality.
+          We use <strong>Vercel Analytics</strong> to collect anonymous page-view
+          data (such as which pages are visited and referring site). It does not
+          use advertising cookies and is not used for cross-site tracking. We do
+          not set marketing or profiling cookies.
+        </p>
+        <p>
+          The site may rely on strictly necessary technical storage (such as
+          localStorage above) for basic functionality.
         </p>
       </section>
 
@@ -94,9 +100,8 @@ export default function PrivacyPage() {
       <section className="content-section" aria-labelledby="privacy-third">
         <h2 id="privacy-third">Third parties</h2>
         <p>
-          We do not embed third-party ad networks or social trackers on calculator
-          pages. If we add analytics or other services in the future, we will
-          update this policy before or when they go live.
+          We use Vercel Analytics for anonymous traffic measurement. We do not
+          embed third-party ad networks or social trackers on calculator pages.
         </p>
       </section>
 

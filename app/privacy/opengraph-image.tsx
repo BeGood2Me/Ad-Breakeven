@@ -11,6 +11,6 @@ export const contentType = ogImageContentType;
 export default function OpenGraphImage() {
   return createOpenGraphImage(
     "Privacy Policy",
-    "No accounts, no analytics, no tracking cookies — calculator data stays local"
+    "Privacy-friendly analytics — no ad trackers; calculator data stays local"
   );
 }
