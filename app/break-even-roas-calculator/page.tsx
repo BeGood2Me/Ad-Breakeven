@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import BreakEvenRoasCalculator from "@/components/calculators/BreakEvenRoasCalculator";
+import EmbedCodeSection from "@/components/EmbedCodeSection";
 import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 
@@ -42,6 +43,11 @@ export default function BreakEvenRoasPage() {
         </p>
       </section>
 
+      <EmbedCodeSection
+        embedPath="/embed/break-even-roas"
+        title="Break-even ROAS Calculator"
+      />
+
       <RelatedTools
         links={[
           {
@@ -62,6 +68,12 @@ export default function BreakEvenRoasPage() {
             before: "Learn the formula in ",
             linkText: "How to Calculate Break-even ROAS",
             href: "/how-to-calculate-break-even-roas",
+            after: ".",
+          },
+          {
+            before: "See margin-based benchmarks in ",
+            linkText: "What Is a Good ROAS?",
+            href: "/what-is-a-good-roas",
             after: ".",
           },
         ]}

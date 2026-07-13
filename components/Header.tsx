@@ -112,6 +112,10 @@ export default function Header() {
     setMoreOpen(false);
   }
 
+  if (currentPath.startsWith("/embed")) {
+    return null;
+  }
+
   return (
     <header className="site-header">
       <div className="header-inner">

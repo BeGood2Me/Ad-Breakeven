@@ -5,6 +5,7 @@ import { copyShareUrl } from "@/lib/calculator-params";
 
 interface CalculatorToolbarProps {
   onReset: () => void;
+  onTryExample?: () => void;
   copyText: string | null;
   shareParams: Record<string, string>;
   shareEnabled: boolean;
@@ -12,6 +13,7 @@ interface CalculatorToolbarProps {
 
 export default function CalculatorToolbar({
   onReset,
+  onTryExample,
   copyText,
   shareParams,
   shareEnabled,
@@ -57,6 +59,11 @@ export default function CalculatorToolbar({
 
   return (
     <div className="calculator-actions">
+      {onTryExample && (
+        <button type="button" className="calc-btn" onClick={() => onTryExample()}>
+          Try example
+        </button>
+      )}
       <button type="button" className="calc-btn" onClick={() => onReset()}>
         Reset
       </button>

@@ -20,6 +20,9 @@ import {
   parseOptionalInput,
 } from "@/lib/format";
 import { useCalculatorPersistence } from "@/hooks/useCalculatorPersistence";
+import { exampleForModel } from "@/lib/calculator-examples";
+import { contributionPerOrder } from "@/lib/calculations";
+import ProfitCurveChart from "@/components/ProfitCurveChart";
 import { NextStepsSection } from "@/components/NextStepsSection";
 import BusinessModelToggle from "./BusinessModelToggle";
 import CalculatorToolbar, { CalculatorResults } from "./CalculatorToolbar";
@@ -135,6 +138,40 @@ export default function AdProfitCalculator() {
     updateShareUrl({});
   }
 
+  function tryExample() {
+    const ex = exampleForModel(model);
+    setModel(ex.model);
+    setValue(ex.value);
+    setMargin(ex.margin);
+    setAdSpend(ex.adSpend);
+    setSales(ex.sales);
+    setCloseRate(ex.closeRate);
+    setFixedCost(ex.fixedCost);
+    updateShareUrl({
+      model: ex.model,
+      value: ex.value,
+      margin: ex.margin,
+      adSpend: ex.adSpend,
+      sales: ex.sales,
+      closeRate: ex.closeRate,
+      fixedCost: ex.fixedCost,
+    });
+  }
+
+  const contributionPerUnit =
+    inputsReady && results.contribution !== null
+      ? contributionPerOrder(
+          effectiveAov,
+          parseInput(margin),
+          parseOptionalInput(fixedCost)
+        )
+      : null;
+
+  const breakEvenSpend =
+    contributionPerUnit !== null && parseInput(sales) > 0
+      ? contributionPerUnit * parseInput(sales)
+      : null;
+
   const profitBadge =
     results.profit === null
       ? null
@@ -164,6 +201,7 @@ export default function AdProfitCalculator() {
       />
       <CalculatorToolbar
         onReset={reset}
+        onTryExample={tryExample}
         copyText={copyText}
         shareParams={values}
         shareEnabled={inputsReady}
@@ -278,6 +316,14 @@ export default function AdProfitCalculator() {
             <dd>{formatRoas(results.breakEvenRoas)}</dd>
           </div>
         </dl>
+        {contributionPerUnit !== null && parseInput(adSpend) > 0 && (
+          <ProfitCurveChart
+            adSpend={parseInput(adSpend)}
+            sales={parseInput(sales)}
+            contributionPerUnit={contributionPerUnit}
+            breakEvenSpend={breakEvenSpend}
+          />
+        )}
         <NextStepsSection
           variant="ad-profit"
           model={model}

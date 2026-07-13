@@ -48,6 +48,8 @@ export const FAQ_ITEMS: FaqItem[] = [
         A &ldquo;good&rdquo; ROAS depends entirely on your margin. With 50%
         margins, 2.0× is break-even. With 25% margins, you need 4.0× just to
         break even. Calculate your specific threshold with the{" "}
+        <Link href="/what-is-a-good-roas">What Is a Good ROAS?</Link> guide or
+        the{" "}
         <Link href="/break-even-roas-calculator">Break-even ROAS Calculator</Link>.
       </>
     ),
@@ -59,7 +61,8 @@ export const FAQ_ITEMS: FaqItem[] = [
     answer: (
       <>
         Max CPA is the highest amount you can pay for one conversion and still
-        break even. It equals your contribution margin per order. Calculate it
+        break even. It equals your contribution margin per order. See{" "}
+        <Link href="/max-cpa-guide">How to Set Target CPA</Link> or calculate it
         with the <Link href="/max-cpa-calculator">Max CPA Calculator</Link>.
       </>
     ),

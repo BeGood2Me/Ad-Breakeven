@@ -59,6 +59,12 @@ export default function MaxCpaPage() {
             href: "/max-cpc-calculator",
             after: ".",
           },
+          {
+            before: "Read the full walkthrough in ",
+            linkText: "How to Set Target CPA",
+            href: "/max-cpa-guide",
+            after: ".",
+          },
         ]}
       />
     </article>

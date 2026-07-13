@@ -2,6 +2,7 @@ import { FAQ_ITEMS } from "@/lib/faq";
 import {
   ALL_PAGES,
   FAQ_PAGE_TITLE,
+  GUIDE_DESCRIPTIONS,
   SITE_DESCRIPTION,
   SITE_NAME,
   SITE_URL,
@@ -47,13 +48,7 @@ export function buildLlmsTxt(): string {
     "",
     ...guidePages.map(({ title, href }) => {
       const description =
-        href === "/how-to-calculate-break-even-roas"
-          ? "Break-even ROAS formula, step-by-step example, ecommerce and lead gen"
-          : href === "/roas-vs-roi-vs-cpa"
-            ? "Compare ROAS, ROI, CPA, and CPC — when to use each for ad profitability"
-            : href === "/faq"
-              ? "Answers on break-even ROAS, max CPA, CPC, ad profit, and lead gen"
-              : title;
+        GUIDE_DESCRIPTIONS[href] ?? title;
       return linkLine(title, href, description);
     }),
     "",
@@ -150,12 +145,32 @@ export function buildLlmsFullTxt(): string {
     linkLine(
       "How to Calculate Break-even ROAS",
       "/how-to-calculate-break-even-roas",
-      "Formula walkthrough with ecommerce and lead gen examples"
+      GUIDE_DESCRIPTIONS["/how-to-calculate-break-even-roas"]
+    ),
+    linkLine(
+      "What Is a Good ROAS?",
+      "/what-is-a-good-roas",
+      GUIDE_DESCRIPTIONS["/what-is-a-good-roas"]
+    ),
+    linkLine(
+      "How to Set Target CPA",
+      "/max-cpa-guide",
+      GUIDE_DESCRIPTIONS["/max-cpa-guide"]
+    ),
+    linkLine(
+      "Google Ads Break-even ROAS",
+      "/google-ads-break-even",
+      GUIDE_DESCRIPTIONS["/google-ads-break-even"]
     ),
     linkLine(
       "ROAS vs ROI vs CPA vs CPC",
       "/roas-vs-roi-vs-cpa",
-      "Metric definitions, differences, and break-even connections"
+      GUIDE_DESCRIPTIONS["/roas-vs-roi-vs-cpa"]
+    ),
+    linkLine(
+      "About Ad Breakeven",
+      "/about",
+      GUIDE_DESCRIPTIONS["/about"]
     ),
     "",
     `## ${FAQ_PAGE_TITLE}`,

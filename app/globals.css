@@ -959,3 +959,127 @@ main {
   background: color-mix(in srgb, var(--color-text-muted) 15%, transparent);
   color: var(--color-text);
 }
+
+/* Data tables (guide pages) */
+.table-wrap {
+  overflow-x: auto;
+  margin: 1rem 0;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.data-table th,
+.data-table td {
+  padding: 0.625rem 0.875rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.data-table th {
+  font-weight: 600;
+  background: var(--color-bg);
+}
+
+.data-table tbody tr:hover {
+  background: color-mix(in srgb, var(--color-primary) 4%, transparent);
+}
+
+/* Profit curve chart (Ad Profit calculator) */
+.profit-chart {
+  margin: 1.25rem 0 0;
+  padding: 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.profit-chart-caption {
+  margin: 0 0 0.75rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.profit-chart-svg {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+}
+
+.profit-chart-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.75rem 0 0;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.profit-chart-legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.profit-chart-dot {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+}
+
+.profit-chart-dot-current {
+  background: var(--color-primary);
+}
+
+.profit-chart-dot-breakeven {
+  background: var(--color-accent);
+}
+
+/* Embeddable calculator */
+[data-embed="true"] .skip-link {
+  display: none;
+}
+
+.embed-shell {
+  min-height: 100vh;
+  padding: 1rem;
+  background: var(--color-surface);
+}
+
+.embed-calculator {
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.embed-attribution {
+  margin: 1rem auto 0;
+  max-width: 480px;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+}
+
+.embed-attribution a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.embed-section {
+  margin-top: 2rem;
+}
+
+.embed-code-block {
+  overflow-x: auto;
+  margin: 1rem 0;
+  padding: 1rem;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}

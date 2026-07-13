@@ -27,8 +27,12 @@ export const ALL_PAGES = [
   { href: "/max-cpc-calculator", title: "Max CPC Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/ad-profit-calculator", title: "Ad Profit Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/how-to-calculate-break-even-roas", title: "How to Calculate Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
+  { href: "/what-is-a-good-roas", title: "What Is a Good ROAS?", changefreq: "monthly" as const, priority: 0.85 },
+  { href: "/max-cpa-guide", title: "How to Set Target CPA", changefreq: "monthly" as const, priority: 0.85 },
+  { href: "/google-ads-break-even", title: "Google Ads Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/roas-vs-roi-vs-cpa", title: "ROAS vs ROI vs CPA", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/faq", title: FAQ_PAGE_TITLE, changefreq: "monthly" as const, priority: 0.7 },
+  { href: "/about", title: "About Ad Breakeven", changefreq: "yearly" as const, priority: 0.5 },
   { href: "/privacy", title: "Privacy Policy", changefreq: "yearly" as const, priority: 0.3 },
   { href: "/terms", title: "Terms of Use", changefreq: "yearly" as const, priority: 0.3 },
 ] as const;
@@ -59,6 +63,21 @@ export const TOOL_LINKS = [
       "Net ad profit after spend and costs, compared to your break-even ROAS — with tailored next steps.",
   },
 ] as const;
+
+export const GUIDE_DESCRIPTIONS: Record<string, string> = {
+  "/how-to-calculate-break-even-roas":
+    "Break-even ROAS formula, step-by-step example, ecommerce and lead gen",
+  "/what-is-a-good-roas":
+    "Good ROAS benchmarks by margin — why generic 3× or 4× targets mislead",
+  "/max-cpa-guide":
+    "How to set target CPA for ecommerce and lead gen with worked examples",
+  "/google-ads-break-even":
+    "Google Ads break-even ROAS and target ROAS (tROAS) from margin",
+  "/roas-vs-roi-vs-cpa":
+    "Compare ROAS, ROI, CPA, and CPC — when to use each for ad profitability",
+  "/faq": "Answers on break-even ROAS, max CPA, CPC, ad profit, and lead gen",
+  "/about": "About Ad Breakeven — mission, methodology, and disclaimer",
+};
 
 export const GUIDE_LINKS = ALL_PAGES.filter(
   (page) =>

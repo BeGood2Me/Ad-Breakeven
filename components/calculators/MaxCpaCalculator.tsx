@@ -18,6 +18,7 @@ import {
   parseOptionalInput,
 } from "@/lib/format";
 import { useCalculatorPersistence } from "@/hooks/useCalculatorPersistence";
+import { exampleForModel } from "@/lib/calculator-examples";
 import { NextStepsSection } from "@/components/NextStepsSection";
 import BusinessModelToggle from "./BusinessModelToggle";
 import CalculatorToolbar, { CalculatorResults } from "./CalculatorToolbar";
@@ -95,6 +96,22 @@ export default function MaxCpaCalculator() {
     updateShareUrl({});
   }
 
+  function tryExample() {
+    const ex = exampleForModel(model);
+    setModel(ex.model);
+    setValue(ex.value);
+    setMargin(ex.margin);
+    setCloseRate(ex.closeRate);
+    setFixedCost(ex.fixedCost);
+    updateShareUrl({
+      model: ex.model,
+      value: ex.value,
+      margin: ex.margin,
+      closeRate: ex.closeRate,
+      fixedCost: ex.fixedCost,
+    });
+  }
+
   return (
     <div className="calculator">
       <BusinessModelToggle
@@ -106,6 +123,7 @@ export default function MaxCpaCalculator() {
       />
       <CalculatorToolbar
         onReset={reset}
+        onTryExample={tryExample}
         copyText={copyText}
         shareParams={values}
         shareEnabled={inputsReady}

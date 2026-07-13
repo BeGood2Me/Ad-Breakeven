@@ -6,9 +6,24 @@ import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 
 const LEARN_MORE_LINKS = [
   {
+    href: "/what-is-a-good-roas",
+    label: "What Is a Good ROAS?",
+    description: "break-even benchmarks by margin",
+  },
+  {
     href: "/how-to-calculate-break-even-roas",
     label: "How to Calculate Break-even ROAS",
     description: "formula, example, and tips",
+  },
+  {
+    href: "/max-cpa-guide",
+    label: "How to Set Target CPA",
+    description: "ecommerce and lead gen worked examples",
+  },
+  {
+    href: "/google-ads-break-even",
+    label: "Google Ads Break-even ROAS",
+    description: "tROAS settings from your margin",
   },
   {
     href: "/roas-vs-roi-vs-cpa",

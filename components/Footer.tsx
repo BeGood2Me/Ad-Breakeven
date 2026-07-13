@@ -1,8 +1,17 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import FooterYear from "@/components/FooterYear";
 import { GUIDE_LINKS, SITE_NAME, TOOL_LINKS } from "@/lib/site";
 
 export default function Footer() {
+  const pathname = usePathname();
+
+  if (pathname.startsWith("/embed")) {
+    return null;
+  }
+
   return (
     <footer className="site-footer">
       <div className="footer-inner">
@@ -33,7 +42,8 @@ export default function Footer() {
           <h2>About</h2>
           <p className="footer-meta">
             {SITE_NAME} — free break-even calculators for paid media planning.
-            No ads, no signup. Supports ecommerce and lead gen.
+            Free, no signup. Supports ecommerce and lead gen.{" "}
+            <Link href="/about">Learn more</Link>
           </p>
         </div>
       </div>
