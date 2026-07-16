@@ -1,0 +1,58 @@
+{
+  "slug": "cpc-bidding",
+  "type": "pillar",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "CPC & Bidding Topic Hub | Ad Breakeven Blog",
+    "description": "Max CPC formula, break-even bids from max CPA and conversion rate, and practical bidding guidance for Google Ads and Meta campaigns.",
+    "keywords": [
+      "max cpc",
+      "break even cpc",
+      "cpc bidding",
+      "conversion rate bidding",
+      "google ads max cpc"
+    ],
+    "canonical": "/topics/cpc-bidding"
+  },
+  "headline": "CPC & Bidding",
+  "intro": "Max CPC connects your acquisition cap to click-level bids. If you know max CPA and conversion rate, you know the highest CPC that can still break even — a practical sanity check before raising bids.",
+  "sections": [
+    {
+      "id": "cpc-overview",
+      "heading": "From CPA cap to CPC bid",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Conversion rate bridges acquisition economics and auction bids. A $50 max CPA at 2% conversion rate means $1.00 break-even CPC. Higher conversion rate raises your affordable CPC; lower rate tightens it."
+        },
+        {
+          "type": "formula",
+          "text": "Max CPC = max CPA × conversion rate (as a decimal)"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is max CPC?",
+      "answer": "Max CPC is the highest cost per click that can still break even given your max CPA and conversion rate."
+    },
+    {
+      "question": "Should I set manual CPC at max CPC?",
+      "answer": "Max CPC is a ceiling, not a target. Smart bidding may exceed it on some clicks if aggregate CPA stays profitable — but it is a useful planning number."
+    },
+    {
+      "question": "What if conversion rate is zero or unknown?",
+      "answer": "You cannot calculate break-even CPC without conversion data. Use a test budget, measure conversion rate, then set bids."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate break-even CPC with the ",
+      "linkText": "Max CPC Calculator",
+      "href": "/max-cpc-calculator",
+      "after": "."
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "slug": "good-roas-benchmarks-by-margin",
+  "type": "blog",
+  "pillar": "roas-break-even",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "What Is a Good ROAS? Benchmarks by Margin (Not Generic 4×)",
+    "description": "Good ROAS depends on margin — not industry averages. See break-even ROAS at 25%, 40%, 50%, 60%, and 70% margin and why 3× or 4× targets mislead.",
+    "keywords": [
+      "what is a good roas",
+      "good roas benchmark",
+      "average roas",
+      "roas by margin",
+      "minimum roas"
+    ],
+    "canonical": "/blog/good-roas-benchmarks-by-margin"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "What Is a Good ROAS? Benchmarks by Margin Level",
+  "intro": "There is no universal good ROAS — only a ROAS that is profitable for your margin. A 3× ROAS sounds strong until you realize 25% margin businesses need 4× just to break even.",
+  "tags": ["roas", "benchmarks", "margin", "break-even"],
+  "sections": [
+    {
+      "id": "no-universal",
+      "heading": "Why generic ROAS targets fail",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Agencies and blog posts often cite 3× or 4× ROAS as a minimum. Those numbers assume a specific margin profile. At 60% margin, break-even ROAS is about 1.67× — holding out for 4× leaves scale on the table. At 25% margin, 3× still loses money."
+        },
+        {
+          "type": "list",
+          "items": [
+            "50% margin → break-even ROAS ≈ 2.0×",
+            "40% margin → break-even ROAS ≈ 2.5×",
+            "25% margin → break-even ROAS ≈ 4.0×"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "good-vs-breakeven",
+      "heading": "Good ROAS vs break-even ROAS",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Break-even ROAS is your floor. Good ROAS is anything above it — how far above depends on your profit goals and competitive pressure. A practical target is break-even ROAS plus 20–30% headroom for ecommerce scaling."
+        },
+        {
+          "type": "link",
+          "before": "See the full margin table in ",
+          "linkText": "What Is a Good ROAS?",
+          "href": "/what-is-a-good-roas",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "id": "platform-roas",
+      "heading": "Platform ROAS is not profit ROAS",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Google Ads, Meta, and Shopify report revenue ROAS. They do not subtract COGS, shipping, or payment fees. Always translate platform ROAS into contribution ROAS before comparing to benchmarks."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is a good ROAS for ecommerce?",
+      "answer": "It depends on gross margin. At 50% margin, break-even is about 2× and good might be 2.5× or higher. Calculate your specific floor rather than using industry averages."
+    },
+    {
+      "question": "Is 4× ROAS good?",
+      "answer": "Only if your margin is around 25% or higher with minimal fixed costs. At 50% margin, 4× is well above break-even and may be unnecessarily conservative for scaling."
+    },
+    {
+      "question": "What ROAS should I target in Google Ads?",
+      "answer": "Set target ROAS at or above your break-even ROAS from margin and AOV. Use our break-even calculator, then add profit headroom if needed."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate your floor with the ",
+      "linkText": "Break-even ROAS Calculator",
+      "href": "/break-even-roas-calculator",
+      "after": "."
+    }
+  ]
+}

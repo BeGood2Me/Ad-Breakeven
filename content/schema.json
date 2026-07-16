@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Ad Breakeven Blog Post",
+  "type": "object",
+  "required": [
+    "slug",
+    "type",
+    "pillar",
+    "publishedAt",
+    "updatedAt",
+    "seo",
+    "author",
+    "headline",
+    "intro",
+    "tags",
+    "sections",
+    "faq",
+    "relatedTools"
+  ],
+  "properties": {
+    "slug": { "type": "string" },
+    "type": { "const": "blog" },
+    "pillar": { "type": "string" },
+    "publishedAt": { "type": "string", "format": "date" },
+    "updatedAt": { "type": "string", "format": "date" },
+    "seo": {
+      "type": "object",
+      "required": ["title", "description", "keywords", "canonical"],
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "keywords": { "type": "array", "items": { "type": "string" } },
+        "canonical": { "type": "string" }
+      }
+    },
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "organization": { "type": "string" },
+        "role": { "type": "string" },
+        "bio": { "type": "string" },
+        "url": { "type": "string" }
+      }
+    },
+    "headline": { "type": "string" },
+    "intro": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "sections": { "type": "array" },
+    "faq": { "type": "array" },
+    "relatedTools": { "type": "array" }
+  }
+}

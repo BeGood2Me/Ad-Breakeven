@@ -1,0 +1,101 @@
+{
+  "slug": "google-ads-target-roas-settings",
+  "type": "blog",
+  "pillar": "roas-break-even",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "Google Ads Target ROAS (tROAS): How to Set It from Margin",
+    "description": "Set Google Ads target ROAS from break-even economics — not guesswork. Learn where to find margin data, how tROAS bidding works, and common mistakes.",
+    "keywords": [
+      "target roas google ads",
+      "google ads break even roas",
+      "troas settings",
+      "google ads roas target",
+      "smart bidding roas"
+    ],
+    "canonical": "/blog/google-ads-target-roas-settings"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "How to Set Google Ads Target ROAS from Your Margin",
+  "intro": "Target ROAS (tROAS) tells Google Smart Bidding the efficiency floor you need. Set it from break-even economics — margin, AOV, and fixed costs — not from a competitor benchmark.",
+  "tags": ["google-ads", "troas", "roas", "smart-bidding"],
+  "sections": [
+    {
+      "id": "what-troas",
+      "heading": "What target ROAS does in Google Ads",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Target ROAS bidding optimizes for conversion value relative to spend. Google uses your target as a signal — campaigns may fluctuate above or below it as the algorithm learns. Your break-even ROAS is the minimum target that keeps campaigns profitable after costs Google does not see."
+        }
+      ]
+    },
+    {
+      "id": "calculate-first",
+      "heading": "Calculate break-even ROAS before opening Google Ads",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Find gross margin from Shopify, your P&L, or COGS spreadsheet",
+            "Subtract per-order fixed costs (shipping, payment fees, packaging)",
+            "Divide AOV by contribution per order",
+            "Add profit headroom if you want margin above break-even"
+          ]
+        },
+        {
+          "type": "link",
+          "before": "Detailed platform walkthrough: ",
+          "linkText": "Google Ads Break-even ROAS",
+          "href": "/google-ads-break-even",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "id": "mistakes",
+      "heading": "Common tROAS mistakes",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Using revenue ROAS from Google as if it included COGS",
+            "Copying a competitor's 400% target without matching margin",
+            "Setting tROAS below break-even to get more volume",
+            "Ignoring conversion value rules — ensure value reflects AOV accurately"
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What target ROAS should I use in Google Ads?",
+      "answer": "Start at or above your break-even ROAS calculated from margin and AOV. Add headroom for profit goals. Do not use generic 400% unless your economics support it."
+    },
+    {
+      "question": "Where do I find margin for tROAS?",
+      "answer": "Shopify gross profit reports, accounting P&L, or COGS divided by revenue. Use true gross margin before ad spend, not net profit."
+    },
+    {
+      "question": "Can tROAS be lower than break-even ROAS?",
+      "answer": "You can set it lower, but the campaign will lose money after product costs. Lower tROAS may increase volume at the expense of profitability."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate break-even ROAS with the ",
+      "linkText": "Break-even ROAS Calculator",
+      "href": "/break-even-roas-calculator",
+      "after": "."
+    }
+  ]
+}

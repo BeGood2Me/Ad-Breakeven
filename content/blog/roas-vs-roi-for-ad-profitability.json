@@ -1,0 +1,105 @@
+{
+  "slug": "roas-vs-roi-for-ad-profitability",
+  "type": "blog",
+  "pillar": "ad-profitability",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "ROAS vs ROI for Ad Profitability: Which Metric Should You Use?",
+    "description": "ROAS measures revenue per ad dollar; ROI measures profit relative to investment. Learn when to use each for campaign decisions and break-even planning.",
+    "keywords": [
+      "roas vs roi",
+      "roas vs roi advertising",
+      "ad profitability metrics",
+      "campaign roi",
+      "return on ad spend vs roi"
+    ],
+    "canonical": "/blog/roas-vs-roi-for-ad-profitability"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "ROAS vs ROI for Ad Profitability",
+  "intro": "ROAS and ROI both measure ad efficiency, but they answer different questions. Using the wrong one leads to scaling campaigns that look healthy but lose money after costs.",
+  "tags": ["roas", "roi", "metrics", "profitability"],
+  "sections": [
+    {
+      "id": "definitions",
+      "heading": "Definitions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "ROAS (return on ad spend) = revenue ÷ ad spend. A 4× ROAS means $4 revenue per $1 spent. ROI (return on investment) typically = profit ÷ investment × 100%. ROI accounts for costs beyond ad spend."
+        },
+        {
+          "type": "callout",
+          "title": "Example:",
+          "text": "$100 ad spend, $400 revenue, $200 product costs → ROAS 4×, profit $100, ROI 100% on ad spend."
+        }
+      ]
+    },
+    {
+      "id": "when-roas",
+      "heading": "When ROAS is the right metric",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Daily campaign monitoring in ad platforms",
+            "Comparing ad efficiency across campaigns with similar margins",
+            "Setting tROAS targets when value tracking is accurate",
+            "Quick break-even checks when you know margin (break-even ROAS = 1 ÷ margin)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "when-roi",
+      "heading": "When ROI matters more",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Board or finance reporting on true profitability",
+            "Blended channels where ad spend is one line item among many",
+            "Deciding whether to increase total marketing budget",
+            "Businesses with highly variable COGS or fulfillment"
+          ]
+        },
+        {
+          "type": "link",
+          "before": "Deep comparison: ",
+          "linkText": "ROAS vs ROI vs CPA",
+          "href": "/roas-vs-roi-vs-cpa",
+          "after": "."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Is ROAS the same as ROI?",
+      "answer": "No. ROAS uses revenue; ROI uses profit. High ROAS can coexist with negative ROI if margins are thin."
+    },
+    {
+      "question": "What is a good ROI on ad spend?",
+      "answer": "It varies by business model. Break-even ROI on ad spend is 0% profit. Positive ROI means campaigns generate profit after all variable costs."
+    },
+    {
+      "question": "Which metric do Google Ads use?",
+      "answer": "Google Ads reports ROAS (conversion value divided by cost). It does not report profit ROI unless you import margin-adjusted values."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate net ad profit with the ",
+      "linkText": "Ad Profit Calculator",
+      "href": "/ad-profit-calculator",
+      "after": "."
+    }
+  ]
+}

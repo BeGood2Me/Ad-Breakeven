@@ -1,3 +1,5 @@
+import fs from "fs";
+
 const SITE_HOST = "adbreakeven.com";
 const SITE_URL = `https://${SITE_HOST}`;
 const KEY = "07a85be26d4c9f13";
@@ -21,7 +23,16 @@ const PATHS = [
   "/llms-full.txt",
 ];
 
-const urlList = PATHS.map((path) =>
+const contentUrlsPath = new URL("../generated/content-urls.json", import.meta.url);
+let contentUrls = [];
+try {
+  contentUrls = JSON.parse(fs.readFileSync(contentUrlsPath, "utf8"));
+} catch {
+  console.warn("No generated/content-urls.json — run npm run generate:content first");
+}
+
+const allPaths = [...PATHS, ...contentUrls];
+const urlList = [...new Set(allPaths)].map((path) =>
   path === "/" ? `${SITE_URL}/` : `${SITE_URL}${path}`
 );
 

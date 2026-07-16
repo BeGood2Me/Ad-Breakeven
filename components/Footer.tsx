@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import FooterYear from "@/components/FooterYear";
+import { PILLAR_INDEX } from "@/generated/content-manifest";
 import { GUIDE_LINKS, SITE_NAME, TOOL_LINKS } from "@/lib/site";
 
 export default function Footer() {
@@ -14,6 +15,18 @@ export default function Footer() {
 
   return (
     <footer className="site-footer">
+      <nav className="footer-topics" aria-label="Topic clusters">
+        <ul className="footer-topics-list">
+          {PILLAR_INDEX.map(({ slug, path, headline }) => (
+            <li key={slug}>
+              <Link href={path}>{headline}</Link>
+            </li>
+          ))}
+          <li>
+            <Link href="/blog">All blog posts</Link>
+          </li>
+        </ul>
+      </nav>
       <div className="footer-inner">
         <div>
           <h2>Calculators</h2>

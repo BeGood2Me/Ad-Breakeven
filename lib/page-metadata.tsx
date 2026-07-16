@@ -7,12 +7,24 @@ export function buildPageMetadata(options: {
   title: string;
   description: string;
   path: string;
+  keywords?: string[];
+  publishedTime?: string;
+  modifiedTime?: string;
+  ogType?: "website" | "article";
 }): Metadata {
+  const openGraph = {
+    ...openGraphForPage(options),
+    ...(options.ogType ? { type: options.ogType } : {}),
+    ...(options.publishedTime ? { publishedTime: options.publishedTime } : {}),
+    ...(options.modifiedTime ? { modifiedTime: options.modifiedTime } : {}),
+  };
+
   return {
     title: options.title,
     description: options.description,
+    ...(options.keywords?.length ? { keywords: options.keywords } : {}),
     alternates: { canonical: options.path },
-    openGraph: openGraphForPage(options),
+    openGraph,
     twitter: {
       card: "summary_large_image",
       title: options.title,

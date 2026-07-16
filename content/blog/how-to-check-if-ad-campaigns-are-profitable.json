@@ -1,0 +1,125 @@
+{
+  "slug": "how-to-check-if-ad-campaigns-are-profitable",
+  "type": "blog",
+  "pillar": "ad-profitability",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "How to Check If Your Ad Campaigns Are Actually Profitable",
+    "description": "Platform dashboards can hide unprofitable campaigns. Learn the 5-step checklist: contribution margin, break-even ROAS, actual ROAS, ad profit, and scaling rules.",
+    "keywords": [
+      "are my ads profitable",
+      "ad campaign profitability",
+      "ad profit calculator",
+      "check roas profitability",
+      "paid ads profit"
+    ],
+    "canonical": "/blog/how-to-check-if-ad-campaigns-are-profitable"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "How to Check If Your Ad Campaigns Are Actually Profitable",
+  "intro": "Revenue ROAS in your ad platform is a starting point — not the final answer. Here is a five-step checklist to know if campaigns make money after product costs and ad spend.",
+  "tags": ["profitability", "ad-profit", "roas", "checklist"],
+  "sections": [
+    {
+      "id": "step-1",
+      "heading": "Step 1: Calculate contribution margin",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Contribution = (AOV × gross margin%) − fixed costs per order. Without this number, you cannot know if any ROAS is profitable."
+        }
+      ]
+    },
+    {
+      "id": "step-2",
+      "heading": "Step 2: Find break-even ROAS",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "Break-even ROAS = AOV ÷ contribution per order"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is your floor. Actual ROAS below this means the campaign loses money."
+        }
+      ]
+    },
+    {
+      "id": "step-3",
+      "heading": "Step 3: Compare actual ROAS",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Pull actual ROAS from the ad platform for the same date range. Ensure conversion value reflects true AOV — especially if you use average order value vs last-click SKU value."
+        }
+      ]
+    },
+    {
+      "id": "step-4",
+      "heading": "Step 4: Calculate ad profit in dollars",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "ROAS alone does not show dollar impact. Ad profit = total contribution from conversions minus ad spend. A campaign at 2.5× ROAS on $10,000 spend behaves very differently than the same ROAS on $500 spend."
+        },
+        {
+          "type": "link",
+          "before": "Use the ",
+          "linkText": "Ad Profit Calculator",
+          "href": "/ad-profit-calculator",
+          "after": " for revenue, contribution, and net profit in one view."
+        }
+      ]
+    },
+    {
+      "id": "step-5",
+      "heading": "Step 5: Set scaling rules",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Below break-even ROAS → reduce spend or fix funnel/margin",
+            "At break-even → optimize before scaling",
+            "Above break-even with positive ad profit → test incremental budget in 10–20% steps",
+            "Re-check after each scale — CPA often rises with volume"
+          ]
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I know if my Google Ads are profitable?",
+      "answer": "Compare actual ROAS to break-even ROAS from your margin, then calculate net ad profit in dollars. Platform revenue ROAS alone is not enough."
+    },
+    {
+      "question": "What ROAS is profitable?",
+      "answer": "Any ROAS above your break-even ROAS is profitable. The exact number depends on margin — there is no universal threshold."
+    },
+    {
+      "question": "Should I scale campaigns at break-even ROAS?",
+      "answer": "Break-even means zero profit. Scale only when ROAS is above break-even and ad profit is positive, unless you have strategic reasons to accept losses temporarily."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Run the full check in the ",
+      "linkText": "Ad Profit Calculator",
+      "href": "/ad-profit-calculator",
+      "after": "."
+    },
+    {
+      "before": "See all metrics in the ",
+      "linkText": "Break-even Ads Calculator",
+      "href": "/",
+      "after": "."
+    }
+  ]
+}

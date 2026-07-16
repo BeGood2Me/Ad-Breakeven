@@ -13,6 +13,7 @@ export const PRIMARY_NAV_LINKS = [
 
 export const MORE_NAV_LINKS = [
   { href: "/ad-profit-calculator", label: "Ad Profit Calculator", shortLabel: "Ad Profit" },
+  { href: "/blog", label: "Blog", shortLabel: "Blog" },
   { href: "/how-to-calculate-break-even-roas", label: "ROAS Guide", shortLabel: "ROAS Guide" },
   { href: "/roas-vs-roi-vs-cpa", label: "ROAS vs ROI", shortLabel: "Compare" },
   { href: "/faq", label: "FAQ", shortLabel: "FAQ" },

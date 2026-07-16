@@ -1,4 +1,5 @@
 import { FAQ_ITEMS } from "@/lib/faq";
+import { BLOG_INDEX, PILLAR_INDEX } from "@/generated/content-manifest";
 import {
   ALL_PAGES,
   FAQ_PAGE_TITLE,
@@ -51,6 +52,23 @@ export function buildLlmsTxt(): string {
         GUIDE_DESCRIPTIONS[href] ?? title;
       return linkLine(title, href, description);
     }),
+    "",
+    "## Blog",
+    "",
+    linkLine(
+      "Ad Breakeven Blog",
+      "/blog",
+      "SEO guides on ROAS, CPA, CPC, and ad profitability with topic clusters"
+    ),
+    ...BLOG_INDEX.map(({ headline, path, intro }) =>
+      linkLine(headline, path, intro)
+    ),
+    "",
+    "## Topic clusters",
+    "",
+    ...PILLAR_INDEX.map(({ headline, path, intro }) =>
+      linkLine(headline, path, intro)
+    ),
     "",
     "## Optional",
     "",

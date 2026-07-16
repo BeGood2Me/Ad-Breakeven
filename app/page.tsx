@@ -31,6 +31,11 @@ const LEARN_MORE_LINKS = [
     description: "when to use each metric (plus CPC)",
   },
   {
+    href: "/blog",
+    label: "Blog",
+    description: "SEO guides on ROAS, CPA, CPC, and ad profit by topic",
+  },
+  {
     href: "/faq",
     label: "FAQ",
     description: "common questions about ROAS, CPA, and ad profit",

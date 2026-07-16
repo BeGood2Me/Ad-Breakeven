@@ -1,0 +1,68 @@
+{
+  "slug": "roas-break-even",
+  "type": "pillar",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "ROAS & Break-even Topic Hub | Ad Breakeven Blog",
+    "description": "Everything about break-even ROAS, good ROAS benchmarks by margin, and Google Ads target ROAS settings — formulas, examples, and free calculators.",
+    "keywords": [
+      "break even roas",
+      "what is a good roas",
+      "target roas google ads",
+      "roas calculator",
+      "minimum profitable roas"
+    ],
+    "canonical": "/topics/roas-break-even"
+  },
+  "headline": "ROAS & Break-even",
+  "intro": "Break-even ROAS is the floor where ad spend equals contribution margin — not a generic 3× or 4× benchmark. This topic cluster covers the formula, margin-based targets, and how to set tROAS in Google Ads.",
+  "sections": [
+    {
+      "id": "why-roas-cluster",
+      "heading": "Why break-even ROAS matters",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Platform dashboards report revenue ROAS. They do not subtract COGS, shipping, or fulfillment. A campaign at 3× ROAS can still lose money at 40% margin. Break-even ROAS ties your ad efficiency target to economics you control: margin, AOV, and fixed per-order costs."
+        },
+        {
+          "type": "formula",
+          "text": "Break-even ROAS = value ÷ contribution per conversion"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use the articles below for worked examples, margin tables, and platform settings. Each post links to our free calculators so you can run your own numbers in seconds."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is break-even ROAS?",
+      "answer": "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend. Below that ROAS, campaigns lose money after product or fulfillment costs."
+    },
+    {
+      "question": "Is 4× ROAS always good?",
+      "answer": "No. At 50% margin, break-even is about 2×. At 25% margin, you need roughly 4× just to break even. Good ROAS is always relative to margin."
+    },
+    {
+      "question": "Does conversion rate change break-even ROAS?",
+      "answer": "No. Conversion rate affects max CPC and volume, but break-even ROAS depends only on margin and value per conversion."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate your floor with the ",
+      "linkText": "Break-even ROAS Calculator",
+      "href": "/break-even-roas-calculator",
+      "after": "."
+    },
+    {
+      "before": "See margin benchmarks in ",
+      "linkText": "What Is a Good ROAS?",
+      "href": "/what-is-a-good-roas",
+      "after": "."
+    }
+  ]
+}

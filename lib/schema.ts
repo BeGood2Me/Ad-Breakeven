@@ -108,6 +108,9 @@ export function articleSchema(options: {
   headline: string;
   description: string;
   path: string;
+  datePublished?: string;
+  dateModified?: string;
+  authorName?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -115,9 +118,13 @@ export function articleSchema(options: {
     headline: options.headline,
     description: options.description,
     url: `${SITE_URL}${options.path}`,
+    ...(options.datePublished
+      ? { datePublished: options.datePublished }
+      : {}),
+    ...(options.dateModified ? { dateModified: options.dateModified } : {}),
     author: {
       "@type": "Organization",
-      name: SITE_NAME,
+      name: options.authorName ?? SITE_NAME,
       url: SITE_URL,
     },
     publisher: {
@@ -125,5 +132,52 @@ export function articleSchema(options: {
       name: SITE_NAME,
       url: SITE_URL,
     },
+  };
+}
+
+export function blogPostingSchema(options: {
+  headline: string;
+  description: string;
+  path: string;
+  datePublished: string;
+  dateModified: string;
+  keywords?: string[];
+  authorName?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: options.headline,
+    description: options.description,
+    url: `${SITE_URL}${options.path}`,
+    datePublished: options.datePublished,
+    dateModified: options.dateModified,
+    ...(options.keywords?.length ? { keywords: options.keywords.join(", ") } : {}),
+    author: {
+      "@type": "Organization",
+      name: options.authorName ?? SITE_NAME,
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: SITE_URL,
+    },
+    mainEntityOfPage: `${SITE_URL}${options.path}`,
+  };
+}
+
+export function faqSchema(items: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: answer,
+      },
+    })),
   };
 }

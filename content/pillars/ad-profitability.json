@@ -1,0 +1,64 @@
+{
+  "slug": "ad-profitability",
+  "type": "pillar",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "Ad Profitability & Metrics Topic Hub | Ad Breakeven Blog",
+    "description": "ROAS vs ROI, ad profit after costs, and how to tell if campaigns are actually profitable — not just revenue-positive on platform dashboards.",
+    "keywords": [
+      "ad profit",
+      "roas vs roi",
+      "campaign profitability",
+      "paid ads profit",
+      "are my ads profitable"
+    ],
+    "canonical": "/topics/ad-profitability"
+  },
+  "headline": "Ad Profitability & Metrics",
+  "intro": "Revenue ROAS and account ROI answer different questions. This cluster helps you pick the right metric, calculate net ad profit after costs, and spot campaigns that look fine in-platform but lose money after margin.",
+  "sections": [
+    {
+      "id": "profitability-overview",
+      "heading": "Profit beats platform ROAS",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A campaign can hit 4× revenue ROAS and still be unprofitable at 30% margin. Ad profit subtracts product costs and ad spend from revenue — the number that actually matters for scaling."
+        },
+        {
+          "type": "paragraph",
+          "text": "Compare actual ROAS to break-even ROAS, then translate the gap into dollars with an ad profit calculation."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "Can ROAS look good but still lose money?",
+      "answer": "Yes. Platform ROAS uses revenue, not contribution margin. High revenue at low margin often means ad spend exceeds profit kept per sale."
+    },
+    {
+      "question": "What is the difference between ROAS and ROI?",
+      "answer": "ROAS is revenue divided by ad spend. ROI typically measures profit relative to spend or investment. ROAS is faster for ad dashboards; ROI reflects true return after costs."
+    },
+    {
+      "question": "How do I check if a campaign is profitable?",
+      "answer": "Compare actual ROAS to break-even ROAS, or calculate net ad profit: revenue minus product costs minus ad spend."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate net profit with the ",
+      "linkText": "Ad Profit Calculator",
+      "href": "/ad-profit-calculator",
+      "after": "."
+    },
+    {
+      "before": "Compare metrics in ",
+      "linkText": "ROAS vs ROI vs CPA",
+      "href": "/roas-vs-roi-vs-cpa",
+      "after": "."
+    }
+  ]
+}

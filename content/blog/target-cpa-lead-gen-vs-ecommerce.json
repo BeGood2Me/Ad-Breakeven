@@ -1,0 +1,102 @@
+{
+  "slug": "target-cpa-lead-gen-vs-ecommerce",
+  "type": "blog",
+  "pillar": "cpa-acquisition",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "Target CPA: Lead Gen vs Ecommerce (Cost Per Lead vs CPA)",
+    "description": "Lead gen target CPA is usually cost per lead, not cost per closed deal. Learn how close rate changes your caps and what to enter in Google Ads vs your CRM.",
+    "keywords": [
+      "target cpa lead gen",
+      "cost per lead",
+      "cpa vs cpl",
+      "lead gen max cpa",
+      "close rate advertising"
+    ],
+    "canonical": "/blog/target-cpa-lead-gen-vs-ecommerce"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "Target CPA for Lead Gen vs Ecommerce",
+  "intro": "Ecommerce max CPA is cost per purchase. Lead gen max CPA is usually cost per lead — and your CRM closed-deal cap is a different, higher number.",
+  "tags": ["cpa", "lead-gen", "cpl", "close-rate"],
+  "sections": [
+    {
+      "id": "ecommerce-recap",
+      "heading": "Ecommerce: one conversion, one cap",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "In ecommerce, the ad platform conversion is a purchase. Max CPA is straightforward: contribution per order. Target CPA in Google or Meta should stay at or below that cap."
+        }
+      ]
+    },
+    {
+      "id": "lead-gen",
+      "heading": "Lead gen: expected value per lead",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Lead gen ads convert on form fills, calls, or demos — not closed revenue. Value per lead is deal value multiplied by close rate. A $5,000 service at 15% close rate has $750 expected value per lead."
+        },
+        {
+          "type": "formula",
+          "text": "Max cost per lead = (deal value × close rate × margin%) − fixed cost per lead"
+        },
+        {
+          "type": "formula",
+          "text": "Max cost per closed deal = max cost per lead ÷ close rate"
+        }
+      ]
+    },
+    {
+      "id": "crm-vs-ads",
+      "heading": "What to enter in ads vs CRM",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Google Ads target CPA → max cost per lead (platform conversion)",
+            "CRM reporting → cost per closed deal (often 5–10× higher)",
+            "Sales team asks for lower CPL — finance asks about cost per sale. Both are valid; label them clearly."
+          ]
+        },
+        {
+          "type": "link",
+          "before": "Full walkthrough: ",
+          "linkText": "How to Set Target CPA",
+          "href": "/max-cpa-guide",
+          "after": "."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is target CPA for lead gen?",
+      "answer": "Target CPA in ad platforms is typically target cost per lead — the max you can pay for a form fill or call and break even given close rate and deal value."
+    },
+    {
+      "question": "How does close rate affect max CPA?",
+      "answer": "Lower close rate reduces expected value per lead, which lowers max cost per lead. Max cost per closed deal equals max CPL divided by close rate."
+    },
+    {
+      "question": "Should I optimize for leads or sales in Google Ads?",
+      "answer": "Most campaigns optimize for leads because that is what the pixel fires. Use close rate offline to translate lead caps into sales economics."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Toggle lead gen mode in the ",
+      "linkText": "Max CPA Calculator",
+      "href": "/max-cpa-calculator",
+      "after": "."
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "slug": "break-even-roas-explained",
+  "type": "blog",
+  "pillar": "roas-break-even",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "Break-even ROAS Explained: Formula, Examples & Calculator",
+    "description": "Learn what break-even ROAS means, how to calculate it from margin and AOV, and why platform ROAS can mislead. Includes ecommerce and lead gen examples.",
+    "keywords": [
+      "break even roas",
+      "break even roas formula",
+      "minimum roas",
+      "break even point calculator",
+      "roas calculator"
+    ],
+    "canonical": "/blog/break-even-roas-explained"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "Break-even ROAS Explained: What It Is and How to Calculate It",
+  "intro": "Break-even ROAS is the minimum return on ad spend where your campaign stops losing money after product costs — not the revenue number your ad platform shows by default.",
+  "tags": ["roas", "break-even", "formula", "ecommerce", "lead-gen"],
+  "sections": [
+    {
+      "id": "definition",
+      "heading": "What break-even ROAS means",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "ROAS (return on ad spend) is revenue divided by ad spend. Break-even ROAS is the ROAS where contribution margin equals ad spend — profit after product costs is zero. Any ROAS below that threshold means you lose money on each conversion, even when revenue looks healthy."
+        },
+        {
+          "type": "callout",
+          "title": "Key insight:",
+          "text": "Platform ROAS uses gross revenue. Break-even ROAS uses contribution margin. They are not the same number."
+        }
+      ]
+    },
+    {
+      "id": "formula",
+      "heading": "The break-even ROAS formula",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "First find contribution per conversion: value times gross margin percent, minus any fixed cost per order or per lead."
+        },
+        {
+          "type": "formula",
+          "text": "Contribution = (value × margin%) − fixed cost"
+        },
+        {
+          "type": "formula",
+          "text": "Break-even ROAS = value ÷ contribution"
+        },
+        {
+          "type": "paragraph",
+          "text": "With no fixed costs, this simplifies to 1 ÷ margin. Fifty percent margin means 2.0× break-even ROAS. Twenty-five percent margin means 4.0×."
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "heading": "Worked example (ecommerce)",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AOV $90, gross margin 50%, shipping and fees $6 per order."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Contribution = ($90 × 0.50) − $6 = $39",
+            "Break-even ROAS = $90 ÷ $39 = 2.31×",
+            "At 2.0× platform ROAS, the campaign loses money despite $180 revenue on $90 spend"
+          ]
+        },
+        {
+          "type": "link",
+          "before": "Run your own numbers in the ",
+          "linkText": "Break-even ROAS Calculator",
+          "href": "/break-even-roas-calculator",
+          "after": "."
+        }
+      ]
+    },
+    {
+      "id": "lead-gen",
+      "heading": "Lead gen: use expected revenue per lead",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "For lead gen, value is expected revenue per lead: customer or deal value multiplied by close rate. A $5,000 deal at 15% close rate has $750 expected value per lead. Apply the same formula to that value."
+        },
+        {
+          "type": "paragraph",
+          "text": "Conversion rate on the landing page does not change break-even ROAS — only margin and value per conversion matter."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is break-even ROAS?",
+      "answer": "Break-even ROAS is the minimum ROAS where ad spend equals contribution margin per conversion. Below it, campaigns lose money after product or fulfillment costs."
+    },
+    {
+      "question": "How do I calculate break-even ROAS?",
+      "answer": "Divide value (AOV or expected revenue per lead) by contribution per conversion. Contribution equals value times margin percent minus fixed costs."
+    },
+    {
+      "question": "Does conversion rate affect break-even ROAS?",
+      "answer": "No. Conversion rate affects max CPC and volume, but break-even ROAS depends only on margin and value per conversion."
+    },
+    {
+      "question": "Is break-even ROAS the same as target ROAS?",
+      "answer": "Break-even ROAS is your floor. Target ROAS in ad platforms should be at or above this number — often higher if you want profit, not just break-even."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate instantly with the ",
+      "linkText": "Break-even ROAS Calculator",
+      "href": "/break-even-roas-calculator",
+      "after": "."
+    },
+    {
+      "before": "See the step-by-step guide at ",
+      "linkText": "How to Calculate Break-even ROAS",
+      "href": "/how-to-calculate-break-even-roas",
+      "after": "."
+    }
+  ]
+}

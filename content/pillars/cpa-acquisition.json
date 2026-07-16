@@ -1,0 +1,68 @@
+{
+  "slug": "cpa-acquisition",
+  "type": "pillar",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "CPA & Acquisition Cost Topic Hub | Ad Breakeven Blog",
+    "description": "Learn max CPA, target CPA for ecommerce and lead gen, and how to set acquisition caps from margin — with formulas, examples, and free calculators.",
+    "keywords": [
+      "max cpa",
+      "target cpa",
+      "cost per acquisition",
+      "cost per lead",
+      "break even cpa"
+    ],
+    "canonical": "/topics/cpa-acquisition"
+  },
+  "headline": "CPA & Acquisition Costs",
+  "intro": "Max CPA is the highest you can pay per conversion and still break even. For lead gen, that usually means cost per lead — not cost per closed deal. This cluster explains both models and how to set platform targets.",
+  "sections": [
+    {
+      "id": "cpa-overview",
+      "heading": "Acquisition caps from margin",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Your max CPA equals contribution margin per conversion before ad spend. Ecommerce: max CPA per purchase. Lead gen: max cost per lead, with a separate CRM cap for closed deals (divide by close rate)."
+        },
+        {
+          "type": "formula",
+          "text": "Max CPA = (value × margin%) − fixed cost per conversion"
+        },
+        {
+          "type": "paragraph",
+          "text": "Target CPA in Google or Meta should sit at or below this cap — with headroom if you want profit, not just break-even."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is max CPA?",
+      "answer": "Max CPA is the highest cost per acquisition you can afford and still break even. It equals contribution margin per conversion."
+    },
+    {
+      "question": "Is max CPA the same as target CPA?",
+      "answer": "Max CPA is your break-even ceiling. Target CPA is what you bid toward — often 10–25% below max CPA if you want profit margin."
+    },
+    {
+      "question": "How does lead gen differ from ecommerce?",
+      "answer": "Lead gen uses expected revenue per lead (deal value × close rate) and produces a max cost per lead. CRM reporting often shows cost per closed deal, which is higher."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Run your numbers in the ",
+      "linkText": "Max CPA Calculator",
+      "href": "/max-cpa-calculator",
+      "after": "."
+    },
+    {
+      "before": "Read the full walkthrough in ",
+      "linkText": "How to Set Target CPA",
+      "href": "/max-cpa-guide",
+      "after": "."
+    }
+  ]
+}

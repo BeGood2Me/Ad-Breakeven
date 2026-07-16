@@ -1,0 +1,103 @@
+{
+  "slug": "max-cpa-explained-for-ecommerce",
+  "type": "blog",
+  "pillar": "cpa-acquisition",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "Max CPA Explained for Ecommerce: Formula & Worked Example",
+    "description": "Max CPA is the highest cost per purchase you can afford before ads lose money. Learn the formula, ecommerce example, and how it connects to ROAS and CPC.",
+    "keywords": [
+      "max cpa",
+      "max cpa formula",
+      "cost per acquisition ecommerce",
+      "target cpa ecommerce",
+      "break even cpa"
+    ],
+    "canonical": "/blog/max-cpa-explained-for-ecommerce"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "Max CPA Explained for Ecommerce",
+  "intro": "Max CPA is your break-even cost per purchase — the highest CPA Google or Meta can deliver before you lose money on each order after product costs.",
+  "tags": ["cpa", "max-cpa", "ecommerce", "acquisition"],
+  "sections": [
+    {
+      "id": "definition",
+      "heading": "What max CPA means for ecommerce",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "CPA (cost per acquisition) is ad spend divided by purchases. Max CPA equals contribution margin per order — profit per sale before ad costs. Spend $45 to acquire a customer when max CPA is $39 and you lose $6 per order regardless of revenue ROAS."
+        },
+        {
+          "type": "formula",
+          "text": "Max CPA = (AOV × margin%) − fixed cost per order"
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "heading": "Worked example",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "AOV $90, margin 50%, fixed costs $6 per order."
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Contribution = ($90 × 0.50) − $6 = $39",
+            "Max CPA = $39",
+            "Actual CPA $45 → losing $6 per purchase"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connect-roas",
+      "heading": "How max CPA connects to ROAS",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Max CPA and break-even ROAS describe the same economics differently. ROAS compares revenue to spend; max CPA is the absolute dollar cap per conversion. Both derive from contribution margin."
+        },
+        {
+          "type": "link",
+          "before": "Calculate both in the ",
+          "linkText": "Break-even Ads Calculator",
+          "href": "/",
+          "after": "."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "What is max CPA in ecommerce?",
+      "answer": "Max CPA is the highest cost per purchase you can pay and still break even. It equals contribution margin per order before ad spend."
+    },
+    {
+      "question": "How is max CPA different from target CPA?",
+      "answer": "Max CPA is your ceiling. Target CPA in ad platforms is what you bid toward — often set below max CPA to preserve profit margin."
+    },
+    {
+      "question": "Does max CPA include shipping costs?",
+      "answer": "Fixed per-order costs like shipping and payment fees reduce contribution and therefore reduce max CPA. Include them in the calculation."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate max CPA with the ",
+      "linkText": "Max CPA Calculator",
+      "href": "/max-cpa-calculator",
+      "after": "."
+    }
+  ]
+}

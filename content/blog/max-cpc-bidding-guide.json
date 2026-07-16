@@ -1,0 +1,94 @@
+{
+  "slug": "max-cpc-bidding-guide",
+  "type": "blog",
+  "pillar": "cpc-bidding",
+  "publishedAt": "2026-07-16",
+  "updatedAt": "2026-07-16",
+  "seo": {
+    "title": "Max CPC Bidding Guide: Break-even CPC from CPA & Conversion Rate",
+    "description": "Calculate max CPC from max CPA and conversion rate. Practical bidding guide for Google Ads and Meta with formula, examples, and free calculator.",
+    "keywords": [
+      "max cpc",
+      "break even cpc",
+      "cpc bidding strategy",
+      "max cpc formula",
+      "google ads cpc bid"
+    ],
+    "canonical": "/blog/max-cpc-bidding-guide"
+  },
+  "author": {
+    "name": "Ad Breakeven Editorial",
+    "organization": "Ad Breakeven",
+    "role": "Paid media profitability",
+    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
+    "url": "/about"
+  },
+  "headline": "Max CPC Bidding Guide: From CPA Cap to Click Bids",
+  "intro": "Max CPC translates your acquisition economics into a click-level ceiling. If you know max CPA and landing page conversion rate, you know the highest CPC that can still break even.",
+  "tags": ["cpc", "bidding", "conversion-rate", "max-cpc"],
+  "sections": [
+    {
+      "id": "formula",
+      "heading": "The max CPC formula",
+      "blocks": [
+        {
+          "type": "formula",
+          "text": "Max CPC = max CPA × conversion rate (as a decimal)"
+        },
+        {
+          "type": "paragraph",
+          "text": "Example: max CPA $50, conversion rate 2% (0.02). Max CPC = $50 × 0.02 = $1.00. Paying $1.50 per click at that conversion rate pushes CPA above break-even."
+        }
+      ]
+    },
+    {
+      "id": "workflow",
+      "heading": "Practical bidding workflow",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Calculate max CPA from margin and AOV",
+            "Measure landing page conversion rate (last 30–90 days)",
+            "Multiply to get max CPC",
+            "Compare to actual average CPC in ad platform",
+            "If average CPC exceeds max CPC, improve conversion rate, raise AOV/margin, or reduce bids"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "smart-bidding",
+      "heading": "Max CPC with Smart Bidding",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Automated bidding does not use max CPC as a hard limit — individual clicks may cost more if aggregate CPA stays profitable. Max CPC remains a planning and diagnostic tool, not a bid strategy setting."
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "question": "How do I calculate max CPC?",
+      "answer": "Multiply max CPA by conversion rate as a decimal. Example: $40 max CPA at 2.5% conversion = $1.00 max CPC."
+    },
+    {
+      "question": "What conversion rate should I use?",
+      "answer": "Use recent landing page conversion rate from your ad platform or analytics — typically 30–90 days of data for stability."
+    },
+    {
+      "question": "What if my CPC is above max CPC but CPA is fine?",
+      "answer": "Some clicks cost more than others. If aggregate CPA is below max CPA, the campaign is still profitable. Max CPC is an average planning figure."
+    }
+  ],
+  "relatedTools": [
+    {
+      "before": "Calculate with the ",
+      "linkText": "Max CPC Calculator",
+      "href": "/max-cpc-calculator",
+      "after": "."
+    }
+  ]
+}
