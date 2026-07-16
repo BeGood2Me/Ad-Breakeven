@@ -3,6 +3,7 @@ import Link from "next/link";
 import { buildPageMetadata } from "@/lib/page-metadata";
 import { getBlogIndex, getPillarIndex } from "@/lib/content/load-content";
 import { PILLAR_BY_SLUG } from "@/generated/content-manifest";
+import { SITE_NAME } from "@/lib/site";
 
 const PAGE = {
   title: "Ad Breakeven Blog | ROAS, CPA, CPC & Ad Profit Guides",
@@ -22,8 +23,8 @@ export default function BlogIndexPage() {
       <h1>Ad Breakeven Blog</h1>
       <p className="intro">
         Practical paid-media profitability guides — break-even ROAS, acquisition
-        caps, bidding, and ad profit — organized by topic cluster. Every article
-        links to free calculators you can use immediately.
+        caps, bidding, and ad profit — organized by topic cluster. Published by
+        {SITE_NAME}. Every article links to free calculators you can use immediately.
       </p>
 
       <section className="content-section" aria-labelledby="topics-heading">

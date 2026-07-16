@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
 import { BlogCrossLinks } from "@/components/BlogCrossLinks";
-import {
-  AuthorBox,
-  ContentFaqSection,
-} from "@/components/ContentAuthorFaq";
+import { ContentFaqSection } from "@/components/ContentAuthorFaq";
 import { RelatedTools } from "@/components/RelatedTools";
 import { RenderBlocks } from "@/lib/content/render-blocks";
 import {
@@ -19,6 +16,7 @@ import {
   faqSchema,
 } from "@/lib/schema";
 import { PILLAR_BY_SLUG } from "@/generated/content-manifest";
+import { SITE_NAME } from "@/lib/site";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -70,7 +68,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           datePublished: post.publishedAt,
           dateModified: post.updatedAt,
           keywords: post.seo.keywords,
-          authorName: post.author.name,
+          authorName: SITE_NAME,
         })}
       />
       {post.faq.length > 0 && <JsonLd data={faqSchema(post.faq)} />}
@@ -84,13 +82,11 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <h1>{post.headline}</h1>
         <p className="intro">{post.intro}</p>
         <p className="blog-post-meta">
-          Published {post.publishedAt}
+          Published {post.publishedAt} by {SITE_NAME}
           {post.updatedAt !== post.publishedAt &&
             ` · Updated ${post.updatedAt}`}
         </p>
       </header>
-
-      <AuthorBox author={post.author} />
 
       {post.sections.map((section) => (
         <section

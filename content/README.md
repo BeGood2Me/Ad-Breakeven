@@ -25,6 +25,6 @@ Blog posts and topic pillar pages are stored as JSON. A generator script builds 
 - llms.txt index entries
 - IndexNow URL list (`generated/content-urls.json`)
 
-## E-E-A-T author block
+## Author / E-E-A-T
 
-Update the `"author"` object in each JSON (or create a shared template) with your real name, experience, and credentials.
+Content is published under the **Ad Breakeven** brand only. Guides explain standard contribution-margin formulas; calculators are the primary product. No personal expert credentials are claimed — verify all results with your own data.

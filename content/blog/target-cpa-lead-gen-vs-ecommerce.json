@@ -17,11 +17,8 @@
     "canonical": "/blog/target-cpa-lead-gen-vs-ecommerce"
   },
   "author": {
-    "name": "Ad Breakeven Editorial",
-    "organization": "Ad Breakeven",
-    "role": "Paid media profitability",
-    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
-    "url": "/about"
+    "name": "Ad Breakeven",
+    "organization": "Ad Breakeven"
   },
   "headline": "Target CPA for Lead Gen vs Ecommerce",
   "intro": "Ecommerce max CPA is cost per purchase. Lead gen max CPA is usually cost per lead — and your CRM closed-deal cap is a different, higher number.",

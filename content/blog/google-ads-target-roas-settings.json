@@ -17,11 +17,8 @@
     "canonical": "/blog/google-ads-target-roas-settings"
   },
   "author": {
-    "name": "Ad Breakeven Editorial",
-    "organization": "Ad Breakeven",
-    "role": "Paid media profitability",
-    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
-    "url": "/about"
+    "name": "Ad Breakeven",
+    "organization": "Ad Breakeven"
   },
   "headline": "How to Set Google Ads Target ROAS from Your Margin",
   "intro": "Target ROAS (tROAS) tells Google Smart Bidding the efficiency floor you need. Set it from break-even economics — margin, AOV, and fixed costs — not from a competitor benchmark.",

@@ -1,20 +1,4 @@
-import type { ContentAuthor, ContentFaqItem } from "@/lib/content/types";
-import Link from "next/link";
-
-export function AuthorBox({ author }: { author: ContentAuthor }) {
-  return (
-    <aside className="author-box" aria-label="About the author">
-      <p className="author-box-name">{author.name}</p>
-      {author.role && <p className="author-box-role">{author.role}</p>}
-      {author.bio && <p className="author-box-bio">{author.bio}</p>}
-      {author.url && (
-        <p>
-          <Link href={author.url}>About our methodology</Link>
-        </p>
-      )}
-    </aside>
-  );
-}
+import type { ContentFaqItem } from "@/lib/content/types";
 
 export function ContentFaqSection({ faq }: { faq: ContentFaqItem[] }) {
   if (faq.length === 0) return null;

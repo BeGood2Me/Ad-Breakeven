@@ -17,11 +17,8 @@
     "canonical": "/blog/max-cpa-explained-for-ecommerce"
   },
   "author": {
-    "name": "Ad Breakeven Editorial",
-    "organization": "Ad Breakeven",
-    "role": "Paid media profitability",
-    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
-    "url": "/about"
+    "name": "Ad Breakeven",
+    "organization": "Ad Breakeven"
   },
   "headline": "Max CPA Explained for Ecommerce",
   "intro": "Max CPA is your break-even cost per purchase — the highest CPA Google or Meta can deliver before you lose money on each order after product costs.",

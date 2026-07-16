@@ -17,11 +17,8 @@
     "canonical": "/blog/break-even-roas-explained"
   },
   "author": {
-    "name": "Ad Breakeven Editorial",
-    "organization": "Ad Breakeven",
-    "role": "Paid media profitability",
-    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
-    "url": "/about"
+    "name": "Ad Breakeven",
+    "organization": "Ad Breakeven"
   },
   "headline": "Break-even ROAS Explained: What It Is and How to Calculate It",
   "intro": "Break-even ROAS is the minimum return on ad spend where your campaign stops losing money after product costs — not the revenue number your ad platform shows by default.",

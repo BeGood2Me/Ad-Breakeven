@@ -17,11 +17,8 @@
     "canonical": "/blog/good-roas-benchmarks-by-margin"
   },
   "author": {
-    "name": "Ad Breakeven Editorial",
-    "organization": "Ad Breakeven",
-    "role": "Paid media profitability",
-    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
-    "url": "/about"
+    "name": "Ad Breakeven",
+    "organization": "Ad Breakeven"
   },
   "headline": "What Is a Good ROAS? Benchmarks by Margin Level",
   "intro": "There is no universal good ROAS — only a ROAS that is profitable for your margin. A 3× ROAS sounds strong until you realize 25% margin businesses need 4× just to break even.",

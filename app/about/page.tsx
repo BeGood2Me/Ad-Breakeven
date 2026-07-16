@@ -32,9 +32,9 @@ export default function AboutPage() {
       />
       <h1>About {SITE_NAME}</h1>
       <p className="intro">
-        {SITE_NAME} helps marketers and store owners find the numbers where paid
-        ad spend stops being a loss — break-even ROAS, max CPA, max CPC, and ad
-        profit — from margin and conversion economics, not generic benchmarks.
+        {SITE_NAME} is a free toolkit for break-even ROAS, max CPA, max CPC, and
+        ad profit planning — built for ecommerce and lead gen advertisers who
+        want margin-based numbers, not generic benchmarks.
       </p>
 
       <section className="content-section" aria-labelledby="why-exists">
@@ -46,9 +46,21 @@ export default function AboutPage() {
           cost per closed deal are often confused.
         </p>
         <p>
-          We built {SITE_NAME} so you can answer &ldquo;what ROAS or CPA can I
-          afford?&rdquo; in seconds — with separate modes for ecommerce (AOV) and
-          lead gen (deal value × close rate).
+          {SITE_NAME} packages standard contribution-margin math into free
+          calculators and educational guides — so you can answer &ldquo;what ROAS
+          or CPA can I afford?&rdquo; in seconds, with separate modes for
+          ecommerce (AOV) and lead gen (deal value × close rate).
+        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="who-we-are">
+        <h2 id="who-we-are">What {SITE_NAME} is</h2>
+        <p>
+          {SITE_NAME} is an independent calculator and reference site — not a PPC
+          agency, consultancy, or managed-ads service. Guides explain widely used
+          break-even formulas; calculators let you run your own numbers. Always
+          verify results against your margin, costs, and platform data before
+          changing spend.
         </p>
       </section>
 
@@ -67,7 +79,8 @@ export default function AboutPage() {
             <Link href="/ad-profit-calculator">ad profit</Link>
           </li>
           <li>
-            Guides on{" "}
+            Guides and{" "}
+            <Link href="/blog">blog</Link> on{" "}
             <Link href="/how-to-calculate-break-even-roas">break-even ROAS</Link>,{" "}
             <Link href="/what-is-a-good-roas">good ROAS benchmarks</Link>, and{" "}
             <Link href="/google-ads-break-even">Google Ads tROAS</Link>

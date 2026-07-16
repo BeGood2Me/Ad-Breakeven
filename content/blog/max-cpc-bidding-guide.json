@@ -17,11 +17,8 @@
     "canonical": "/blog/max-cpc-bidding-guide"
   },
   "author": {
-    "name": "Ad Breakeven Editorial",
-    "organization": "Ad Breakeven",
-    "role": "Paid media profitability",
-    "bio": "Practical break-even math for ecommerce and lead gen. We built Ad Breakeven because generic ROAS benchmarks ignore margin — our articles use contribution economics, not platform vanity metrics.",
-    "url": "/about"
+    "name": "Ad Breakeven",
+    "organization": "Ad Breakeven"
   },
   "headline": "Max CPC Bidding Guide: From CPA Cap to Click Bids",
   "intro": "Max CPC translates your acquisition economics into a click-level ceiling. If you know max CPA and landing page conversion rate, you know the highest CPC that can still break even.",
