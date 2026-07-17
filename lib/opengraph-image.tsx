@@ -16,7 +16,7 @@ export function createOpenGraphImage(title: string, tagline: string) {
           justifyContent: "center",
           padding: 80,
           background:
-            "linear-gradient(135deg, #0f1419 0%, #1a2332 50%, #2563eb 100%)",
+            "linear-gradient(135deg, #0a0e14 0%, #121821 48%, #0d9488 100%)",
           color: "#ffffff",
           fontFamily: "system-ui, sans-serif",
         }}
@@ -40,6 +40,7 @@ export function createOpenGraphImage(title: string, tagline: string) {
             lineHeight: 1.15,
             marginBottom: 24,
             maxWidth: 1000,
+            letterSpacing: "-0.02em",
           }}
         >
           {title}

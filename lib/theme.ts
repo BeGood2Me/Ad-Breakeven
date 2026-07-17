@@ -20,7 +20,7 @@ export function applyTheme(theme: Theme) {
 
 export function updateThemeColorMeta(theme: Theme) {
   if (typeof document === "undefined") return;
-  const color = theme === "dark" ? "#0f1419" : "#f8f9fb";
+  const color = theme === "dark" ? "#0a0e14" : "#eef2f6";
   let meta = document.querySelector('meta[name="theme-color"]');
   if (!meta) {
     meta = document.createElement("meta");
@@ -37,4 +37,4 @@ export function getDocumentTheme(): Theme {
     : "light";
 }
 
-export const themeInitScript = `(function(){try{var k=${JSON.stringify(THEME_STORAGE_KEY)};var s=localStorage.getItem(k);var t=s==='dark'||s==='light'?s:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);var c=t==='dark'?'#0f1419':'#f8f9fb';var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',c);}catch(e){}})();`;
+export const themeInitScript = `(function(){try{var k=${JSON.stringify(THEME_STORAGE_KEY)};var s=localStorage.getItem(k);var t=s==='dark'||s==='light'?s:(window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.setAttribute('data-theme',t);var c=t==='dark'?'#0a0e14':'#eef2f6';var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content',c);}catch(e){}})();`;

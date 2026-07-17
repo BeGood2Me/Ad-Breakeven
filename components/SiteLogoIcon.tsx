@@ -26,9 +26,9 @@ export default function SiteLogoIcon({
           y2="62"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#0f1419" />
-          <stop offset="0.45" stopColor="#1a3a6e" />
-          <stop offset="1" stopColor="#2563eb" />
+          <stop stopColor="#0a0e14" />
+          <stop offset="0.45" stopColor="#0f3d3a" />
+          <stop offset="1" stopColor="#0d9488" />
         </linearGradient>
         <linearGradient
           id="site-logo-shine"

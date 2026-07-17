@@ -6,43 +6,45 @@
 
 :root {
   color-scheme: light;
-  --color-bg: #f8f9fb;
-  --color-surface: #ffffff;
-  --color-text: #1a1f2e;
-  --color-text-muted: #5c6578;
-  --color-primary: #2563eb;
-  --color-primary-hover: #1d4ed8;
-  --color-border: #e2e6ef;
+  --color-bg: #eef2f6;
+  --color-surface: #fbfcfe;
+  --color-text: #0c1222;
+  --color-text-muted: #5a6578;
+  --color-primary: #0d9488;
+  --color-primary-hover: #0f766e;
+  --color-border: #d5dde8;
   --color-accent: #0f766e;
-  --color-result-bg: #f0f7ff;
+  --color-result-bg: #e6f7f5;
   --color-success: #15803d;
   --color-danger: #b91c1c;
   --color-warning-bg: #fef3c7;
   --color-warning-text: #92400e;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
-  --radius: 8px;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --font-sans: var(--font-plex-sans), "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), "IBM Plex Mono", ui-monospace, monospace;
+  --radius: 6px;
+  --shadow: 0 1px 2px rgba(12, 18, 34, 0.06);
   --max-width: 720px;
   --max-width-wide: 960px;
+  --grid-line: rgba(12, 18, 34, 0.045);
 }
 
 [data-theme="dark"] {
   color-scheme: dark;
-  --color-bg: #0f1419;
-  --color-surface: #1a2332;
-  --color-text: #e8ecf4;
-  --color-text-muted: #9aa5b8;
-  --color-primary: #5b9eff;
-  --color-primary-hover: #7eb3ff;
-  --color-border: #2d3a4d;
-  --color-accent: #2dd4bf;
-  --color-result-bg: #1e2a3d;
+  --color-bg: #0a0e14;
+  --color-surface: #121821;
+  --color-text: #e8eef6;
+  --color-text-muted: #8b97ab;
+  --color-primary: #2dd4bf;
+  --color-primary-hover: #5eead4;
+  --color-border: #243041;
+  --color-accent: #14b8a6;
+  --color-result-bg: #132a28;
   --color-success: #4ade80;
   --color-danger: #f87171;
   --color-warning-bg: #422006;
   --color-warning-text: #fcd34d;
-  --shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --grid-line: rgba(232, 238, 246, 0.04);
 }
 
 html {
@@ -55,7 +57,13 @@ body {
   font-size: 1.0625rem;
   line-height: 1.6;
   color: var(--color-text);
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(ellipse 80% 50% at 50% -20%, color-mix(in srgb, var(--color-primary) 12%, transparent), transparent);
+  background-size: 24px 24px, 24px 24px, 100% 100%;
+  background-attachment: fixed;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -84,6 +92,7 @@ h3 {
 h1 {
   font-size: clamp(1.75rem, 4vw, 2.25rem);
   margin: 0 0 1rem;
+  letter-spacing: -0.02em;
 }
 
 h2 {
@@ -114,7 +123,9 @@ ol {
 
 /* Layout */
 .site-header {
-  background: var(--color-surface);
+  background: color-mix(in srgb, var(--color-surface) 88%, transparent);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
   top: 0;
@@ -146,7 +157,7 @@ ol {
 .site-logo-icon {
   flex-shrink: 0;
   display: block;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .site-logo:hover {
@@ -425,6 +436,8 @@ main {
 
 .form-group input {
   font: inherit;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
   padding: 0.625rem 0.75rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
@@ -441,13 +454,18 @@ main {
 
 .results {
   margin-top: 1.5rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--color-border);
+  padding: 1.25rem 1.25rem 1.25rem 1.35rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .results h2 {
   margin-top: 0;
   font-size: 1.125rem;
+  letter-spacing: -0.01em;
 }
 
 .next-steps {
@@ -503,7 +521,9 @@ main {
   font-size: 1.375rem;
   font-weight: 700;
   margin: 0.25rem 0 0;
+  font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
 }
 
 .result-item dd.positive {
@@ -547,8 +567,10 @@ main {
 
 .formula-block {
   display: block;
-  padding: 1rem;
-  background: var(--color-bg);
+  padding: 1rem 1.1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-bottom: 2px solid var(--color-primary);
   border-radius: var(--radius);
   font-family: var(--font-mono);
   font-size: 0.9375rem;
@@ -878,14 +900,16 @@ main {
   padding: 0.5rem 0.875rem;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
-  background: var(--color-bg);
+  background: var(--color-surface);
   color: var(--color-text);
   cursor: pointer;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
 .calc-btn:hover:not(:disabled) {
   border-color: var(--color-primary);
   color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 6%, var(--color-surface));
 }
 
 .calc-btn:disabled {
@@ -925,8 +949,9 @@ main {
 }
 
 .results-empty {
-  background: var(--color-bg);
+  background: var(--color-surface);
   border: 1px dashed var(--color-border);
+  border-left: 3px solid var(--color-border);
   border-radius: var(--radius);
   padding: 1.25rem;
 }
@@ -1108,7 +1133,7 @@ main {
   color: var(--color-text-muted);
   text-decoration: none;
   padding: 0.35rem 0.65rem;
-  border-radius: 999px;
+  border-radius: var(--radius);
   border: 1px solid var(--color-border);
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
