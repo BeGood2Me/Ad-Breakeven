@@ -42,8 +42,17 @@ function NavLinkItem({
 export default function Header() {
   const currentPath = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [desktopNav, setDesktopNav] = useState(false);
   const headerActionsRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const media = window.matchMedia("(min-width: 1400px)");
+    const sync = () => setDesktopNav(media.matches);
+    sync();
+    media.addEventListener("change", sync);
+    return () => media.removeEventListener("change", sync);
+  }, []);
 
   useEffect(() => {
     setMenuOpen(false);
@@ -118,6 +127,7 @@ export default function Header() {
             id="main-nav"
             className={`site-nav${menuOpen ? " site-nav-open" : ""}`}
             aria-label="Main navigation"
+            hidden={!desktopNav && !menuOpen}
           >
             <ul>
               <li className="nav-group-label" aria-hidden="true">
