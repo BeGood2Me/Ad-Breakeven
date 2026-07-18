@@ -4,22 +4,43 @@ export const FAQ_PAGE_TITLE = "Ad Breakeven FAQ";
 export const SITE_DESCRIPTION =
   "Find break-even ROAS, max CPA, max CPC, and ad profit for ecommerce and lead gen. Free calculators with shareable results and next steps.";
 
-export const PRIMARY_NAV_LINKS = [
+export const CALCULATOR_NAV_LINKS = [
   { href: "/", label: "Break-even Calculator", shortLabel: "Break-even" },
   { href: "/break-even-roas-calculator", label: "ROAS Calculator", shortLabel: "ROAS" },
-  { href: "/max-cpa-calculator", label: "Max CPA", shortLabel: "Max CPA" },
-  { href: "/max-cpc-calculator", label: "Max CPC", shortLabel: "Max CPC" },
-] as const;
-
-export const MORE_NAV_LINKS = [
+  { href: "/max-cpa-calculator", label: "Max CPA Calculator", shortLabel: "Max CPA" },
+  { href: "/max-cpc-calculator", label: "Max CPC Calculator", shortLabel: "Max CPC" },
   { href: "/ad-profit-calculator", label: "Ad Profit Calculator", shortLabel: "Ad Profit" },
-  { href: "/blog", label: "Blog", shortLabel: "Blog" },
-  { href: "/how-to-calculate-break-even-roas", label: "ROAS Guide", shortLabel: "ROAS Guide" },
-  { href: "/roas-vs-roi-vs-cpa", label: "ROAS vs ROI", shortLabel: "Compare" },
-  { href: "/faq", label: "FAQ", shortLabel: "FAQ" },
 ] as const;
 
-export const NAV_LINKS = [...PRIMARY_NAV_LINKS, ...MORE_NAV_LINKS] as const;
+export const GUIDE_NAV_LINKS = [
+  {
+    href: "/how-to-calculate-break-even-roas",
+    label: "How to Calculate Break-even ROAS",
+    shortLabel: "ROAS Guide",
+  },
+  {
+    href: "/what-is-a-good-roas",
+    label: "What Is a Good ROAS?",
+    shortLabel: "Good ROAS",
+  },
+  {
+    href: "/max-cpa-guide",
+    label: "How to Set Target CPA",
+    shortLabel: "CPA Guide",
+  },
+  {
+    href: "/google-ads-break-even",
+    label: "Google Ads Break-even ROAS",
+    shortLabel: "Google Ads",
+  },
+  {
+    href: "/roas-vs-roi-vs-cpa",
+    label: "ROAS vs ROI vs CPA",
+    shortLabel: "Compare",
+  },
+] as const;
+
+export const NAV_LINKS = [...CALCULATOR_NAV_LINKS, ...GUIDE_NAV_LINKS] as const;
 
 export const ALL_PAGES = [
   { href: "/", title: "Break-even Ads Calculator", changefreq: "weekly" as const, priority: 1.0 },

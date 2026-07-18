@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
-  MORE_NAV_LINKS,
+  CALCULATOR_NAV_LINKS,
+  GUIDE_NAV_LINKS,
   NAV_LINKS,
-  PRIMARY_NAV_LINKS,
   SITE_NAME,
 } from "@/lib/site";
 import SiteLogoIcon from "@/components/SiteLogoIcon";
@@ -20,10 +20,16 @@ function NavLinkItem({
   shortLabel,
   currentPath,
   onNavigate,
-}: NavLink & { currentPath: string; onNavigate?: () => void }) {
+  className,
+}: NavLink & {
+  currentPath: string;
+  onNavigate?: () => void;
+  className?: string;
+}) {
   return (
     <Link
       href={href}
+      className={className}
       aria-current={currentPath === href ? "page" : undefined}
       onClick={() => onNavigate?.()}
     >
@@ -36,38 +42,12 @@ function NavLinkItem({
 export default function Header() {
   const currentPath = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
-  const [moreOpen, setMoreOpen] = useState(false);
-  const moreRef = useRef<HTMLLIElement>(null);
   const headerActionsRef = useRef<HTMLDivElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
 
-  const moreIsActive = MORE_NAV_LINKS.some(({ href }) => href === currentPath);
-
   useEffect(() => {
-    setMoreOpen(false);
     setMenuOpen(false);
   }, [currentPath]);
-
-  useEffect(() => {
-    if (!moreOpen) return;
-
-    function handlePointerDown(event: MouseEvent) {
-      if (!moreRef.current?.contains(event.target as Node)) {
-        setMoreOpen(false);
-      }
-    }
-
-    function handleKeyDown(event: KeyboardEvent) {
-      if (event.key === "Escape") setMoreOpen(false);
-    }
-
-    document.addEventListener("mousedown", handlePointerDown);
-    document.addEventListener("keydown", handleKeyDown);
-    return () => {
-      document.removeEventListener("mousedown", handlePointerDown);
-      document.removeEventListener("keydown", handleKeyDown);
-    };
-  }, [moreOpen]);
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -107,11 +87,6 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  function closeMenus() {
-    setMenuOpen(false);
-    setMoreOpen(false);
-  }
-
   if (currentPath.startsWith("/embed")) {
     return null;
   }
@@ -145,44 +120,32 @@ export default function Header() {
             aria-label="Main navigation"
           >
             <ul>
-              {PRIMARY_NAV_LINKS.map((link) => (
+              <li className="nav-group-label" aria-hidden="true">
+                Calculators
+              </li>
+              {CALCULATOR_NAV_LINKS.map((link) => (
                 <li key={link.href}>
                   <NavLinkItem
                     {...link}
                     currentPath={currentPath}
-                    onNavigate={closeMenus}
+                    onNavigate={() => setMenuOpen(false)}
                   />
                 </li>
               ))}
-              <li
-                ref={moreRef}
-                className={`nav-more${moreOpen ? " nav-more-open" : ""}`}
-              >
-                <button
-                  type="button"
-                  className="nav-more-toggle"
-                  aria-expanded={moreOpen}
-                  aria-haspopup="true"
-                  aria-current={moreIsActive ? "page" : undefined}
-                  onClick={() => setMoreOpen((open) => !open)}
-                >
-                  More
-                  <span aria-hidden="true" className="nav-more-chevron">
-                    ▾
-                  </span>
-                </button>
-                <ul className="nav-dropdown">
-                  {MORE_NAV_LINKS.map((link) => (
-                    <li key={link.href}>
-                      <NavLinkItem
-                        {...link}
-                        currentPath={currentPath}
-                        onNavigate={closeMenus}
-                      />
-                    </li>
-                  ))}
-                </ul>
+              <li className="nav-divider" aria-hidden="true" />
+              <li className="nav-group-label" aria-hidden="true">
+                Guides
               </li>
+              {GUIDE_NAV_LINKS.map((link) => (
+                <li key={link.href}>
+                  <NavLinkItem
+                    {...link}
+                    currentPath={currentPath}
+                    className="nav-link-guide"
+                    onNavigate={() => setMenuOpen(false)}
+                  />
+                </li>
+              ))}
             </ul>
           </nav>
           <ThemeToggle />
