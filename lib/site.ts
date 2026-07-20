@@ -53,6 +53,7 @@ export const ALL_PAGES = [
   { href: "/max-cpa-guide", title: "How to Set Target CPA", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/google-ads-break-even", title: "Google Ads Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/roas-vs-roi-vs-cpa", title: "ROAS vs ROI vs CPA", changefreq: "monthly" as const, priority: 0.85 },
+  { href: "/guides", title: "Ad Breakeven Guides", changefreq: "monthly" as const, priority: 0.8 },
   { href: "/faq", title: FAQ_PAGE_TITLE, changefreq: "monthly" as const, priority: 0.7 },
   { href: "/about", title: "About Ad Breakeven", changefreq: "yearly" as const, priority: 0.5 },
   { href: "/privacy", title: "Privacy Policy", changefreq: "yearly" as const, priority: 0.3 },

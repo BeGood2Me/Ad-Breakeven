@@ -50,6 +50,9 @@ export default function HomePage() {
       <section className="content-section home-guides" aria-labelledby="guides-heading">
         <div className="home-guides-header">
           <h2 id="guides-heading">Guides</h2>
+          <Link href="/guides" className="home-guides-all">
+            All guides
+          </Link>
         </div>
         <ul className="home-guides-grid">
           {HOME_GUIDES.map(({ href, label }) => (
