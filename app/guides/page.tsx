@@ -13,6 +13,7 @@ const PAGE = {
 export const metadata: Metadata = buildPageMetadata(PAGE);
 
 const GUIDES_INDEX = [
+  { href: "/break-even-roas-by-margin", label: "Break-even ROAS by margin (table)" },
   ...GUIDE_NAV_LINKS.map(({ href, label }) => ({ href, label })),
   { href: "/faq", label: FAQ_PAGE_TITLE },
 ] as const;

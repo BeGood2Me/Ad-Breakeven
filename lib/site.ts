@@ -49,6 +49,7 @@ export const ALL_PAGES = [
   { href: "/max-cpc-calculator", title: "Max CPC Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/ad-profit-calculator", title: "Ad Profit Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/how-to-calculate-break-even-roas", title: "How to Calculate Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
+  { href: "/break-even-roas-by-margin", title: "Break-even ROAS by Margin", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/what-is-a-good-roas", title: "What Is a Good ROAS?", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/max-cpa-guide", title: "How to Set Target CPA", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/google-ads-break-even", title: "Google Ads Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
@@ -88,6 +89,8 @@ export const TOOL_LINKS = [
 ] as const;
 
 export const GUIDE_DESCRIPTIONS: Record<string, string> = {
+  "/break-even-roas-by-margin":
+    "Full break-even ROAS table for 10%–80% gross margin with formula and fixed-cost examples",
   "/how-to-calculate-break-even-roas":
     "Break-even ROAS formula, step-by-step example, ecommerce and lead gen",
   "/what-is-a-good-roas":

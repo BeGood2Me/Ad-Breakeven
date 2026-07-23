@@ -57,7 +57,8 @@ export default function WhatIsAGoodRoasPage() {
         <h2 id="margin-table">Break-even ROAS by margin</h2>
         <p>
           Use this table as a quick sanity check. Fixed costs per order (shipping,
-          payment fees) raise your real break-even ROAS above these figures.
+          payment fees) raise your real break-even ROAS above these figures. See
+          the full <Link href="/break-even-roas-by-margin">10%–80% margin table</Link>.
         </p>
         <div className="table-wrap">
           <table className="data-table">

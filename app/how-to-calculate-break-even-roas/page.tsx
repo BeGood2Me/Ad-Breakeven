@@ -312,7 +312,9 @@ export default function HowToCalculateRoasPage() {
 
             <strong>Higher margin</strong> lowers break-even ROAS. At 50% margin
 
-            with no fixed costs, break-even is only 2.0×.
+            with no fixed costs, break-even is only 2.0×. See the{" "}
+
+            <Link href="/break-even-roas-by-margin">full margin table</Link>.
 
           </li>
 
