@@ -92,7 +92,7 @@ export const GUIDE_DESCRIPTIONS: Record<string, string> = {
   "/break-even-roas-by-margin":
     "Full break-even ROAS table for 10%–80% gross margin with formula and fixed-cost examples",
   "/how-to-calculate-break-even-roas":
-    "Break-even ROAS formula, step-by-step example, ecommerce and lead gen",
+    "Break-even ROAS formula from contribution margin — ecommerce and lead gen",
   "/what-is-a-good-roas":
     "Good ROAS benchmarks by margin — why generic 3× or 4× targets mislead",
   "/max-cpa-guide":

@@ -711,7 +711,8 @@ main {
   padding-top: 0;
 }
 
-.faq-item h2 {
+.faq-item h2,
+.faq-item h3 {
   font-size: 1.125rem;
   margin: 0 0 0.5rem;
 }
