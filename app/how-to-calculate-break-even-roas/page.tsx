@@ -10,10 +10,9 @@ import { buildPageMetadata } from "@/lib/page-metadata";
 import { breadcrumbSchema, faqSchema, howToSchema } from "@/lib/schema";
 
 const PAGE = {
-  title:
-    "How to Calculate Break-even ROAS | Formula with Contribution Margin",
+  title: "How to Calculate Break Even ROAS | Formula + Free Calculator",
   description:
-    "Calculate break-even ROAS from contribution margin: AOV × gross margin minus fixed costs. Ecommerce and lead gen examples, margin table, and free calculator.",
+    "How to calculate break even ROAS from contribution margin. Ecommerce & lead gen examples, margin table, and free calculator. No signup.",
   path: "/how-to-calculate-break-even-roas",
 };
 

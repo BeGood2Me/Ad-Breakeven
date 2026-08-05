@@ -7,9 +7,9 @@ import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 import { faqSchema } from "@/lib/schema";
 
 const PAGE = {
-  title: "Max CPA Calculator | Break-even Cost Per Acquisition Free Tool",
+  title: "Max CPA Calculator (Free) | Break-Even Cost Per Acquisition",
   description:
-    "Calculate max CPA from contribution margin — (AOV × margin) − fixed costs. Ecommerce purchase caps and lead gen cost-per-lead limits. Free, no signup.",
+    "Free max CPA calculator: (AOV × margin) − fixed costs. Set Target CPA for Google Ads & Meta. Ecommerce + lead gen. No signup.",
   path: "/max-cpa-calculator",
 };
 

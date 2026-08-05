@@ -4,9 +4,9 @@ import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 
 const PAGE = {
-  title: "Max CPC Calculator | Find the Highest Click Cost You Can Afford",
+  title: "Max CPC Calculator (Free) | Break-Even Bid From Your CPA",
   description:
-    "Calculate break-even CPC from margin, max CPA, and conversion rate. Free bid-planning tool for Google Ads, Meta Ads, ecommerce, and lead gen campaigns.",
+    "Free max CPC calculator from max CPA and conversion rate. Set Google Ads & Meta bid ceilings that still break even. No signup.",
   path: "/max-cpc-calculator",
 };
 

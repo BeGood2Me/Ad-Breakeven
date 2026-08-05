@@ -20,9 +20,9 @@ const HOME_BLOG_LABELS: Record<string, string> = {
 };
 
 const PAGE = {
-  title: "Break-even Ads Calculator | Find Your Minimum ROAS, CPA & CPC",
+  title: "Break Even Ads Calculator (Free) | ROAS, CPA & CPC Floors",
   description:
-    "Find break-even ROAS, max CPA, max CPC, and sales volume from your margin and conversion rate. Free hub calculator for ecommerce and lead gen with shareable results.",
+    "Free break even ads calculator: minimum ROAS, max CPA, max CPC from your margin. Ecommerce & lead gen. Shareable results, no signup.",
   path: "/",
 };
 

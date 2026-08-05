@@ -13,15 +13,10 @@ import { articleSchema, breadcrumbSchema } from "@/lib/schema";
 
 
 const PAGE = {
-
-  title: "ROAS vs ROI vs CPA vs CPC | Which Metric to Use for Ad Profitability",
-
+  title: "ROAS vs ROI vs CPA vs CPC | Which Metric for Ad Profit?",
   description:
-
-    "Compare ROAS, ROI, CPA, and CPC — what each paid media metric measures, when to use it, and how to tie them to break-even targets and real profit.",
-
+    "ROAS vs ROI vs CPA vs CPC explained — what each measures, when to use it, and how to set break-even targets. Free calculators included.",
   path: "/roas-vs-roi-vs-cpa",
-
 };
 
 
