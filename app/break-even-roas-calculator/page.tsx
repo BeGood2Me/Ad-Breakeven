@@ -160,6 +160,12 @@ export default function BreakEvenRoasPage() {
             after: ".",
           },
           {
+            before: "Turn CPA into a click bid with the ",
+            linkText: "Max CPC Calculator",
+            href: "/max-cpc-calculator",
+            after: ".",
+          },
+          {
             before: "Learn the formula in ",
             linkText: "How to Calculate Break-even ROAS",
             href: "/how-to-calculate-break-even-roas",

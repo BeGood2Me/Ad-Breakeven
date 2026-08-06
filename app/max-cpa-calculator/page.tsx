@@ -25,9 +25,19 @@ const PAGE_FAQ = [
       "Max CPA = (value × gross margin %) − fixed cost per conversion. For ecommerce, value is AOV. For lead gen, value is customer value × close rate.",
   },
   {
-    question: "Is target CPA the same as max CPA?",
+    question: "What is max CPA vs target CPA?",
     answer:
       "Max CPA is your break-even ceiling. Target CPA in Google Ads or Meta should usually sit at or below max CPA so you leave room for profit and variance.",
+  },
+  {
+    question: "What is a good max CPA for ecommerce?",
+    answer:
+      "There is no universal good max CPA — it equals your contribution per order. A $90 AOV at 50% margin with $6 fixed costs has a $39 max CPA. Use your own margin and costs.",
+  },
+  {
+    question: "How does max CPA relate to break-even ROAS?",
+    answer:
+      "They are the same economics in different units. Max CPA is contribution per conversion in dollars. Break-even ROAS is AOV ÷ contribution. Raising max CPA lowers break-even ROAS.",
   },
   {
     question: "How do I get max cost per lead for lead gen?",
@@ -58,21 +68,49 @@ export default function MaxCpaPage() {
 
       <MaxCpaCalculator />
 
+      <section className="content-section" aria-labelledby="what-is-max-cpa">
+        <h2 id="what-is-max-cpa">What is max CPA?</h2>
+        <p>
+          Max CPA is your break-even cost per acquisition — the most you can pay
+          Google Ads, Meta, or any channel for one conversion and still cover
+          product costs. Spend above max CPA and every sale or lead loses money,
+          even when platform ROAS looks fine.
+        </p>
+        <p>
+          Read the full explainer in{" "}
+          <Link href="/blog/max-cpa-explained-for-ecommerce">
+            Max CPA Explained for Ecommerce
+          </Link>{" "}
+          or the{" "}
+          <Link href="/max-cpa-guide">How to Set Target CPA</Link> guide.
+        </p>
+      </section>
+
       <section className="content-section" aria-labelledby="cpa-formula">
-        <h2 id="cpa-formula">The max CPA formula</h2>
+        <h2 id="cpa-formula">Max CPA formula</h2>
         <p className="formula-block">
-          Max acquisition cost = (value × margin%) − fixed cost
+          Max CPA = (value × margin%) − fixed cost
         </p>
         <p>
           Ecommerce: value is AOV and fixed cost is per order — this is your max
           CPA per purchase. Lead gen: use customer value × close rate as value
-          and fixed cost per lead — the result is max cost per lead. That same
-          contribution is the profit you keep before ad spend.
+          and fixed cost per lead — the result is max cost per lead.
         </p>
-        <p>
-          Full walkthrough with platform settings:{" "}
-          <Link href="/max-cpa-guide">How to Set Target CPA</Link>.
-        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="max-vs-target">
+        <h2 id="max-vs-target">Max CPA vs target CPA</h2>
+        <ul>
+          <li>
+            <strong>Max CPA</strong> — break-even ceiling from your margin and
+            costs. Do not bid above it.
+          </li>
+          <li>
+            <strong>Target CPA</strong> — the bid goal you enter in Google Ads or
+            Meta. Set it at or below max CPA if you want profit, not just
+            break-even.
+          </li>
+        </ul>
       </section>
 
       <section className="content-section" aria-labelledby="ecommerce-example">
@@ -89,8 +127,7 @@ export default function MaxCpaPage() {
           <p>
             <strong>Max CPA:</strong> $39 per purchase. Enter this as a Target
             CPA ceiling in Google Ads or benchmark Meta cost per purchase
-            against it. Spending $45 per sale loses money even if ROAS looks
-            fine on the platform.
+            against it.
           </p>
         </div>
       </section>
@@ -128,24 +165,23 @@ export default function MaxCpaPage() {
             <strong>Break-even ROAS</strong> — when you optimize on return on
             ad spend (Target ROAS). Same economics, different unit. Use the{" "}
             <Link href="/break-even-roas-calculator">
-              Break-even ROAS Calculator
+              Break Even ROAS Calculator
             </Link>{" "}
-            or see{" "}
+            or{" "}
             <Link href="/how-to-calculate-break-even-roas">
               how to calculate break-even ROAS
             </Link>
             .
           </li>
           <li>
-            <strong>Max CPC</strong> — when you need a bid ceiling from CPA and
-            conversion rate. Use the{" "}
+            <strong>Max CPC</strong> — turn max CPA into a click bid with the{" "}
             <Link href="/max-cpc-calculator">Max CPC Calculator</Link>.
           </li>
         </ul>
       </section>
 
       <section className="content-section" aria-labelledby="faq">
-        <h2 id="faq">Frequently asked questions</h2>
+        <h2 id="faq">People also ask about max CPA</h2>
         <ul className="faq-list">
           {PAGE_FAQ.map((item) => (
             <li key={item.question} className="faq-item">
@@ -160,7 +196,7 @@ export default function MaxCpaPage() {
         links={[
           {
             before: "Find your ROAS floor with the ",
-            linkText: "Break-even ROAS Calculator",
+            linkText: "Break Even ROAS Calculator",
             href: "/break-even-roas-calculator",
             after: ".",
           },
@@ -177,9 +213,9 @@ export default function MaxCpaPage() {
             after: ".",
           },
           {
-            before: "See ROAS, CPA, and CPC together on the ",
-            linkText: "Break-even Ads Calculator",
-            href: "/",
+            before: "Compare metrics in ",
+            linkText: "ROAS vs ROI vs CPA",
+            href: "/roas-vs-roi-vs-cpa",
             after: ".",
           },
         ]}

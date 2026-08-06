@@ -3,7 +3,7 @@
   "type": "blog",
   "pillar": "cpa-acquisition",
   "publishedAt": "2026-07-16",
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-08-06",
   "seo": {
     "title": "Max CPA Explained: Formula, Ecommerce Example & Calculator",
     "description": "What is max CPA? Break-even cost per purchase formula for ecommerce, worked example, and free max CPA calculator. Link to Target CPA settings.",
@@ -94,6 +94,18 @@
       "before": "Calculate max CPA with the ",
       "linkText": "Max CPA Calculator",
       "href": "/max-cpa-calculator",
+      "after": " — free, no signup."
+    },
+    {
+      "before": "Turn that CPA into a click bid with the ",
+      "linkText": "Max CPC Calculator",
+      "href": "/max-cpc-calculator",
+      "after": "."
+    },
+    {
+      "before": "Set platform targets in ",
+      "linkText": "How to Set Target CPA",
+      "href": "/max-cpa-guide",
       "after": "."
     }
   ]

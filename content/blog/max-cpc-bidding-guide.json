@@ -3,16 +3,16 @@
   "type": "blog",
   "pillar": "cpc-bidding",
   "publishedAt": "2026-07-16",
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-08-06",
   "seo": {
     "title": "Max CPC Calculator Guide | Break-Even CPC From CPA",
     "description": "How to calculate max CPC from max CPA and conversion rate. Free formula, Google Ads bidding tips, and break-even CPC calculator.",
     "keywords": [
       "max cpc",
-      "break even cpc",
-      "cpc bidding strategy",
       "max cpc formula",
-      "google ads cpc bid"
+      "how to calculate max cpc",
+      "break even cpc",
+      "max cpc calculator"
     ],
     "canonical": "/blog/max-cpc-bidding-guide"
   },
@@ -68,6 +68,14 @@
   ],
   "faq": [
     {
+      "question": "What is max CPC?",
+      "answer": "Max CPC is the highest cost per click you can pay and still break even, given max CPA and conversion rate."
+    },
+    {
+      "question": "What is the max CPC formula?",
+      "answer": "Max CPC = max CPA × conversion rate (as a decimal). Example: $40 max CPA at 2.5% conversion = $1.00 max CPC."
+    },
+    {
       "question": "How do I calculate max CPC?",
       "answer": "Multiply max CPA by conversion rate as a decimal. Example: $40 max CPA at 2.5% conversion = $1.00 max CPC."
     },
@@ -85,6 +93,18 @@
       "before": "Calculate with the ",
       "linkText": "Max CPC Calculator",
       "href": "/max-cpc-calculator",
+      "after": " — free, no signup."
+    },
+    {
+      "before": "Find your acquisition ceiling with the ",
+      "linkText": "Max CPA Calculator",
+      "href": "/max-cpa-calculator",
+      "after": "."
+    },
+    {
+      "before": "Compare CPC to ROAS and CPA in ",
+      "linkText": "ROAS vs ROI vs CPA",
+      "href": "/roas-vs-roi-vs-cpa",
       "after": "."
     }
   ]

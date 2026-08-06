@@ -18,6 +18,16 @@ const PAGE = {
 
 const PAGE_FAQ = [
   {
+    question: "What is break-even ROAS?",
+    answer:
+      "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend — the floor below which campaigns lose money after product costs.",
+  },
+  {
+    question: "What is breakeven ROAS meaning?",
+    answer:
+      "Breakeven ROAS (same as break-even ROAS) means zero profit after COGS and per-order fees. Platform revenue ROAS is not the same number — it ignores margin.",
+  },
+  {
     question: "How do you calculate break-even ROAS?",
     answer:
       "Divide AOV by contribution per order. Contribution = (AOV × gross margin %) − fixed cost per order. With no fixed costs, break-even ROAS equals 1 ÷ margin.",
@@ -72,7 +82,7 @@ export default function HowToCalculateRoasPage() {
       </p>
 
       <section className="content-section" aria-labelledby="what-is-roas">
-        <h2 id="what-is-roas">What is break-even ROAS?</h2>
+        <h2 id="what-is-roas">What is break-even ROAS? (breakeven ROAS meaning)</h2>
         <p>
           ROAS measures revenue generated per dollar of ad spend. Break-even
           ROAS is the minimum ROAS where total contribution margin from
@@ -288,7 +298,7 @@ export default function HowToCalculateRoasPage() {
       </section>
 
       <section className="content-section" aria-labelledby="faq">
-        <h2 id="faq">Frequently asked questions</h2>
+        <h2 id="faq">People also ask about break-even ROAS</h2>
         <ul className="faq-list">
           {PAGE_FAQ.map((item) => (
             <li key={item.question} className="faq-item">
@@ -303,14 +313,20 @@ export default function HowToCalculateRoasPage() {
         links={[
           {
             before: "Skip the manual math with the ",
-            linkText: "Break-even ROAS Calculator",
+            linkText: "Break Even ROAS Calculator",
             href: "/break-even-roas-calculator",
             after: " — instant results from your inputs.",
           },
           {
-            before: "See ROAS, CPA, CPC, and break-even sales on the ",
-            linkText: "Break-even Ads Calculator",
-            href: "/",
+            before: "Convert contribution to a purchase cap with the ",
+            linkText: "Max CPA Calculator",
+            href: "/max-cpa-calculator",
+            after: ".",
+          },
+          {
+            before: "Turn CPA into a click bid with the ",
+            linkText: "Max CPC Calculator",
+            href: "/max-cpc-calculator",
             after: ".",
           },
           {
@@ -320,9 +336,9 @@ export default function HowToCalculateRoasPage() {
             after: ".",
           },
           {
-            before: "See what counts as a good ROAS in ",
-            linkText: "What Is a Good ROAS?",
-            href: "/what-is-a-good-roas",
+            before: "Read ",
+            linkText: "Break-even ROAS Explained",
+            href: "/blog/break-even-roas-explained",
             after: ".",
           },
         ]}

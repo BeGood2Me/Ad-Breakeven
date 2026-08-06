@@ -6,10 +6,10 @@ import { PILLAR_INDEX } from "@/generated/content-manifest";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 
 const HOME_GUIDES = [
-  { href: "/what-is-a-good-roas", label: "Good ROAS?" },
   { href: "/how-to-calculate-break-even-roas", label: "ROAS formula" },
-  { href: "/max-cpa-guide", label: "Target CPA" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/max-cpa-calculator", label: "Max CPA" },
+  { href: "/max-cpc-calculator", label: "Max CPC" },
+  { href: "/what-is-a-good-roas", label: "Good ROAS?" },
 ] as const;
 
 const HOME_BLOG_LABELS: Record<string, string> = {

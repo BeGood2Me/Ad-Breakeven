@@ -3,16 +3,16 @@
   "type": "blog",
   "pillar": "roas-break-even",
   "publishedAt": "2026-07-16",
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-08-06",
   "seo": {
-    "title": "Break-even ROAS Explained: Formula, Examples & Calculator",
-    "description": "Learn what break-even ROAS means, how to calculate it from margin and AOV, and why platform ROAS can mislead. Includes ecommerce and lead gen examples.",
+    "title": "What Is Break-Even ROAS? Meaning, Formula & Calculator",
+    "description": "What is break-even ROAS (breakeven ROAS)? Meaning, contribution-margin formula, ecommerce examples, and free calculator. Platform ROAS is not the same.",
     "keywords": [
-      "break even roas",
+      "what is break even roas",
+      "what is breakeven roas",
+      "break even roas meaning",
       "break even roas formula",
-      "minimum roas",
-      "break even point calculator",
-      "roas calculator"
+      "breakeven roas"
     ],
     "canonical": "/blog/break-even-roas-explained"
   },
@@ -26,7 +26,7 @@
   "sections": [
     {
       "id": "definition",
-      "heading": "What break-even ROAS means",
+      "heading": "What is break-even ROAS? (breakeven ROAS meaning)",
       "blocks": [
         {
           "type": "paragraph",
@@ -108,8 +108,16 @@
       "answer": "Break-even ROAS is the minimum ROAS where ad spend equals contribution margin per conversion. Below it, campaigns lose money after product or fulfillment costs."
     },
     {
+      "question": "What is breakeven ROAS meaning?",
+      "answer": "Breakeven ROAS means the same as break-even ROAS: zero profit after COGS and per-order fees. It is not the same as platform revenue ROAS."
+    },
+    {
       "question": "How do I calculate break-even ROAS?",
       "answer": "Divide value (AOV or expected revenue per lead) by contribution per conversion. Contribution equals value times margin percent minus fixed costs."
+    },
+    {
+      "question": "How does contribution margin set break-even ROAS?",
+      "answer": "Contribution margin per conversion is the denominator. Break-even ROAS = value ÷ contribution. Higher contribution lowers the ROAS you need."
     },
     {
       "question": "Does conversion rate affect break-even ROAS?",
@@ -123,7 +131,7 @@
   "relatedTools": [
     {
       "before": "Calculate instantly with the ",
-      "linkText": "Break-even ROAS Calculator",
+      "linkText": "Break Even ROAS Calculator",
       "href": "/break-even-roas-calculator",
       "after": "."
     },
@@ -131,6 +139,18 @@
       "before": "See the step-by-step guide at ",
       "linkText": "How to Calculate Break-even ROAS",
       "href": "/how-to-calculate-break-even-roas",
+      "after": "."
+    },
+    {
+      "before": "Convert contribution to a purchase cap with the ",
+      "linkText": "Max CPA Calculator",
+      "href": "/max-cpa-calculator",
+      "after": "."
+    },
+    {
+      "before": "See the full ",
+      "linkText": "break-even ROAS by margin table",
+      "href": "/break-even-roas-by-margin",
       "after": "."
     }
   ]

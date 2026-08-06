@@ -472,7 +472,7 @@ export default function RoasVsRoiVsCpaPage() {
 
             before: "Calculate your break-even ROAS with the ",
 
-            linkText: "Break-even ROAS Calculator",
+            linkText: "Break Even ROAS Calculator",
 
             href: "/break-even-roas-calculator",
 
@@ -482,11 +482,23 @@ export default function RoasVsRoiVsCpaPage() {
 
           {
 
-            before: "Find max CPA and max CPC on the ",
+            before: "Find your purchase ceiling with the ",
 
-            linkText: "Break-even Ads Calculator",
+            linkText: "Max CPA Calculator",
 
-            href: "/",
+            href: "/max-cpa-calculator",
+
+            after: ".",
+
+          },
+
+          {
+
+            before: "Set a click bid ceiling with the ",
+
+            linkText: "Max CPC Calculator",
+
+            href: "/max-cpc-calculator",
 
             after: ".",
 
@@ -511,18 +523,6 @@ export default function RoasVsRoiVsCpaPage() {
             linkText: "How to Calculate Break-even ROAS",
 
             href: "/how-to-calculate-break-even-roas",
-
-            after: ".",
-
-          },
-
-          {
-
-            before: "More answers in the ",
-
-            linkText: "FAQ",
-
-            href: "/faq",
 
             after: ".",
 

@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import MaxCpcCalculator from "@/components/calculators/MaxCpcCalculator";
+import JsonLd from "@/components/JsonLd";
 import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
+import { faqSchema } from "@/lib/schema";
 
 const PAGE = {
   title: "Max CPC Calculator (Free) | Break-Even Bid From Your CPA",
@@ -9,6 +12,34 @@ const PAGE = {
     "Free max CPC calculator from max CPA and conversion rate. Set Google Ads & Meta bid ceilings that still break even. No signup.",
   path: "/max-cpc-calculator",
 };
+
+const PAGE_FAQ = [
+  {
+    question: "What is max CPC?",
+    answer:
+      "Max CPC (maximum cost per click) is the highest bid you can pay per click and still break even, given your max CPA and conversion rate.",
+  },
+  {
+    question: "How do you calculate max CPC?",
+    answer:
+      "Max CPC = max CPA × conversion rate. Example: $40 max CPA at 2% conversion rate → $0.80 max CPC.",
+  },
+  {
+    question: "What is the max CPC formula?",
+    answer:
+      "Max CPC = max acquisition cost × conversion rate (as a decimal). Ecommerce uses max CPA per purchase; lead gen uses max cost per lead.",
+  },
+  {
+    question: "Does conversion rate change max CPC?",
+    answer:
+      "Yes. Higher conversion rates raise max CPC because more clicks turn into conversions. Max CPA stays the same; only the click-level bid ceiling changes.",
+  },
+  {
+    question: "Max CPC vs max CPA — what’s the difference?",
+    answer:
+      "Max CPA is your cost ceiling per conversion. Max CPC is that ceiling divided across clicks using conversion rate — the bid you can afford before the click converts.",
+  },
+] as const;
 
 export const metadata: Metadata = buildPageMetadata(PAGE);
 
@@ -20,42 +51,121 @@ export default function MaxCpcPage() {
         description={PAGE.description}
         path={PAGE.path}
       />
+      <JsonLd data={faqSchema([...PAGE_FAQ])} />
+
       <h1>Max CPC Calculator</h1>
       <p className="intro">
-        CPC (cost per click) is what you pay each time someone clicks your ad.
-        Your break-even CPC depends on how much profit you keep per conversion
-        (max CPA for ecommerce, max cost per lead for lead gen) and how often
-        clicks convert. Bid above break-even CPC and you will lose money even
-        with good traffic.
+        Calculate the highest cost per click you can afford before ads lose
+        money. Max CPC comes from your{" "}
+        <Link href="/max-cpa-calculator">max CPA</Link> and conversion rate —
+        free, no signup.
       </p>
 
       <MaxCpcCalculator />
 
+      <section className="content-section" aria-labelledby="what-is-max-cpc">
+        <h2 id="what-is-max-cpc">What is max CPC?</h2>
+        <p>
+          Max CPC is your break-even bid per click. If you know how much profit
+          you keep per conversion (max CPA) and how often clicks convert, you
+          know the highest CPC that can still break even. Bid above it and you
+          lose money even with “good” traffic.
+        </p>
+        <p>
+          Step-by-step bidding guide:{" "}
+          <Link href="/blog/max-cpc-bidding-guide">Max CPC Bidding Guide</Link>.
+        </p>
+      </section>
+
       <section className="content-section" aria-labelledby="cpc-formula">
-        <h2 id="cpc-formula">The formula</h2>
+        <h2 id="cpc-formula">Max CPC formula</h2>
         <p className="formula-block">
           Max CPC = max acquisition cost × conversion rate
         </p>
         <p>
-          Ecommerce: max acquisition cost is max CPA per purchase. Lead gen: it
-          is max cost per lead from the calculator. Conversion rate is expressed
-          as a decimal (e.g., 2% = 0.02).
+          Ecommerce: max acquisition cost is{" "}
+          <Link href="/max-cpa-calculator">max CPA</Link> per purchase. Lead
+          gen: it is max cost per lead. Conversion rate is a decimal (2% =
+          0.02).
         </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="how-to-calc">
+        <h2 id="how-to-calc">How to calculate max CPC</h2>
+        <ol>
+          <li>
+            Find{" "}
+            <Link href="/max-cpa-calculator">max CPA</Link> from margin and AOV
+            (or lead value × close rate).
+          </li>
+          <li>Measure landing-page conversion rate for the campaign.</li>
+          <li>Multiply: max CPC = max CPA × conversion rate.</li>
+          <li>
+            Cap manual bids near that number, or use it as a sanity check under
+            Smart Bidding.
+          </li>
+        </ol>
+        <div className="example-box">
+          <p>
+            Example: max CPA <strong>$50</strong>, conversion rate{" "}
+            <strong>2%</strong> → max CPC = $50 × 0.02 = <strong>$1.00</strong>.
+          </p>
+        </div>
+      </section>
+
+      <section className="content-section" aria-labelledby="max-cpc-vs-cpa">
+        <h2 id="max-cpc-vs-cpa">Max CPC vs max CPA</h2>
+        <ul>
+          <li>
+            <strong>Max CPA</strong> — dollars you can spend per conversion.
+          </li>
+          <li>
+            <strong>Max CPC</strong> — dollars you can spend per click at your
+            current conversion rate.
+          </li>
+          <li>
+            Compare both to ROAS in{" "}
+            <Link href="/roas-vs-roi-vs-cpa">ROAS vs ROI vs CPA</Link>.
+          </li>
+        </ul>
+      </section>
+
+      <section className="content-section" aria-labelledby="faq">
+        <h2 id="faq">People also ask about max CPC</h2>
+        <ul className="faq-list">
+          {PAGE_FAQ.map((item) => (
+            <li key={item.question} className="faq-item">
+              <h3>{item.question}</h3>
+              <p>{item.answer}</p>
+            </li>
+          ))}
+        </ul>
       </section>
 
       <RelatedTools
         links={[
           {
-            before:
-              "If you're not sure about your CPA yet, calculate it first with the ",
+            before: "Calculate your acquisition ceiling first with the ",
             linkText: "Max CPA Calculator",
             href: "/max-cpa-calculator",
             after: ".",
           },
           {
-            before: "See all metrics together on the ",
+            before: "See ROAS, CPA, and CPC together on the ",
             linkText: "Break-even Ads Calculator",
             href: "/",
+            after: ".",
+          },
+          {
+            before: "Find your ROAS floor with the ",
+            linkText: "Break Even ROAS Calculator",
+            href: "/break-even-roas-calculator",
+            after: ".",
+          },
+          {
+            before: "Read ",
+            linkText: "Max CPC Bidding Guide",
+            href: "/blog/max-cpc-bidding-guide",
             after: ".",
           },
         ]}
