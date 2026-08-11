@@ -81,7 +81,7 @@ export function buildLlmsTxt(): string {
     linkLine(
       "Privacy Policy",
       "/privacy",
-      "What data the site collects — Vercel Analytics for page views; no ad trackers"
+      "What data the site collects — Vercel Analytics and Google Analytics for page views; no ad networks"
     ),
     linkLine(
       "Terms of Use",

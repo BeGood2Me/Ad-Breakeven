@@ -34,9 +34,9 @@ export default function PrivacyPage() {
         <h2 id="privacy-summary">Summary</h2>
         <ul>
           <li>No account or signup required</li>
-          <li>Privacy-friendly page analytics (Vercel Analytics)</li>
-          <li>No advertising or profiling trackers</li>
-          <li>No marketing cookies</li>
+          <li>Page analytics via Vercel Analytics; Google Analytics only if you accept cookies</li>
+          <li>No third-party ad networks or social trackers</li>
+          <li>Simple Accept / Decline cookie choice — no marketing cookies</li>
           <li>Calculator inputs are stored locally in your browser</li>
           <li>We do not sell your personal information</li>
         </ul>
@@ -76,10 +76,17 @@ export default function PrivacyPage() {
       <section className="content-section" aria-labelledby="privacy-cookies">
         <h2 id="privacy-cookies">Cookies</h2>
         <p>
-          We use <strong>Vercel Analytics</strong> to collect anonymous page-view
-          data (such as which pages are visited and referring site). It does not
-          use advertising cookies and is not used for cross-site tracking. We do
-          not set marketing or profiling cookies.
+          We use <strong>Vercel Analytics</strong> and, if you accept cookies,{" "}
+          <strong>Google Analytics 4</strong> to measure page views, traffic
+          sources, and basic usage. Google Analytics may set cookies used for
+          measurement. We do not use these tools for advertising remarketing or
+          third-party ad networks.
+        </p>
+        <p>
+          On your first visit you can <strong>Accept</strong> or{" "}
+          <strong>Decline</strong> analytics cookies. Your choice is stored in
+          localStorage on your device. Declining keeps Google Analytics from
+          loading. Clear site data in your browser to see the choice again.
         </p>
         <p>
           The site may rely on strictly necessary technical storage (such as
@@ -100,8 +107,9 @@ export default function PrivacyPage() {
       <section className="content-section" aria-labelledby="privacy-third">
         <h2 id="privacy-third">Third parties</h2>
         <p>
-          We use Vercel Analytics for anonymous traffic measurement. We do not
-          embed third-party ad networks or social trackers on calculator pages.
+          We use Vercel Analytics and Google Analytics (Google LLC) for traffic
+          measurement. We do not embed third-party ad networks or social trackers
+          on calculator pages.
         </p>
       </section>
 

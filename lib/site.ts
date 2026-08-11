@@ -3,6 +3,9 @@ export const SITE_NAME = "Ad Breakeven";
 export const FAQ_PAGE_TITLE = "Ad Breakeven FAQ";
 export const SITE_DESCRIPTION =
   "Find break-even ROAS, max CPA, max CPC, and ad profit for ecommerce and lead gen. Free calculators with shareable results and next steps.";
+/** Google Analytics 4 measurement ID (public client ID) */
+export const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-777FR0Y1TN";
 
 export const CALCULATOR_NAV_LINKS = [
   { href: "/", label: "Break-even Calculator", shortLabel: "Break-even" },

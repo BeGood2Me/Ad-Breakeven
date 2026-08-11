@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import { websiteSchema } from "@/lib/schema";
 import { themeInitScript } from "@/lib/theme";
+import CookieBanner from "@/components/CookieBanner";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import JsonLd from "@/components/JsonLd";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -83,6 +85,8 @@ export default function RootLayout({
         <main id="main-content">{children}</main>
         <Footer />
         <Analytics />
+        <GoogleAnalytics />
+        <CookieBanner />
       </body>
     </html>
   );
