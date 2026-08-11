@@ -1,0 +1,80 @@
+{
+  "property": "sc-domain:adbreakeven.com",
+  "capturedAt": "2026-08-11",
+  "window": "last_28_days",
+  "baseline": {
+    "impressions": 993,
+    "clicks": 0,
+    "avgPosition": 51.2,
+    "dailyRecovering": "50-60/day (Aug 5-8 after Jul 28 redirect cliff)"
+  },
+  "targets": {
+    "30Days": "Daily average at or above Aug 5-8 baseline (~50-60/day)",
+    "90Days": "2,000+ impressions / 28 days; first clicks if any page hits top 20"
+  },
+  "keyQueries": [
+    {
+      "query": "max cpa",
+      "page": "/max-cpa-calculator",
+      "baselinePosition": 17.5,
+      "targetPosition": 10
+    },
+    {
+      "query": "max cpc",
+      "page": "/max-cpc-calculator",
+      "baselinePosition": 31.1,
+      "targetPosition": 20
+    },
+    {
+      "query": "break even roas calculator",
+      "page": "/break-even-roas-calculator",
+      "baselinePosition": 70.3,
+      "targetPosition": "improve; primary owner of query"
+    },
+    {
+      "query": "target roas calculator",
+      "page": "/target-roas-calculator",
+      "baselinePosition": 77,
+      "targetPosition": "new coverage page"
+    },
+    {
+      "query": "cpc roas",
+      "page": "/roas-vs-roi-vs-cpa",
+      "baselinePosition": 51.9,
+      "targetPosition": "climb via comparison expansion"
+    },
+    {
+      "query": "cpa roas",
+      "page": "/roas-vs-roi-vs-cpa",
+      "baselinePosition": 73.1,
+      "targetPosition": "climb via comparison expansion"
+    }
+  ],
+  "cadence": {
+    "weekly": "7-day impression sum + avg position (ignore single bad days)",
+    "biweekly": "Positions on: max cpa, max cpc, break even roas calculator",
+    "notes": [
+      "Do not flip www/non-www",
+      "Ignore http:// Page with redirect (expected HTTPS redirect)",
+      "GSC data can lag ~2 days — do not obsess over 24h"
+    ]
+  },
+  "checkpoints": [
+    {
+      "date": "2026-08-11",
+      "impressions28d": 993,
+      "clicks28d": 0,
+      "avgPosition28d": 51.2,
+      "impressions7dApprox": 303,
+      "note": "7d approx Aug 4-9 (Aug 10 partial in GSC)",
+      "queries": {
+        "max cpa": 17.5,
+        "max cpc": 31.1,
+        "break even roas calculator": 70.3,
+        "target roas calculator": 77,
+        "cpc roas": 51.9,
+        "cpa roas": 73.1
+      }
+    }
+  ]
+}

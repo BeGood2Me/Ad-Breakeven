@@ -6,7 +6,7 @@ export const SITE_DESCRIPTION =
 
 export const CALCULATOR_NAV_LINKS = [
   { href: "/", label: "Break-even Calculator", shortLabel: "Break-even" },
-  { href: "/break-even-roas-calculator", label: "ROAS Calculator", shortLabel: "ROAS" },
+  { href: "/break-even-roas-calculator", label: "Break Even ROAS Calculator", shortLabel: "ROAS" },
   { href: "/max-cpa-calculator", label: "Max CPA Calculator", shortLabel: "Max CPA" },
   { href: "/max-cpc-calculator", label: "Max CPC Calculator", shortLabel: "Max CPC" },
   { href: "/ad-profit-calculator", label: "Ad Profit Calculator", shortLabel: "Ad Profit" },
@@ -44,7 +44,8 @@ export const NAV_LINKS = [...CALCULATOR_NAV_LINKS, ...GUIDE_NAV_LINKS] as const;
 
 export const ALL_PAGES = [
   { href: "/", title: "Break-even Ads Calculator", changefreq: "weekly" as const, priority: 1.0 },
-  { href: "/break-even-roas-calculator", title: "Break-even ROAS Calculator", changefreq: "monthly" as const, priority: 0.9 },
+  { href: "/break-even-roas-calculator", title: "Break Even ROAS Calculator", changefreq: "monthly" as const, priority: 0.9 },
+  { href: "/target-roas-calculator", title: "Target ROAS Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/max-cpa-calculator", title: "Max CPA Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/max-cpc-calculator", title: "Max CPC Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/ad-profit-calculator", title: "Ad Profit Calculator", changefreq: "monthly" as const, priority: 0.9 },
@@ -64,9 +65,15 @@ export const ALL_PAGES = [
 export const TOOL_LINKS = [
   {
     href: "/break-even-roas-calculator",
-    title: "Break-even ROAS Calculator",
+    title: "Break Even ROAS Calculator",
     description:
-      "Minimum ROAS after margin and fixed costs — ecommerce or lead gen, with formula and next steps.",
+      "Free break even ROAS calculator from margin and AOV — the dedicated tool for your minimum profitable ROAS.",
+  },
+  {
+    href: "/target-roas-calculator",
+    title: "Target ROAS Calculator",
+    description:
+      "Turn margin into Target ROAS (tROAS) — break-even floor plus a profit buffer for Google Ads and Meta.",
   },
   {
     href: "/max-cpa-calculator",
@@ -99,6 +106,8 @@ export const GUIDE_DESCRIPTIONS: Record<string, string> = {
     "How to set target CPA for ecommerce and lead gen with worked examples",
   "/google-ads-break-even":
     "Google Ads break-even ROAS and target ROAS (tROAS) from margin",
+  "/target-roas-calculator":
+    "Target ROAS calculator from margin — set tROAS above your break-even floor",
   "/roas-vs-roi-vs-cpa":
     "Compare ROAS, ROI, CPA, and CPC — when to use each for ad profitability",
   "/faq": "Answers on break-even ROAS, max CPA, CPC, ad profit, and lead gen",

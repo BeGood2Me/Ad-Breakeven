@@ -69,8 +69,10 @@ export default function GoogleAdsBreakEvenPage() {
         </div>
         <p>
           Use the{" "}
-          <Link href="/break-even-roas-calculator">Break-even ROAS Calculator</Link>{" "}
-          for instant results.
+          <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>{" "}
+          for instant results, or the{" "}
+          <Link href="/target-roas-calculator">Target ROAS Calculator</Link> to
+          add a profit buffer before you set tROAS.
         </p>
       </section>
 

@@ -54,8 +54,14 @@
   "relatedTools": [
     {
       "before": "Calculate your floor with the ",
-      "linkText": "Break-even ROAS Calculator",
+      "linkText": "Break Even ROAS Calculator",
       "href": "/break-even-roas-calculator",
+      "after": "."
+    },
+    {
+      "before": "Set tROAS above that floor with the ",
+      "linkText": "Target ROAS Calculator",
+      "href": "/target-roas-calculator",
       "after": "."
     },
     {

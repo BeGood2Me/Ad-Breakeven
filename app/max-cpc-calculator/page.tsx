@@ -118,6 +118,8 @@ export default function MaxCpcPage() {
         <ul>
           <li>
             <strong>Max CPA</strong> — dollars you can spend per conversion.
+            Start with the{" "}
+            <Link href="/max-cpa-calculator">Max CPA Calculator</Link>.
           </li>
           <li>
             <strong>Max CPC</strong> — dollars you can spend per click at your
@@ -125,9 +127,23 @@ export default function MaxCpcPage() {
           </li>
           <li>
             Compare both to ROAS in{" "}
-            <Link href="/roas-vs-roi-vs-cpa">ROAS vs ROI vs CPA</Link>.
+            <Link href="/roas-vs-roi-vs-cpa">ROAS vs ROI vs CPA</Link> —
+            especially if you are weighing CPC ROAS vs CPA bidding.
           </li>
         </ul>
+      </section>
+
+      <section className="content-section" aria-labelledby="max-cpc-bids">
+        <h2 id="max-cpc-bids">How to use max CPC for bidding</h2>
+        <p>
+          Use max CPC as a manual bid ceiling or as a sanity check against
+          automated bids. If live CPC sits above max CPC for long, either
+          conversion rate must rise, AOV/margin must improve, or that keyword
+          should pause. Full walkthrough:{" "}
+          <Link href="/blog/max-cpc-bidding-guide">max CPC bidding guide</Link>.
+          For Target ROAS instead of CPC caps, use the{" "}
+          <Link href="/target-roas-calculator">Target ROAS Calculator</Link>.
+        </p>
       </section>
 
       <section className="content-section" aria-labelledby="faq">
@@ -166,6 +182,12 @@ export default function MaxCpcPage() {
             before: "Read ",
             linkText: "Max CPC Bidding Guide",
             href: "/blog/max-cpc-bidding-guide",
+            after: ".",
+          },
+          {
+            before: "More answers on the ",
+            linkText: "Ad Breakeven FAQ",
+            href: "/faq",
             after: ".",
           },
         ]}

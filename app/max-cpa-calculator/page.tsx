@@ -168,6 +168,8 @@ export default function MaxCpaPage() {
               Break Even ROAS Calculator
             </Link>{" "}
             or{" "}
+            <Link href="/target-roas-calculator">Target ROAS Calculator</Link>{" "}
+            to set a floor plus buffer. Also see{" "}
             <Link href="/how-to-calculate-break-even-roas">
               how to calculate break-even ROAS
             </Link>
@@ -178,6 +180,22 @@ export default function MaxCpaPage() {
             <Link href="/max-cpc-calculator">Max CPC Calculator</Link>.
           </li>
         </ul>
+      </section>
+
+      <section className="content-section" aria-labelledby="max-cpa-bids">
+        <h2 id="max-cpa-bids">How to use max CPA in Google Ads and Meta</h2>
+        <p>
+          After you calculate max CPA, set Target CPA at or below that ceiling so
+          average cost per conversion stays profitable. Pair with the{" "}
+          <Link href="/blog/max-cpa-explained-for-ecommerce">
+            max CPA ecommerce guide
+          </Link>{" "}
+          and compare units in{" "}
+          <Link href="/roas-vs-roi-vs-cpa">ROAS vs ROI vs CPA</Link>. For keyword
+          bids, convert max CPA to{" "}
+          <Link href="/max-cpc-calculator">max CPC</Link> using your conversion
+          rate.
+        </p>
       </section>
 
       <section className="content-section" aria-labelledby="faq">
@@ -216,6 +234,12 @@ export default function MaxCpaPage() {
             before: "Compare metrics in ",
             linkText: "ROAS vs ROI vs CPA",
             href: "/roas-vs-roi-vs-cpa",
+            after: ".",
+          },
+          {
+            before: "More answers on the ",
+            linkText: "Ad Breakeven FAQ",
+            href: "/faq",
             after: ".",
           },
         ]}

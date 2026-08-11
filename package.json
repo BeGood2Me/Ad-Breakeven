@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "tsx --test lib/*.test.ts",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "seo:checklist": "node scripts/seo-biweekly-checklist.mjs"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",

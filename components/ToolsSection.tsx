@@ -2,10 +2,11 @@ import Link from "next/link";
 import { TOOL_LINKS } from "@/lib/site";
 
 const HOME_TOOL_LABELS: Record<string, string> = {
-  "/break-even-roas-calculator": "ROAS",
-  "/max-cpa-calculator": "CPA",
-  "/max-cpc-calculator": "CPC",
-  "/ad-profit-calculator": "Profit",
+  "/break-even-roas-calculator": "Break Even ROAS",
+  "/target-roas-calculator": "Target ROAS",
+  "/max-cpa-calculator": "Max CPA",
+  "/max-cpc-calculator": "Max CPC",
+  "/ad-profit-calculator": "Ad Profit",
 };
 
 export function ToolsSection() {

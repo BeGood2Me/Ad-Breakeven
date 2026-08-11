@@ -47,6 +47,24 @@ export default function FaqPage() {
         <h2 id="more-help">More resources</h2>
         <ul>
           <li>
+            <Link href="/break-even-roas-calculator">
+              Break Even ROAS Calculator
+            </Link>{" "}
+            — minimum profitable ROAS from margin
+          </li>
+          <li>
+            <Link href="/max-cpa-calculator">Max CPA Calculator</Link> — highest
+            cost per acquisition before ads lose money
+          </li>
+          <li>
+            <Link href="/max-cpc-calculator">Max CPC Calculator</Link> — break-even
+            bid from max CPA and conversion rate
+          </li>
+          <li>
+            <Link href="/target-roas-calculator">Target ROAS Calculator</Link> —
+            set tROAS above your break-even floor
+          </li>
+          <li>
             <Link href="/">Break-even Ads Calculator</Link> — ROAS, CPA, CPC, and
             sales in one place
           </li>

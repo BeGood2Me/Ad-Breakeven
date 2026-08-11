@@ -17,7 +17,7 @@ export const FAQ_ITEMS: FaqItem[] = [
         Break-even ROAS is the minimum return on ad spend where your campaign
         stops losing money after product costs. Below that ROAS, ad spend exceeds
         the profit you keep from each sale. Use the{" "}
-        <Link href="/break-even-roas-calculator">Break-even ROAS Calculator</Link>{" "}
+        <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>{" "}
         to find yours from margin and AOV.
       </>
     ),
@@ -35,7 +35,7 @@ export const FAQ_ITEMS: FaqItem[] = [
           How to Calculate Break-even ROAS
         </Link>{" "}
         or use the{" "}
-        <Link href="/break-even-roas-calculator">Break-even ROAS Calculator</Link>.
+        <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>.
       </>
     ),
   },
@@ -50,7 +50,7 @@ export const FAQ_ITEMS: FaqItem[] = [
         break even. Calculate your specific threshold with the{" "}
         <Link href="/what-is-a-good-roas">What Is a Good ROAS?</Link> guide or
         the{" "}
-        <Link href="/break-even-roas-calculator">Break-even ROAS Calculator</Link>.
+        <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>.
       </>
     ),
   },

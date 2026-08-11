@@ -148,6 +148,12 @@ export default function BreakEvenRoasPage() {
       <RelatedTools
         links={[
           {
+            before: "Set Target ROAS above your floor with the ",
+            linkText: "Target ROAS Calculator",
+            href: "/target-roas-calculator",
+            after: ".",
+          },
+          {
             before: "See ROAS, CPA, and CPC together on the ",
             linkText: "Break-even Ads Calculator",
             href: "/",

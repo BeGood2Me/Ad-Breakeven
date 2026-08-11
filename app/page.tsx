@@ -20,9 +20,9 @@ const HOME_BLOG_LABELS: Record<string, string> = {
 };
 
 const PAGE = {
-  title: "Break Even Ads Calculator (Free) | ROAS, CPA & CPC Floors",
+  title: "Break-even Ads Calculator (Free) | ROAS + CPA + CPC Hub",
   description:
-    "Free break even ads calculator: minimum ROAS, max CPA, max CPC from your margin. Ecommerce & lead gen. Shareable results, no signup.",
+    "Free hub calculator for break-even ad planning: ROAS, max CPA, and max CPC from your margin. For a ROAS-only floor, use the Break Even ROAS Calculator. No signup.",
   path: "/",
 };
 
@@ -39,7 +39,12 @@ export default function HomePage() {
       <header className="home-hero">
         <h1>Break-even Ads Calculator</h1>
         <p className="intro intro--short">
-          Your margin-based floor for ROAS, CPA, and CPC — free, no signup.
+          One hub for ROAS, CPA, and CPC floors from your margin — free, no
+          signup. Need only break-even ROAS? Use the{" "}
+          <Link href="/break-even-roas-calculator">
+            Break Even ROAS Calculator
+          </Link>
+          .
         </p>
       </header>
 

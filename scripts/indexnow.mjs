@@ -7,6 +7,7 @@ const KEY = "07a85be26d4c9f13";
 const PATHS = [
   "/",
   "/break-even-roas-calculator",
+  "/target-roas-calculator",
   "/max-cpa-calculator",
   "/max-cpc-calculator",
   "/ad-profit-calculator",
