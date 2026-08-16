@@ -3,6 +3,7 @@ import Link from "next/link";
 import BreakEvenRoasCalculator from "@/components/calculators/BreakEvenRoasCalculator";
 import EmbedCodeSection from "@/components/EmbedCodeSection";
 import JsonLd from "@/components/JsonLd";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedTools } from "@/components/RelatedTools";
 import {
   BREAK_EVEN_ROAS_BY_MARGIN,
@@ -10,6 +11,11 @@ import {
 } from "@/lib/good-roas-benchmarks";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 import { faqSchema } from "@/lib/schema";
+import {
+  BREAK_EVEN_ROAS_DEFINITION,
+  FORMULAS,
+  QUICK_ANSWERS,
+} from "@/lib/snippet-definitions";
 
 const PAGE = {
   title: "Break Even ROAS Calculator (Free) | Find Your Minimum ROAS",
@@ -21,13 +27,12 @@ const PAGE = {
 const PAGE_FAQ = [
   {
     question: "What is a break even ROAS calculator?",
-    answer:
-      "A break even ROAS calculator finds the minimum return on ad spend where contribution margin equals ad spend — the floor below which campaigns lose money after product costs.",
+    answer: BREAK_EVEN_ROAS_DEFINITION,
   },
   {
     question: "How do I calculate break-even ROAS?",
     answer:
-      "Divide AOV by contribution per order. Contribution = (AOV × gross margin %) − fixed cost. With no fixed costs, break-even ROAS = 1 ÷ margin.",
+      "Divide value per conversion by contribution per order. Contribution = (AOV × gross margin %) − fixed cost. With no fixed costs, break-even ROAS = 1 ÷ margin.",
   },
   {
     question: "What is break-even ROAS at 50% margin?",
@@ -60,13 +65,16 @@ export default function BreakEvenRoasPage() {
         instant floor you can use in Google Ads Target ROAS or Meta.
       </p>
 
+      <QuickAnswer>
+        <p>{QUICK_ANSWERS.breakEvenRoasCalculator}</p>
+        <p className="formula-block">{FORMULAS.breakEvenRoasEcommerce}</p>
+      </QuickAnswer>
+
       <BreakEvenRoasCalculator />
 
       <section className="content-section" aria-labelledby="roas-formula">
         <h2 id="roas-formula">Break-even ROAS formula</h2>
-        <p className="formula-block">
-          Break-even ROAS = AOV ÷ (AOV × margin% − fixed cost per order)
-        </p>
+        <p className="formula-block">{FORMULAS.breakEvenRoasEcommerce}</p>
         <p>
           With no fixed per-order costs, this simplifies to{" "}
           <code>1 ÷ margin%</code>. A 50% margin means you need at least 2.0×

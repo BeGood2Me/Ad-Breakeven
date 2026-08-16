@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedTools } from "@/components/RelatedTools";
 import {
   BREAK_EVEN_ROAS_BY_MARGIN,
@@ -8,6 +9,12 @@ import {
 } from "@/lib/good-roas-benchmarks";
 import { buildPageMetadata } from "@/lib/page-metadata";
 import { breadcrumbSchema, faqSchema, howToSchema } from "@/lib/schema";
+import {
+  BREAK_EVEN_ROAS_DEFINITION,
+  CONTRIBUTION_MARGIN_DEFINITION,
+  FORMULAS,
+  QUICK_ANSWERS,
+} from "@/lib/snippet-definitions";
 
 const PAGE = {
   title: "How to Calculate Break Even ROAS | Formula + Free Calculator",
@@ -19,8 +26,7 @@ const PAGE = {
 const PAGE_FAQ = [
   {
     question: "What is break-even ROAS?",
-    answer:
-      "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend — the floor below which campaigns lose money after product costs.",
+    answer: BREAK_EVEN_ROAS_DEFINITION,
   },
   {
     question: "What is breakeven ROAS meaning?",
@@ -34,8 +40,7 @@ const PAGE_FAQ = [
   },
   {
     question: "What is contribution margin for ecommerce ads?",
-    answer:
-      "Contribution margin per order is the profit you keep after product costs and per-order fees (shipping, payment processing) — before ad spend. It is the denominator of break-even ROAS and equals your max CPA.",
+    answer: CONTRIBUTION_MARGIN_DEFINITION,
   },
   {
     question: "Does conversion rate affect break-even ROAS?",
@@ -70,9 +75,7 @@ export default function HowToCalculateRoasPage() {
 
       <h1>How to Calculate Break-even ROAS</h1>
       <p className="intro">
-        Break-even ROAS is the minimum return on ad spend where contribution
-        margin from sales equals ad spend — the floor where campaigns stop losing
-        money after product costs. Platform dashboards show revenue ROAS, not
+        {BREAK_EVEN_ROAS_DEFINITION} Platform dashboards show revenue ROAS, not
         profit ROAS, so you need a margin-based threshold before scaling Google
         Ads or Meta. Skip the math with the{" "}
         <Link href="/break-even-roas-calculator">
@@ -81,13 +84,16 @@ export default function HowToCalculateRoasPage() {
         .
       </p>
 
+      <QuickAnswer>
+        <p>{QUICK_ANSWERS.howToCalculate}</p>
+        <p className="formula-block">{FORMULAS.breakEvenRoasEcommerce}</p>
+      </QuickAnswer>
+
       <section className="content-section" aria-labelledby="what-is-roas">
         <h2 id="what-is-roas">What is break-even ROAS? (breakeven ROAS meaning)</h2>
         <p>
-          ROAS measures revenue generated per dollar of ad spend. Break-even
-          ROAS is the minimum ROAS where total contribution margin from
-          ad-driven sales equals your ad spend. Below that threshold, you spend
-          more on ads than you earn back in profit after COGS.
+          {BREAK_EVEN_ROAS_DEFINITION} Below that threshold, you spend more on
+          ads than you earn back in profit after COGS.
         </p>
         <p>
           A campaign reporting 3× ROAS can still lose money if your margin is

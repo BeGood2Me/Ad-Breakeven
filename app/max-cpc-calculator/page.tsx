@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import MaxCpcCalculator from "@/components/calculators/MaxCpcCalculator";
 import JsonLd from "@/components/JsonLd";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 import { faqSchema } from "@/lib/schema";
+import {
+  FORMULAS,
+  MAX_CPC_DEFINITION,
+  QUICK_ANSWERS,
+} from "@/lib/snippet-definitions";
 
 const PAGE = {
   title: "Max CPC Calculator (Free) | Break-Even Bid From Your CPA",
@@ -16,13 +22,11 @@ const PAGE = {
 const PAGE_FAQ = [
   {
     question: "What is max CPC?",
-    answer:
-      "Max CPC (maximum cost per click) is the highest bid you can pay per click and still break even, given your max CPA and conversion rate.",
+    answer: MAX_CPC_DEFINITION,
   },
   {
     question: "How do you calculate max CPC?",
-    answer:
-      "Max CPC = max CPA × conversion rate. Example: $40 max CPA at 2% conversion rate → $0.80 max CPC.",
+    answer: `${FORMULAS.maxCpc}. Example: $40 max CPA at 2% conversion rate → $0.80 max CPC.`,
   },
   {
     question: "What is the max CPC formula?",
@@ -61,15 +65,18 @@ export default function MaxCpcPage() {
         free, no signup.
       </p>
 
+      <QuickAnswer>
+        <p>{QUICK_ANSWERS.maxCpcCalculator}</p>
+        <p className="formula-block">{FORMULAS.maxCpc}</p>
+      </QuickAnswer>
+
       <MaxCpcCalculator />
 
       <section className="content-section" aria-labelledby="what-is-max-cpc">
         <h2 id="what-is-max-cpc">What is max CPC?</h2>
         <p>
-          Max CPC is your break-even bid per click. If you know how much profit
-          you keep per conversion (max CPA) and how often clicks convert, you
-          know the highest CPC that can still break even. Bid above it and you
-          lose money even with “good” traffic.
+          {MAX_CPC_DEFINITION} Bid above it and you lose money even with
+          “good” traffic.
         </p>
         <p>
           Step-by-step bidding guide:{" "}
@@ -79,9 +86,7 @@ export default function MaxCpcPage() {
 
       <section className="content-section" aria-labelledby="cpc-formula">
         <h2 id="cpc-formula">Max CPC formula</h2>
-        <p className="formula-block">
-          Max CPC = max acquisition cost × conversion rate
-        </p>
+        <p className="formula-block">{FORMULAS.maxCpc}</p>
         <p>
           Ecommerce: max acquisition cost is{" "}
           <Link href="/max-cpa-calculator">max CPA</Link> per purchase. Lead

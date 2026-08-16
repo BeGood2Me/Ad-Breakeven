@@ -86,6 +86,10 @@ export default function AboutPage() {
             <Link href="/google-ads-break-even">Google Ads tROAS</Link>
           </li>
           <li>Shareable URLs and tailored next steps after each calculation</li>
+          <li>
+            <Link href="/chrome-extension">Chrome extension</Link> — popup
+            calculator for break-even ROAS, max CPA, and max CPC
+          </li>
         </ul>
       </section>
 

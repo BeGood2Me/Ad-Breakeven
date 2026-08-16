@@ -1,4 +1,5 @@
 import { FAQ_ITEMS } from "@/lib/faq";
+import { buildCanonicalSnippetsSection } from "@/lib/snippet-definitions";
 import { BLOG_INDEX, PILLAR_INDEX } from "@/generated/content-manifest";
 import {
   ALL_PAGES,
@@ -24,7 +25,8 @@ export function buildLlmsTxt(): string {
       page.href !== "/" &&
       !TOOL_LINKS.some((tool) => tool.href === page.href) &&
       page.href !== "/terms" &&
-      page.href !== "/privacy"
+      page.href !== "/privacy" &&
+      page.href !== "/chrome-extension"
   );
 
   const lines = [
@@ -79,6 +81,11 @@ export function buildLlmsTxt(): string {
     ),
     linkLine("Sitemap", "/sitemap.xml", "All indexable URLs for this site"),
     linkLine(
+      "Chrome extension",
+      "/chrome-extension",
+      "Popup calculator for break-even ROAS, max CPA, and max CPC — local storage only"
+    ),
+    linkLine(
       "Privacy Policy",
       "/privacy",
       "What data the site collects — Vercel Analytics and Google Analytics for page views; no ad networks"
@@ -109,6 +116,7 @@ export function buildLlmsFullTxt(): string {
     "",
     "Supports ecommerce and lead gen. Lead gen uses customer value × close rate as expected revenue per lead; max acquisition target is cost per lead (divide by close rate for CRM closed-deal cap).",
     "",
+    ...buildCanonicalSnippetsSection(),
     "## Core formulas",
     "",
     "### Contribution",
@@ -205,6 +213,11 @@ export function buildLlmsFullTxt(): string {
     "",
     linkLine("Privacy Policy", "/privacy", "Data collection and local storage"),
     linkLine("Terms of Use", "/terms", "Full terms and disclaimer"),
+    linkLine(
+      "Chrome extension",
+      "/chrome-extension",
+      "Popup calculator for break-even ROAS, max CPA, and max CPC"
+    ),
     "",
   ];
 

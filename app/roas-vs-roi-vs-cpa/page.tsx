@@ -4,6 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata } from "@/lib/page-metadata";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { QUICK_ANSWERS } from "@/lib/snippet-definitions";
 
 const PAGE = {
   title: "ROAS vs ROI vs CPA vs CPC | Which Metric for Ad Profit?",
@@ -57,9 +58,11 @@ export default function RoasVsRoiVsCpaPage() {
         that look good in dashboards but lose money in your P&amp;L.
       </p>
 
-      <section className="content-section" aria-labelledby="quick-answer">
+      <section className="content-section quick-answer" aria-labelledby="quick-answer">
         <h2 id="quick-answer">Quick answer</h2>
-        <ul>
+        <div className="quick-answer__body">
+          <p>{QUICK_ANSWERS.roasVsRoi}</p>
+          <ul>
           <li>
             <strong>ROAS</strong> — revenue per ad dollar. Best for ecommerce
             efficiency, but ignores margin.
@@ -86,6 +89,7 @@ export default function RoasVsRoiVsCpaPage() {
           <Link href="/max-cpa-calculator">Max CPA Calculator</Link>, and{" "}
           <Link href="/max-cpc-calculator">Max CPC Calculator</Link>.
         </p>
+        </div>
       </section>
 
       <section className="content-section" aria-labelledby="definitions">

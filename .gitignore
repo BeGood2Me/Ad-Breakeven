@@ -33,6 +33,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# chrome extension zip
+/adbreakeven-chrome-extension.zip
+
 # typescript
 next-env.d.ts
 *.tsbuildinfo

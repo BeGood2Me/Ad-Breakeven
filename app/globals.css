@@ -513,6 +513,27 @@ main {
   overflow-x: auto;
 }
 
+.quick-answer {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-primary);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+}
+
+.quick-answer h2 {
+  margin-top: 0;
+  font-size: 1.125rem;
+}
+
+.quick-answer__body > :first-child {
+  margin-top: 0;
+}
+
+.quick-answer__body > :last-child {
+  margin-bottom: 0;
+}
+
 /* Tools grid */
 .tools-grid {
   display: grid;

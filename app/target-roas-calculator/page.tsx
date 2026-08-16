@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import BreakEvenRoasCalculator from "@/components/calculators/BreakEvenRoasCalculator";
 import JsonLd from "@/components/JsonLd";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 import { faqSchema } from "@/lib/schema";
+import {
+  BREAK_EVEN_ROAS_DEFINITION,
+  FORMULAS,
+  QUICK_ANSWERS,
+} from "@/lib/snippet-definitions";
 
 const PAGE = {
   title: "Target ROAS Calculator (Free) | From Margin to tROAS",
@@ -26,8 +32,7 @@ const PAGE_FAQ = [
   },
   {
     question: "Is target ROAS the same as break-even ROAS?",
-    answer:
-      "No. Break-even ROAS is the floor where profit after product costs is zero. Target ROAS is the bid goal you enter in the ad platform — usually above break-even so you keep margin.",
+    answer: `No. ${BREAK_EVEN_ROAS_DEFINITION} Target ROAS is the bid goal you enter in the ad platform — usually above break-even so you keep margin.`,
   },
   {
     question: "What target ROAS should I use in Google Ads?",
@@ -54,6 +59,11 @@ export default function TargetRoasCalculatorPage() {
         guess. Enter AOV and gross margin to get your break-even floor, then set
         Target ROAS above it for profit. Free, no signup.
       </p>
+
+      <QuickAnswer>
+        <p>{QUICK_ANSWERS.targetRoas}</p>
+        <p className="formula-block">{FORMULAS.targetRoas}</p>
+      </QuickAnswer>
 
       <BreakEvenRoasCalculator />
 
@@ -82,9 +92,7 @@ export default function TargetRoasCalculatorPage() {
             but safer profit.
           </li>
         </ol>
-        <p className="formula-block">
-          Target ROAS ≈ break-even ROAS × (1 + profit buffer)
-        </p>
+        <p className="formula-block">{FORMULAS.targetRoas}</p>
         <div className="example-box">
           <p>
             Example: 50% margin, no fixed costs → break-even ={" "}

@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BreakEvenAdsCalculator from "@/components/calculators/BreakEvenAdsCalculator";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { ToolsSection } from "@/components/ToolsSection";
 import { PILLAR_INDEX } from "@/generated/content-manifest";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
+import { QUICK_ANSWERS } from "@/lib/snippet-definitions";
 
 const HOME_GUIDES = [
   { href: "/how-to-calculate-break-even-roas", label: "ROAS formula" },
@@ -47,6 +49,10 @@ export default function HomePage() {
           .
         </p>
       </header>
+
+      <QuickAnswer>
+        <p>{QUICK_ANSWERS.home}</p>
+      </QuickAnswer>
 
       <BreakEvenAdsCalculator />
 

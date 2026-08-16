@@ -18,6 +18,7 @@ const PATHS = [
   "/google-ads-break-even",
   "/roas-vs-roi-vs-cpa",
   "/guides",
+  "/chrome-extension",
   "/blog",
   "/faq",
   "/about",

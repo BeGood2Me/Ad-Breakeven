@@ -2,9 +2,15 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import MaxCpaCalculator from "@/components/calculators/MaxCpaCalculator";
 import JsonLd from "@/components/JsonLd";
+import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedTools } from "@/components/RelatedTools";
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 import { faqSchema } from "@/lib/schema";
+import {
+  FORMULAS,
+  MAX_CPA_DEFINITION,
+  QUICK_ANSWERS,
+} from "@/lib/snippet-definitions";
 
 const PAGE = {
   title: "Max CPA Calculator (Free) | Break-Even Cost Per Acquisition",
@@ -16,8 +22,7 @@ const PAGE = {
 const PAGE_FAQ = [
   {
     question: "What is max CPA?",
-    answer:
-      "Max CPA (maximum cost per acquisition) is the highest amount you can pay for one conversion and still break even after product costs. It equals contribution margin per conversion.",
+    answer: MAX_CPA_DEFINITION,
   },
   {
     question: "How do you calculate max CPA?",
@@ -66,15 +71,18 @@ export default function MaxCpaPage() {
         cost per lead. Free, no signup.
       </p>
 
+      <QuickAnswer>
+        <p>{QUICK_ANSWERS.maxCpaCalculator}</p>
+        <p className="formula-block">{FORMULAS.maxCpa}</p>
+      </QuickAnswer>
+
       <MaxCpaCalculator />
 
       <section className="content-section" aria-labelledby="what-is-max-cpa">
         <h2 id="what-is-max-cpa">What is max CPA?</h2>
         <p>
-          Max CPA is your break-even cost per acquisition — the most you can pay
-          Google Ads, Meta, or any channel for one conversion and still cover
-          product costs. Spend above max CPA and every sale or lead loses money,
-          even when platform ROAS looks fine.
+          {MAX_CPA_DEFINITION} Spend above max CPA and every sale or lead loses
+          money, even when platform ROAS looks fine.
         </p>
         <p>
           Read the full explainer in{" "}

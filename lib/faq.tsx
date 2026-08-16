@@ -1,5 +1,11 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import {
+  BREAK_EVEN_ROAS_DEFINITION,
+  MAX_CPA_DEFINITION,
+  MAX_CPC_DEFINITION,
+  ROAS_VS_ROI_DEFINITION,
+} from "@/lib/snippet-definitions";
 
 export interface FaqItem {
   question: string;
@@ -10,13 +16,10 @@ export interface FaqItem {
 export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "What is break-even ROAS?",
-    plainAnswer:
-      "Break-even ROAS is the minimum return on ad spend where your campaign stops losing money after product costs. Below that ROAS, ad spend exceeds the profit you keep from each sale.",
+    plainAnswer: BREAK_EVEN_ROAS_DEFINITION,
     answer: (
       <>
-        Break-even ROAS is the minimum return on ad spend where your campaign
-        stops losing money after product costs. Below that ROAS, ad spend exceeds
-        the profit you keep from each sale. Use the{" "}
+        {BREAK_EVEN_ROAS_DEFINITION} Use the{" "}
         <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>{" "}
         to find yours from margin and AOV.
       </>
@@ -56,12 +59,10 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "What is max CPA?",
-    plainAnswer:
-      "Max CPA (maximum cost per acquisition) is the highest amount you can pay for one conversion and still break even. It equals your contribution margin per order — profit per sale before ad costs.",
+    plainAnswer: MAX_CPA_DEFINITION,
     answer: (
       <>
-        Max CPA is the highest amount you can pay for one conversion and still
-        break even. It equals your contribution margin per order. See{" "}
+        {MAX_CPA_DEFINITION} See{" "}
         <Link href="/max-cpa-guide">How to Set Target CPA</Link> or calculate it
         with the <Link href="/max-cpa-calculator">Max CPA Calculator</Link>.
       </>
@@ -69,12 +70,11 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "How do I calculate max CPC?",
-    plainAnswer:
-      "Multiply your max CPA by your conversion rate (as a decimal). If max CPA is $50 and 2% of clicks convert, your break-even CPC is $1.00.",
+    plainAnswer: `${MAX_CPC_DEFINITION} Example: $50 max CPA at 2% conversion → $1.00 max CPC.`,
     answer: (
       <>
-        Multiply max CPA by your conversion rate: max CPC = max CPA × conversion
-        rate. Try the <Link href="/max-cpc-calculator">Max CPC Calculator</Link>{" "}
+        {MAX_CPC_DEFINITION} Example: $50 max CPA at 2% conversion → $1.00 max
+        CPC. Try the <Link href="/max-cpc-calculator">Max CPC Calculator</Link>{" "}
         with your numbers.
       </>
     ),
@@ -93,12 +93,10 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "What is the difference between ROAS and ROI?",
-    plainAnswer:
-      "ROAS is revenue divided by ad spend. ROI is profit divided by ad spend, expressed as a percentage. ROAS is easier to track in ad platforms; ROI reflects true profitability.",
+    plainAnswer: ROAS_VS_ROI_DEFINITION,
     answer: (
       <>
-        ROAS = revenue ÷ ad spend. ROI = profit ÷ ad spend. ROAS is easier to
-        track in ad platforms; ROI reflects true profitability. Read the full
+        {ROAS_VS_ROI_DEFINITION} Read the full
         comparison in <Link href="/roas-vs-roi-vs-cpa">ROAS vs ROI vs CPA</Link>.
       </>
     ),

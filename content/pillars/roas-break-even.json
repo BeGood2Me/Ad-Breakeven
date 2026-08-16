@@ -2,7 +2,7 @@
   "slug": "roas-break-even",
   "type": "pillar",
   "publishedAt": "2026-07-16",
-  "updatedAt": "2026-07-16",
+  "updatedAt": "2026-08-16",
   "seo": {
     "title": "ROAS & Break-even Topic Hub | Ad Breakeven Blog",
     "description": "Everything about break-even ROAS, good ROAS benchmarks by margin, and Google Ads target ROAS settings — formulas, examples, and free calculators.",
@@ -16,8 +16,22 @@
     "canonical": "/topics/roas-break-even"
   },
   "headline": "ROAS & Break-even",
-  "intro": "Break-even ROAS is the floor where ad spend equals contribution margin — not a generic 3× or 4× benchmark. This topic cluster covers the formula, margin-based targets, and how to set tROAS in Google Ads.",
+  "intro": "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend — the floor below which campaigns lose money after product costs. This topic cluster covers the formula, margin-based targets, and how to set tROAS in Google Ads.",
   "sections": [
+    {
+      "id": "quick-answer",
+      "heading": "Quick answer",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend — the floor below which campaigns lose money after product costs. Conversion rate does not change break-even ROAS — only margin and value per conversion matter."
+        },
+        {
+          "type": "formula",
+          "text": "Break-even ROAS = value ÷ contribution per conversion"
+        }
+      ]
+    },
     {
       "id": "why-roas-cluster",
       "heading": "Why break-even ROAS matters",
@@ -35,12 +49,67 @@
           "text": "Use the articles below for worked examples, margin tables, and platform settings. Each post links to our free calculators so you can run your own numbers in seconds."
         }
       ]
+    },
+    {
+      "id": "cluster-tools",
+      "heading": "Tools & guides in this cluster",
+      "blocks": [
+        {
+          "type": "link",
+          "before": "Calculate your floor: ",
+          "linkText": "Break Even ROAS Calculator",
+          "href": "/break-even-roas-calculator",
+          "after": "."
+        },
+        {
+          "type": "link",
+          "before": "Set tROAS above break-even: ",
+          "linkText": "Target ROAS Calculator",
+          "href": "/target-roas-calculator",
+          "after": "."
+        },
+        {
+          "type": "link",
+          "before": "Step-by-step formula: ",
+          "linkText": "How to Calculate Break-even ROAS",
+          "href": "/how-to-calculate-break-even-roas",
+          "after": "."
+        },
+        {
+          "type": "link",
+          "before": "Margin benchmarks: ",
+          "linkText": "What Is a Good ROAS?",
+          "href": "/what-is-a-good-roas",
+          "after": "."
+        },
+        {
+          "type": "link",
+          "before": "Quick reference table: ",
+          "linkText": "Break-even ROAS by margin",
+          "href": "/break-even-roas-by-margin",
+          "after": "."
+        },
+        {
+          "type": "link",
+          "before": "Google Ads settings: ",
+          "linkText": "Google Ads Break-even ROAS",
+          "href": "/google-ads-break-even",
+          "after": "."
+        },
+        {
+          "type": "link",
+          "before": "Compare metrics: ",
+          "linkText": "ROAS vs ROI vs CPA vs CPC",
+          "href": "/roas-vs-roi-vs-cpa",
+          "after": "."
+        }
+      ]
     }
   ],
   "faq": [
     {
       "question": "What is break-even ROAS?",
-      "answer": "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend. Below that ROAS, campaigns lose money after product or fulfillment costs."
+      "answer": "Break-even ROAS is the minimum return on ad spend where contribution margin equals ad spend — the floor below which campaigns lose money after product costs."
     },
     {
       "question": "Is 4× ROAS always good?",

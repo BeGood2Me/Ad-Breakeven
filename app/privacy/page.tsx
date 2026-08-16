@@ -38,6 +38,10 @@ export default function PrivacyPage() {
           <li>No third-party ad networks or social trackers</li>
           <li>Simple Accept / Decline cookie choice — no marketing cookies</li>
           <li>Calculator inputs are stored locally in your browser</li>
+          <li>
+            The Chrome extension stores inputs on your device only — it does not
+            read the pages you visit
+          </li>
           <li>We do not sell your personal information</li>
         </ul>
       </section>
@@ -70,6 +74,20 @@ export default function PrivacyPage() {
           This data stays on your device. You can clear it anytime through your
           browser settings. We do not use localStorage to track you across other
           websites.
+        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="privacy-extension">
+        <h2 id="privacy-extension">Chrome extension</h2>
+        <p>
+          The{" "}
+          <Link href="/chrome-extension">Ad Breakeven Chrome extension</Link>{" "}
+          is a popup calculator. It uses the Chrome <strong>storage</strong>{" "}
+          permission only — to remember AOV, margin, fixed cost, and conversion
+          rate on this device. It does not have host permissions, does not read
+          the pages you browse, and does not send calculator inputs to our
+          servers. Uninstall the extension or clear extension data in Chrome to
+          delete those values.
         </p>
       </section>
 

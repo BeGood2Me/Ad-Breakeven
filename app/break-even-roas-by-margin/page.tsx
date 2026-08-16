@@ -12,6 +12,7 @@ import {
   isProfitableAtRoas,
 } from "@/lib/good-roas-benchmarks";
 import { articleSchema, breadcrumbSchema, faqSchema } from "@/lib/schema";
+import { BREAK_EVEN_ROAS_DEFINITION } from "@/lib/snippet-definitions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const PAGE = {
@@ -24,8 +25,7 @@ const PAGE = {
 const PAGE_FAQ = [
   {
     question: "What is break-even ROAS?",
-    answer:
-      "Break-even ROAS is the minimum return on ad spend where profit after product costs equals zero — your campaign stops losing money on margin, but earns nothing yet.",
+    answer: BREAK_EVEN_ROAS_DEFINITION,
   },
   {
     question: "What is break-even ROAS at 50% margin?",
@@ -80,9 +80,7 @@ export default function BreakEvenRoasByMarginPage() {
 
       <h1>Break-even ROAS by margin</h1>
       <p className="intro">
-        Break-even ROAS is the minimum return on ad spend where contribution
-        margin equals ad spend — not the revenue number your ad platform shows by
-        default. Use this table as a quick reference, then{" "}
+        {BREAK_EVEN_ROAS_DEFINITION} Use this table as a quick reference, then{" "}
         <Link href="/break-even-roas-calculator">calculate your exact floor</Link>{" "}
         with AOV and fixed costs.
       </p>

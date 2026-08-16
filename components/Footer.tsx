@@ -44,6 +44,8 @@ export default function Footer() {
             {SITE_NAME} — free break-even calculators for paid media planning.
             Free, no signup. Supports ecommerce and lead gen.{" "}
             <Link href="/about">Learn more</Link>
+            {" · "}
+            <Link href="/chrome-extension">Chrome extension</Link>
           </p>
         </div>
       </div>
