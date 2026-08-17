@@ -31,11 +31,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
-  icons: {
-    icon: [{ url: "/images/ad-breakeven-logo.svg", type: "image/svg+xml" }],
-    shortcut: "/images/ad-breakeven-logo.svg",
-    apple: "/images/ad-breakeven-logo.svg",
-  },
   openGraph: {
     type: "website",
     locale: "en_US",

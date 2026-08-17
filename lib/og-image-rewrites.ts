@@ -28,5 +28,9 @@ export function buildImageAssetRewrites(): { source: string; destination: string
       source: "/icon.svg",
       destination: "/images/ad-breakeven-logo.svg",
     },
+    {
+      source: "/favicon.ico",
+      destination: "/images/ad-breakeven-logo.svg",
+    },
   ];
 }
