@@ -5,13 +5,13 @@ import {
 } from "@/lib/opengraph-image";
 import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = ogImageAlt("Privacy Policy");
+export const alt = ogImageAlt("Ad Breakeven blog");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 
 export default function OpenGraphImage() {
   return createOpenGraphImage(
-    "Privacy Policy",
-    "Privacy-friendly analytics — no ad trackers; calculator data stays local"
+    "Ad Breakeven Blog",
+    "Break-even ROAS, max CPA, max CPC, and ad profit guides"
   );
 }

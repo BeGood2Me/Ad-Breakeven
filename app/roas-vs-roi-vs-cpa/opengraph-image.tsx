@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "ROAS vs ROI vs CPA vs CPC";
+export const alt = ogImageAlt("ROAS vs ROI vs CPA vs CPC");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

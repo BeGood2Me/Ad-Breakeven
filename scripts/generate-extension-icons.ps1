@@ -82,9 +82,9 @@ function Save-Icon {
   $bmp.Dispose()
 }
 
-Save-Icon 16 "icon16.png"
-Save-Icon 32 "icon32.png"
-Save-Icon 48 "icon48.png"
-Save-Icon 128 "icon128.png"
+Save-Icon 16 "ad-breakeven-icon-16.png"
+Save-Icon 32 "ad-breakeven-icon-32.png"
+Save-Icon 48 "ad-breakeven-icon-48.png"
+Save-Icon 128 "ad-breakeven-icon-128.png"
 
 Write-Output "Wrote icons to $iconDir"

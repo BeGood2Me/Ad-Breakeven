@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "Target ROAS Calculator";
+export const alt = ogImageAlt("Target ROAS Calculator");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "How to Set Target CPA";
+export const alt = ogImageAlt("How to Set Target CPA");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

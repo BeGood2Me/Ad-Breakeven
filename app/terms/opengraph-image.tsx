@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "Terms of Use";
+export const alt = ogImageAlt("Terms of Use");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

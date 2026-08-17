@@ -1,3 +1,5 @@
+import { ogImageMetadata } from "./og-image-paths";
+
 export const SITE_URL = "https://adbreakeven.com";
 export const SITE_NAME = "Ad Breakeven";
 export const FAQ_PAGE_TITLE = "Ad Breakeven FAQ";
@@ -141,5 +143,6 @@ export function openGraphForPage(options: {
     description: options.description,
     url: options.path,
     type: "website" as const,
+    images: [ogImageMetadata(options.path, options.title)],
   };
 }

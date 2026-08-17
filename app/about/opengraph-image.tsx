@@ -3,9 +3,10 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 import { SITE_NAME } from "@/lib/site";
 
-export const alt = `About ${SITE_NAME}`;
+export const alt = ogImageAlt(`About ${SITE_NAME}`);
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "What Is a Good ROAS?";
+export const alt = ogImageAlt("What Is a Good ROAS?");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

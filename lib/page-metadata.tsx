@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
 import { breadcrumbSchema, softwareApplicationSchema } from "@/lib/schema";
+import { ogImagePublicPath } from "@/lib/og-image-paths";
 import { openGraphForPage } from "@/lib/site";
 
 export function buildPageMetadata(options: {
@@ -29,6 +30,7 @@ export function buildPageMetadata(options: {
       card: "summary_large_image",
       title: options.title,
       description: options.description,
+      images: [ogImagePublicPath(options.path)],
     },
   };
 }

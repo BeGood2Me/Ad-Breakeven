@@ -191,7 +191,7 @@ function Draw-BrowserChrome($g, $w) {
 # --- Store icon 128x128 ---
 $icon = New-Gfx 128 128 $cBg
 Draw-Icon $icon.G 0 0 128
-Save-Png $icon.Bmp "store-icon-128.png"
+Save-Png $icon.Bmp "ad-breakeven-chrome-extension-icon-128.png"
 $icon.G.Dispose(); $icon.Bmp.Dispose()
 
 # --- Screenshot 1: popup in a browser ---
@@ -199,7 +199,7 @@ $s1 = New-Gfx 1280 800 $cBg
 Draw-BrowserChrome $s1.G 1280
 $s1.G.FillRectangle((New-Object System.Drawing.SolidBrush ([System.Drawing.Color]::FromArgb(16, 22, 31))), 0, 57, 1280, 743)
 Draw-Popup $s1.G 430 110 420 | Out-Null
-Save-Png $s1.Bmp "screenshot-1-popup.png"
+Save-Png $s1.Bmp "ad-breakeven-chrome-extension-popup-screenshot.png"
 $s1.G.Dispose(); $s1.Bmp.Dispose()
 
 # --- Screenshot 2: zoomed results ---
@@ -233,7 +233,7 @@ $note = New-Object System.Drawing.SolidBrush $cMuted
 $s2.G.DrawString("Example: `$100 AOV  |  50% margin  |  2% conversion rate", $fontN, $note, 80, 500)
 $s2.G.DrawString("Inputs stay on this device. No account. No tracking.", $fontN, $note, 80, 530)
 $note.Dispose(); $fontL.Dispose(); $fontV.Dispose(); $fontN.Dispose()
-Save-Png $s2.Bmp "screenshot-2-results.png"
+Save-Png $s2.Bmp "ad-breakeven-chrome-extension-results-screenshot.png"
 $s2.G.Dispose(); $s2.Bmp.Dispose()
 
 # --- Screenshot 3: how it works ---
@@ -270,7 +270,7 @@ foreach ($st in $steps) {
 }
 $fontN.Dispose(); $fontT.Dispose(); $fontD.Dispose()
 $bText.Dispose(); $bMuted.Dispose()
-Save-Png $s3.Bmp "screenshot-3-how-it-works.png"
+Save-Png $s3.Bmp "ad-breakeven-chrome-extension-how-it-works-screenshot.png"
 $s3.G.Dispose(); $s3.Bmp.Dispose()
 
 # --- Small promo 440x280 ---
@@ -285,7 +285,7 @@ $sp.G.DrawString("Ad Breakeven", $f1, $bText, 108, 44)
 $sp.G.DrawString("Break-even ROAS in a popup", $f2, $bMint, 28, 128)
 $sp.G.DrawString("Max CPA  |  Max CPC  |  No account", $f2, $bMuted, 28, 168)
 $f1.Dispose(); $f2.Dispose(); $bText.Dispose(); $bMint.Dispose(); $bMuted.Dispose()
-Save-Png $sp.Bmp "small-promo-440x280.png"
+Save-Png $sp.Bmp "ad-breakeven-chrome-extension-promo-440x280.png"
 $sp.G.Dispose(); $sp.Bmp.Dispose()
 
 # --- Marquee 1400x560 ---
@@ -302,7 +302,7 @@ $mq.G.DrawString("from your margin - while you plan bids.", $f2, $bMuted, 72, 24
 $mq.G.DrawString("Free  |  Local storage only  |  No account", $f2, $bMuted, 72, 320)
 $f1.Dispose(); $f2.Dispose(); $bText.Dispose(); $bMint.Dispose(); $bMuted.Dispose()
 Draw-Popup $mq.G 880 40 460 | Out-Null
-Save-Png $mq.Bmp "marquee-1400x560.png"
+Save-Png $mq.Bmp "ad-breakeven-chrome-extension-marquee-1400x560.png"
 $mq.G.Dispose(); $mq.Bmp.Dispose()
 
 Write-Output "Done: $outDir"

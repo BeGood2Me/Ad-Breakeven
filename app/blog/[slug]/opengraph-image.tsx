@@ -3,9 +3,10 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 import { getBlogPost } from "@/lib/content/load-content";
 
-export const alt = "Ad Breakeven Blog";
+export const alt = ogImageAlt("Ad Breakeven blog post");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

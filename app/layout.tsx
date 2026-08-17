@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Mono, IBM_Plex_Sans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { ogImageMetadata } from "@/lib/og-image-paths";
 import { websiteSchema } from "@/lib/schema";
 import { themeInitScript } from "@/lib/theme";
 import CookieBanner from "@/components/CookieBanner";
@@ -30,17 +31,24 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: SITE_NAME,
   description: SITE_DESCRIPTION,
+  icons: {
+    icon: [{ url: "/images/ad-breakeven-logo.svg", type: "image/svg+xml" }],
+    shortcut: "/images/ad-breakeven-logo.svg",
+    apple: "/images/ad-breakeven-logo.svg",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
     siteName: SITE_NAME,
     description: SITE_DESCRIPTION,
     url: SITE_URL,
+    images: [ogImageMetadata("/", "Break-even Ads Calculator")],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
+    images: [ogImageMetadata("/", "Break-even Ads Calculator").url],
   },
   robots: {
     index: true,

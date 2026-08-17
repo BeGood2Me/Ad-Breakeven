@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "Ad Breakeven Chrome extension";
+export const alt = ogImageAlt("Ad Breakeven Chrome extension");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

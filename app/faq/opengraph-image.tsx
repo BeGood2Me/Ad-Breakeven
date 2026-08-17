@@ -4,8 +4,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = FAQ_PAGE_TITLE;
+export const alt = ogImageAlt(FAQ_PAGE_TITLE);
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

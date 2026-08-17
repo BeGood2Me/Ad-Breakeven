@@ -3,9 +3,10 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 import { getPillarPage } from "@/lib/content/load-content";
 
-export const alt = "Ad Breakeven Topic Hub";
+export const alt = ogImageAlt("Ad Breakeven topic hub");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

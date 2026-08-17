@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "How to Calculate Break-even ROAS";
+export const alt = ogImageAlt("How to Calculate Break-even ROAS");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 

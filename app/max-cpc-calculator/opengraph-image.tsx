@@ -3,8 +3,9 @@ import {
   ogImageContentType,
   ogImageSize,
 } from "@/lib/opengraph-image";
+import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = "Max CPC Calculator";
+export const alt = ogImageAlt("Max CPC Calculator");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 
