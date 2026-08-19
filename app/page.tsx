@@ -45,8 +45,9 @@ export default function HomePage() {
           signup. Need only break-even ROAS? Use the{" "}
           <Link href="/break-even-roas-calculator">
             Break Even ROAS Calculator
-          </Link>
-          .
+          </Link>{" "}
+          or add the{" "}
+          <Link href="/widgets">free widget</Link>.
         </p>
       </header>
 
@@ -57,6 +58,21 @@ export default function HomePage() {
       <BreakEvenAdsCalculator />
 
       <ToolsSection />
+
+      <section className="content-section home-widgets" aria-labelledby="widgets-heading">
+        <div className="home-widgets-card">
+          <div>
+            <h2 id="widgets-heading">Free widgets</h2>
+            <p>
+              Embed break-even ROAS, CPA, CPC, and ad profit calculators on your
+              site with one paste.
+            </p>
+          </div>
+          <Link href="/widgets" className="home-widgets-cta">
+            Get widget code
+          </Link>
+        </div>
+      </section>
 
       <section className="content-section home-guides" aria-labelledby="guides-heading">
         <div className="home-guides-header">

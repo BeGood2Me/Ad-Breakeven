@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import {
+  WIDGETS_NAV_LINK,
   CALCULATOR_NAV_LINKS,
   GUIDE_NAV_LINKS,
   NAV_LINKS,
@@ -12,7 +13,7 @@ import {
 import SiteLogoIcon from "@/components/SiteLogoIcon";
 import ThemeToggle from "@/components/ThemeToggle";
 
-type NavLink = (typeof NAV_LINKS)[number];
+type NavLink = (typeof NAV_LINKS)[number] | typeof WIDGETS_NAV_LINK;
 
 function NavLinkItem({
   href,
@@ -96,7 +97,7 @@ export default function Header() {
     };
   }, [menuOpen]);
 
-  if (currentPath.startsWith("/embed")) {
+  if (currentPath.startsWith("/embed/")) {
     return null;
   }
 
@@ -108,6 +109,13 @@ export default function Header() {
           <span>{SITE_NAME}</span>
         </Link>
         <div className="header-actions" ref={headerActionsRef}>
+          <Link
+            href={WIDGETS_NAV_LINK.href}
+            className="header-widgets-link"
+            aria-current={currentPath === WIDGETS_NAV_LINK.href ? "page" : undefined}
+          >
+            {WIDGETS_NAV_LINK.label}
+          </Link>
           <button
             ref={toggleRef}
             type="button"

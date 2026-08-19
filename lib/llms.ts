@@ -1,8 +1,10 @@
+import { BLOG_INDEX, PILLAR_INDEX } from "@/generated/content-manifest";
 import { FAQ_ITEMS } from "@/lib/faq";
 import { buildCanonicalSnippetsSection } from "@/lib/snippet-definitions";
-import { BLOG_INDEX, PILLAR_INDEX } from "@/generated/content-manifest";
+import { WIDGET_SCRIPT_PATH } from "@/lib/widgets/catalog";
 import {
   ALL_PAGES,
+  WIDGETS_PAGE_PATH,
   FAQ_PAGE_TITLE,
   GUIDE_DESCRIPTIONS,
   SITE_DESCRIPTION,
@@ -26,7 +28,7 @@ export function buildLlmsTxt(): string {
       !TOOL_LINKS.some((tool) => tool.href === page.href) &&
       page.href !== "/terms" &&
       page.href !== "/privacy" &&
-      page.href !== "/chrome-extension"
+      page.href !== WIDGETS_PAGE_PATH
   );
 
   const lines = [
@@ -72,6 +74,16 @@ export function buildLlmsTxt(): string {
       linkLine(headline, path, intro)
     ),
     "",
+    "## Widgets",
+    "",
+    linkLine(
+      "Free Ad Breakeven widgets",
+      WIDGETS_PAGE_PATH,
+      GUIDE_DESCRIPTIONS[WIDGETS_PAGE_PATH]
+    ),
+    `- Widget script: ${abs(WIDGET_SCRIPT_PATH)}`,
+    `- Iframe embeds: ${abs("/embed/break-even-roas")} (and other calculators)`,
+    "",
     "## Optional",
     "",
     linkLine(
@@ -80,11 +92,6 @@ export function buildLlmsTxt(): string {
       "Full FAQ, formulas, and page summaries for AI agents in one file"
     ),
     linkLine("Sitemap", "/sitemap.xml", "All indexable URLs for this site"),
-    linkLine(
-      "Chrome extension",
-      "/chrome-extension",
-      "Popup calculator for break-even ROAS, max CPA, and max CPC — local storage only"
-    ),
     linkLine(
       "Privacy Policy",
       "/privacy",
@@ -214,9 +221,9 @@ export function buildLlmsFullTxt(): string {
     linkLine("Privacy Policy", "/privacy", "Data collection and local storage"),
     linkLine("Terms of Use", "/terms", "Full terms and disclaimer"),
     linkLine(
-      "Chrome extension",
-      "/chrome-extension",
-      "Popup calculator for break-even ROAS, max CPA, and max CPC"
+      "Free Ad Breakeven widgets",
+      WIDGETS_PAGE_PATH,
+      GUIDE_DESCRIPTIONS[WIDGETS_PAGE_PATH]
     ),
     "",
   ];

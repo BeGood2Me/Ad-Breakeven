@@ -18,7 +18,7 @@ export function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
   const response = NextResponse.next();
 
-  if (pathname.startsWith("/embed")) {
+  if (pathname.startsWith("/embed/")) {
     response.headers.set("X-Robots-Tag", "noindex, follow");
     return response;
   }

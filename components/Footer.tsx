@@ -8,7 +8,7 @@ import { GUIDE_LINKS, SITE_NAME, TOOL_LINKS } from "@/lib/site";
 export default function Footer() {
   const pathname = usePathname();
 
-  if (pathname.startsWith("/embed")) {
+  if (pathname.startsWith("/embed/")) {
     return null;
   }
 
@@ -42,10 +42,10 @@ export default function Footer() {
           <h2>About</h2>
           <p className="footer-meta">
             {SITE_NAME} — free break-even calculators for paid media planning.
-            Free, no signup. Supports ecommerce and lead gen.{" "}
+            No signup. Supports ecommerce and lead gen.{" "}
             <Link href="/about">Learn more</Link>
             {" · "}
-            <Link href="/chrome-extension">Chrome extension</Link>
+            <Link href="/widgets">Free Widgets</Link>
           </p>
         </div>
       </div>

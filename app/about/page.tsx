@@ -87,8 +87,8 @@ export default function AboutPage() {
           </li>
           <li>Shareable URLs and tailored next steps after each calculation</li>
           <li>
-            <Link href="/chrome-extension">Chrome extension</Link> — popup
-            calculator for break-even ROAS, max CPA, and max CPC
+            <Link href="/widgets">Free Widgets</Link> — embed calculators on
+            your site
           </li>
         </ul>
       </section>

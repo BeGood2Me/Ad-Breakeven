@@ -47,6 +47,14 @@ export const GUIDE_NAV_LINKS = [
 
 export const NAV_LINKS = [...CALCULATOR_NAV_LINKS, ...GUIDE_NAV_LINKS] as const;
 
+export const WIDGETS_PAGE_PATH = "/widgets";
+
+export const WIDGETS_NAV_LINK = {
+  href: WIDGETS_PAGE_PATH,
+  label: "Free Widgets",
+  shortLabel: "Widgets",
+} as const;
+
 export const ALL_PAGES = [
   { href: "/", title: "Break-even Ads Calculator", changefreq: "weekly" as const, priority: 1.0 },
   { href: "/break-even-roas-calculator", title: "Break Even ROAS Calculator", changefreq: "monthly" as const, priority: 0.9 },
@@ -61,7 +69,7 @@ export const ALL_PAGES = [
   { href: "/google-ads-break-even", title: "Google Ads Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/roas-vs-roi-vs-cpa", title: "ROAS vs ROI vs CPA", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/guides", title: "Ad Breakeven Guides", changefreq: "monthly" as const, priority: 0.8 },
-  { href: "/chrome-extension", title: "Chrome Extension", changefreq: "monthly" as const, priority: 0.7 },
+  { href: WIDGETS_PAGE_PATH, title: "Free Ad Breakeven Widgets", changefreq: "monthly" as const, priority: 0.75 },
   { href: "/faq", title: FAQ_PAGE_TITLE, changefreq: "monthly" as const, priority: 0.7 },
   { href: "/about", title: "About Ad Breakeven", changefreq: "yearly" as const, priority: 0.5 },
   { href: "/privacy", title: "Privacy Policy", changefreq: "yearly" as const, priority: 0.3 },
@@ -117,15 +125,15 @@ export const GUIDE_DESCRIPTIONS: Record<string, string> = {
   "/roas-vs-roi-vs-cpa":
     "Compare ROAS, ROI, CPA, and CPC — when to use each for ad profitability",
   "/faq": "Answers on break-even ROAS, max CPA, CPC, ad profit, and lead gen",
-  "/chrome-extension":
-    "Chrome popup for break-even ROAS, max CPA, and max CPC — local storage only",
+  [WIDGETS_PAGE_PATH]:
+    "Free embeddable break-even ROAS, CPA, CPC, and ad profit calculator widgets",
   "/about": "About Ad Breakeven — mission, methodology, and disclaimer",
 };
 
 export const GUIDE_LINKS = ALL_PAGES.filter(
   (page) =>
     page.href !== "/" &&
-    page.href !== "/chrome-extension" &&
+    page.href !== WIDGETS_PAGE_PATH &&
     !TOOL_LINKS.some((tool) => tool.href === page.href)
 );
 

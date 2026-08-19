@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BreakEvenRoasCalculator from "@/components/calculators/BreakEvenRoasCalculator";
-import EmbedCodeSection from "@/components/EmbedCodeSection";
+import WidgetSetupSection from "@/components/WidgetSetupSection";
+import WidgetCodeSection from "@/components/WidgetCodeSection";
+import { getWidgetById } from "@/lib/widgets/catalog";
 import JsonLd from "@/components/JsonLd";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { RelatedTools } from "@/components/RelatedTools";
@@ -148,10 +150,8 @@ export default function BreakEvenRoasPage() {
         </ul>
       </section>
 
-      <EmbedCodeSection
-        embedPath="/embed/break-even-roas"
-        title="Break-even ROAS Calculator"
-      />
+      <WidgetSetupSection />
+      <WidgetCodeSection widget={getWidgetById("break-even-roas")!} />
 
       <RelatedTools
         links={[

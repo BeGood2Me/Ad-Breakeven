@@ -5,13 +5,13 @@ import {
 } from "@/lib/opengraph-image";
 import { ogImageAlt } from "@/lib/og-image-paths";
 
-export const alt = ogImageAlt("Ad Breakeven Chrome extension");
+export const alt = ogImageAlt("Free Ad Breakeven widgets");
 export const size = ogImageSize;
 export const contentType = ogImageContentType;
 
 export default function OpenGraphImage() {
   return createOpenGraphImage(
-    "Ad Breakeven Chrome extension",
-    "Break-even ROAS, max CPA, and max CPC in a popup — no account"
+    "Free Ad Breakeven widgets",
+    "Embed break-even ROAS, CPA, CPC, and ad profit calculators"
   );
 }

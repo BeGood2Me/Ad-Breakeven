@@ -27,7 +27,7 @@ export default function CookieBanner() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    if (pathname.startsWith("/embed")) {
+    if (pathname.startsWith("/embed/")) {
       setVisible(false);
       return;
     }
