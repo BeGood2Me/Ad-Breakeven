@@ -14,27 +14,32 @@ import {
 import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
 import { faqSchema } from "@/lib/schema";
 import {
-  BREAK_EVEN_ROAS_DEFINITION,
   FORMULAS,
   QUICK_ANSWERS,
 } from "@/lib/snippet-definitions";
 
 const PAGE = {
-  title: "Break Even ROAS Calculator (Free) | Find Your Minimum ROAS",
+  title: "Break Even ROAS Calculator (Free) | Instant Minimum ROAS",
   description:
-    "Free break even ROAS calculator from your margin and AOV. Instant floor for Google Ads & Meta — ecommerce or lead gen. No signup. Shareable results.",
+    "Free break even ROAS calculator for ecommerce and lead gen. Enter margin and AOV for your Google Ads or Meta floor — no signup, shareable results.",
   path: "/break-even-roas-calculator",
 };
 
 const PAGE_FAQ = [
   {
     question: "What is a break even ROAS calculator?",
-    answer: BREAK_EVEN_ROAS_DEFINITION,
+    answer:
+      "A break even ROAS calculator turns your margin and AOV into the minimum ROAS ads need before they lose money after product costs. This page is the free tool — enter inputs and get an instant floor.",
   },
   {
-    question: "How do I calculate break-even ROAS?",
+    question: "How do I use this break even ROAS calculator?",
     answer:
-      "Divide value per conversion by contribution per order. Contribution = (AOV × gross margin %) − fixed cost. With no fixed costs, break-even ROAS = 1 ÷ margin.",
+      "Enter average order value (or lead value), gross margin %, and optional fixed cost per order. The calculator returns contribution per conversion and break-even ROAS you can use as a Target ROAS floor.",
+  },
+  {
+    question: "How do I calculate break-even ROAS manually?",
+    answer:
+      "Divide value per conversion by contribution per order. Contribution = (AOV × gross margin %) − fixed cost. With no fixed costs, break-even ROAS = 1 ÷ margin. For a full walkthrough, see How to Calculate Break-even ROAS.",
   },
   {
     question: "What is break-even ROAS at 50% margin?",
@@ -62,9 +67,10 @@ export default function BreakEvenRoasPage() {
 
       <h1>Break Even ROAS Calculator</h1>
       <p className="intro">
-        Find the minimum ROAS your ads need before they lose money after product
-        costs — free, no signup. Enter margin and AOV (or lead value) for an
-        instant floor you can use in Google Ads Target ROAS or Meta.
+        Free break even ROAS calculator — find the minimum ROAS your ads need
+        before they lose money after product costs. Enter margin and AOV (or
+        lead value) for an instant floor you can use in Google Ads Target ROAS
+        or Meta. No signup.
       </p>
 
       <QuickAnswer>
@@ -75,12 +81,12 @@ export default function BreakEvenRoasPage() {
       <BreakEvenRoasCalculator />
 
       <section className="content-section" aria-labelledby="roas-formula">
-        <h2 id="roas-formula">Break-even ROAS formula</h2>
+        <h2 id="roas-formula">Break-even ROAS formula (quick)</h2>
         <p className="formula-block">{FORMULAS.breakEvenRoasEcommerce}</p>
         <p>
           With no fixed per-order costs, this simplifies to{" "}
           <code>1 ÷ margin%</code>. A 50% margin means you need at least 2.0×
-          ROAS to break even. Full walkthrough:{" "}
+          ROAS to break even. For step-by-step examples and lead gen math, see{" "}
           <Link href="/how-to-calculate-break-even-roas">
             how to calculate break-even ROAS
           </Link>

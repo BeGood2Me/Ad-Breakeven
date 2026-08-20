@@ -17,9 +17,9 @@ import {
 } from "@/lib/snippet-definitions";
 
 const PAGE = {
-  title: "How to Calculate Break Even ROAS | Formula + Free Calculator",
+  title: "How to Calculate Break-even ROAS | Formula & Examples",
   description:
-    "How to calculate break even ROAS from contribution margin. Ecommerce & lead gen examples, margin table, and free calculator. No signup.",
+    "Learn the break-even ROAS formula from contribution margin. Ecommerce and lead gen examples, margin table, and worked steps — then use the free calculator.",
   path: "/how-to-calculate-break-even-roas",
 };
 
@@ -36,7 +36,12 @@ const PAGE_FAQ = [
   {
     question: "How do you calculate break-even ROAS?",
     answer:
-      "Divide AOV by contribution per order. Contribution = (AOV × gross margin %) − fixed cost per order. With no fixed costs, break-even ROAS equals 1 ÷ margin.",
+      "Divide AOV by contribution per order. Contribution = (AOV × gross margin %) − fixed cost per order. With no fixed costs, break-even ROAS equals 1 ÷ margin. For instant results, use the Break Even ROAS Calculator.",
+  },
+  {
+    question: "Where can I calculate break-even ROAS online?",
+    answer:
+      "Use the free Break Even ROAS Calculator on Ad Breakeven. This guide explains the formula; the calculator page is the tool for instant results from your margin and AOV.",
   },
   {
     question: "What is contribution margin for ecommerce ads?",
@@ -77,12 +82,19 @@ export default function HowToCalculateRoasPage() {
       <p className="intro">
         {BREAK_EVEN_ROAS_DEFINITION} Platform dashboards show revenue ROAS, not
         profit ROAS, so you need a margin-based threshold before scaling Google
-        Ads or Meta. Skip the math with the{" "}
-        <Link href="/break-even-roas-calculator">
-          Break-even ROAS Calculator
-        </Link>
-        .
+        Ads or Meta. This guide walks through the formula and examples.
       </p>
+
+      <div className="example-box">
+        <p>
+          <strong>Want the number now?</strong> Use the free{" "}
+          <Link href="/break-even-roas-calculator">
+            Break Even ROAS Calculator
+          </Link>{" "}
+          — enter margin and AOV for an instant floor. Come back here for the
+          step-by-step math.
+        </p>
+      </div>
 
       <QuickAnswer>
         <p>{QUICK_ANSWERS.howToCalculate}</p>
@@ -162,6 +174,13 @@ export default function HowToCalculateRoasPage() {
             break-even ROAS by margin table
           </Link>
           .
+        </p>
+        <p>
+          Prefer not to calculate by hand? Open the{" "}
+          <Link href="/break-even-roas-calculator">
+            Break Even ROAS Calculator
+          </Link>{" "}
+          and enter the same inputs.
         </p>
       </section>
 
@@ -318,10 +337,10 @@ export default function HowToCalculateRoasPage() {
       <RelatedTools
         links={[
           {
-            before: "Skip the manual math with the ",
+            before: "Calculate your floor now with the ",
             linkText: "Break Even ROAS Calculator",
             href: "/break-even-roas-calculator",
-            after: " — instant results from your inputs.",
+            after: " — the primary tool for instant results.",
           },
           {
             before: "Convert contribution to a purchase cap with the ",

@@ -35,11 +35,11 @@ export const FORMULAS = {
 export const QUICK_ANSWERS = {
   home:
     "Break-even ad targets come from your margin, not generic 3× or 4× ROAS benchmarks. This hub calculator finds break-even ROAS, max CPA, and max CPC from AOV (or lead value), gross margin, and conversion rate.",
-  breakEvenRoasCalculator: `${BREAK_EVEN_ROAS_DEFINITION} Enter margin and AOV in the calculator for your floor — use it as the minimum Target ROAS in Google Ads or Meta.`,
+  breakEvenRoasCalculator: `Use this free break even ROAS calculator to find your minimum profitable ROAS from margin and AOV. ${BREAK_EVEN_ROAS_DEFINITION} Enter your inputs below for an instant Target ROAS floor.`,
   maxCpaCalculator: `${MAX_CPA_DEFINITION} Enter AOV and margin to get your Target CPA ceiling for Google Ads or Meta.`,
   maxCpcCalculator: `${MAX_CPC_DEFINITION} Enter max CPA and conversion rate to get a break-even bid ceiling.`,
   howToCalculate:
-    "Divide value per conversion by contribution margin. Contribution = (AOV × gross margin %) − fixed cost per order. Conversion rate does not change break-even ROAS — only margin and value per conversion matter.",
+    "Divide value per conversion by contribution margin. Contribution = (AOV × gross margin %) − fixed cost per order. Conversion rate does not change break-even ROAS — only margin and value per conversion matter. For instant results, use the Break Even ROAS Calculator.",
   targetRoas:
     "Target ROAS (tROAS) is the bid goal in your ad platform — usually 10–25% above break-even ROAS so campaigns stay profitable under variance.",
   roasVsRoi:

@@ -97,8 +97,9 @@ export function howToSchema() {
       {
         "@type": "HowToStep",
         position: 4,
-        name: "Set targets in your ad platform",
-        text: "Use break-even ROAS as your minimum efficiency floor. Ecommerce: max CPA = contribution per sale. Lead gen: max cost per lead = contribution per lead; CRM closed-deal cap = cap ÷ close rate.",
+        name: "Confirm with the calculator",
+        text: "Enter the same margin and AOV in the free Break Even ROAS Calculator at adbreakeven.com/break-even-roas-calculator for an instant floor, then set Target ROAS at or above that number.",
+        url: `${SITE_URL}/break-even-roas-calculator`,
       },
     ],
   };

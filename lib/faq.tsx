@@ -28,17 +28,17 @@ export const FAQ_ITEMS: FaqItem[] = [
   {
     question: "How do I calculate break-even ROAS?",
     plainAnswer:
-      "Divide your average order value by your contribution per order. Contribution per order equals (AOV × gross margin %) minus any fixed per-order costs like shipping or payment fees.",
+      "Use the free Break Even ROAS Calculator for instant results, or divide AOV by contribution per order manually. Contribution = (AOV × gross margin %) − fixed per-order costs.",
     answer: (
       <>
-        Divide your average order value by your contribution per order:
-        contribution = (AOV × gross margin %) − fixed costs. See the full
-        walkthrough in{" "}
+        For instant results, use the{" "}
+        <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>
+        . Manually: divide AOV by contribution per order — contribution = (AOV ×
+        gross margin %) − fixed costs. Full walkthrough:{" "}
         <Link href="/how-to-calculate-break-even-roas">
           How to Calculate Break-even ROAS
-        </Link>{" "}
-        or use the{" "}
-        <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>.
+        </Link>
+        .
       </>
     ),
   },
