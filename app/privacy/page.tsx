@@ -8,7 +8,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/site";
 const PAGE = {
   title: "Privacy Policy",
   description:
-    "How Ad Breakeven collects and uses data: analytics, cookies, local storage, and your U.S. state privacy rights.",
+    "How Ad Breakeven handles data under GDPR and applicable laws: cookies, analytics, local storage, and your privacy rights.",
   path: "/privacy",
 };
 
@@ -25,8 +25,9 @@ export default function PrivacyPage() {
       />
       <h1>Privacy Policy</h1>
       <p className="intro">
-        {SITE_NAME} ({SITE_URL}) is a free calculator site. This Privacy Policy
-        describes how we handle information when you use the Service.
+        {SITE_NAME} ({SITE_URL}) is operated from Ireland. This Privacy Policy
+        describes how we handle information when you use the Service, including
+        your rights under GDPR where applicable.
       </p>
       <PrivacyPolicyContent />
     </article>

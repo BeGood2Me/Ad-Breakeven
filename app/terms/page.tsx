@@ -26,7 +26,8 @@ export default function TermsPage() {
       <h1>Terms of Use</h1>
       <p className="intro">
         {SITE_NAME} provides free break-even calculators and guides for paid
-        media planning. By using this site, you agree to the terms below.
+        media planning. These Terms are governed by Irish law. By using this
+        site, you agree to the terms below.
       </p>
       <TermsOfUseContent />
     </article>

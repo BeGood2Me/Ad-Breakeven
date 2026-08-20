@@ -1,16 +1,20 @@
 import Link from "next/link";
 import {
   BUSINESS_DESCRIPTION,
+  DATA_PROTECTION_AUTHORITY_NAME,
+  DATA_PROTECTION_AUTHORITY_URL,
+  EEA_SUPERVISORY_AUTHORITIES_URL,
   LEGAL_CONTACT_EMAIL,
   LEGAL_ENTITY_NAME,
   LEGAL_LAST_UPDATED_DISPLAY,
+  OPERATOR_COUNTRY,
   SITE_DOMAIN,
 } from "@/lib/legal/config";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 /**
- * Adapted from General Legal Privacy Policy (U.S.) template (CC0).
- * https://github.com/General-Legal/legal-templates/tree/main/templates/privacy-policy-us
+ * Adapted from General Legal Privacy Policy (GDPR Enhanced) template (CC0).
+ * https://github.com/General-Legal/legal-templates/tree/main/templates/privacy-policy-gdpr
  */
 export default function PrivacyPolicyContent() {
   return (
@@ -21,17 +25,17 @@ export default function PrivacyPolicyContent() {
 
       <p>
         {LEGAL_ENTITY_NAME} (&ldquo;<strong>we</strong>,&rdquo; &ldquo;
-        <strong>us</strong>,&rdquo; or &ldquo;<strong>our</strong>&rdquo;)
-        provides {BUSINESS_DESCRIPTION}. This Privacy Policy describes how we
-        process personal information collected through {SITE_URL} and related
-        pages that link to this policy (collectively, the &ldquo;
-        <strong>Service</strong>&rdquo;).
+        <strong>us</strong>,&rdquo; or &ldquo;<strong>our</strong>&rdquo;) is
+        operated from {OPERATOR_COUNTRY} and provides {BUSINESS_DESCRIPTION}.
+        This Privacy Policy describes how we process personal information
+        collected through {SITE_URL} and related pages that link to this policy
+        (collectively, the &ldquo;<strong>Service</strong>&rdquo;).
       </p>
 
       <p>
-        <strong>California Notice at Collection / State Privacy Rights:</strong>{" "}
-        See the State privacy rights notice section below for information about
-        rights that may be available under applicable U.S. state privacy laws.
+        References to &ldquo;personal information&rdquo; in this policy include
+        &ldquo;personal data&rdquo; as defined in the GDPR and UK GDPR where
+        those laws apply.
       </p>
 
       <section className="content-section" aria-labelledby="pi-collect">
@@ -54,22 +58,19 @@ export default function PrivacyPolicyContent() {
 
         <h3>Automatic data collection</h3>
         <p>
-          We, our service providers, and our analytics partners may automatically
-          log information about you, your computer or mobile device, and your
-          interaction with the Service, such as:
+          We and our service providers may automatically log information about
+          you, your computer or mobile device, and your interaction with the
+          Service, such as:
         </p>
         <ul>
           <li>
             <strong>Device data</strong>, such as browser type, operating
             system, screen resolution, device type, IP address, language
-            settings, and general location information derived from IP address
-            (such as city, state, or geographic area).
+            settings, and general location information derived from IP address.
           </li>
           <li>
             <strong>Online activity data</strong>, such as pages viewed, time
-            spent on pages, navigation paths, referring URL, access times, and
-            whether you opened emails or clicked links within them (if
-            applicable).
+            spent on pages, navigation paths, referring URL, and access times.
           </li>
         </ul>
         <p>
@@ -90,16 +91,14 @@ export default function PrivacyPolicyContent() {
         <h2 id="cookie-notice">Cookie notice</h2>
         <p>
           This section explains how we use cookies and similar technologies on{" "}
-          {SITE_DOMAIN}. Content in this section is adapted from the General
-          Legal Cookie Notice template.
+          {SITE_DOMAIN}.
         </p>
 
         <h3>What are cookies?</h3>
         <p>
           Cookies are small data files placed on your device when you visit a
           website. They help us understand how the Service is used and improve
-          your browsing experience. We use session cookies (which expire when you
-          close your browser) and persistent cookies (which remain until deleted).
+          your browsing experience.
         </p>
 
         <h3>Types of cookies we use</h3>
@@ -155,16 +154,11 @@ export default function PrivacyPolicyContent() {
             <strong>Cookie banner.</strong> On your first visit you may{" "}
             <strong>Accept</strong> or <strong>Decline</strong> analytics
             cookies. Your choice is stored in localStorage. Declining prevents
-            Google Analytics from loading. Clear site data to see the banner
-            again.
+            Google Analytics from loading.
           </li>
           <li>
             <strong>Browser controls.</strong> Most browsers let you block or
             delete cookies. Disabling cookies may affect site functionality.
-          </li>
-          <li>
-            <strong>Do Not Track.</strong> We do not currently respond to Do
-            Not Track signals.
           </li>
         </ul>
       </section>
@@ -188,6 +182,49 @@ export default function PrivacyPolicyContent() {
         </p>
       </section>
 
+      <section className="content-section" aria-labelledby="legal-bases">
+        <h2 id="legal-bases">Legal bases for processing (EEA and UK)</h2>
+        <p>
+          If you are in the European Economic Area (EEA) or the United Kingdom,
+          we process personal information only where we have a valid legal basis
+          under the GDPR or UK GDPR:
+        </p>
+        <div className="table-wrap">
+          <table className="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Purpose</th>
+                <th scope="col">Data involved</th>
+                <th scope="col">Legal basis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Service delivery and security</td>
+                <td>Device data, online activity data, server logs</td>
+                <td>
+                  Legitimate interests (operating and securing the Service) and,
+                  where applicable, compliance with law
+                </td>
+              </tr>
+              <tr>
+                <td>Analytics (if you accept cookies)</td>
+                <td>Device data, online activity data, cookies</td>
+                <td>Consent</td>
+              </tr>
+              <tr>
+                <td>Theme and calculator preferences (localStorage)</td>
+                <td>Preferences stored on your device</td>
+                <td>
+                  Legitimate interests (remembering your settings) or consent
+                  where required
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <section className="content-section" aria-labelledby="pi-share">
         <h2 id="pi-share">How we share your personal information</h2>
         <p>We may share personal information with:</p>
@@ -198,20 +235,87 @@ export default function PrivacyPolicyContent() {
             Google LLC (Google Analytics 4, if you accept analytics cookies).
           </li>
           <li>
-            <strong>Professional advisors</strong> (such as lawyers or auditors)
-            when needed for our business.
+            <strong>Professional advisors</strong> when needed for our business.
           </li>
           <li>
-            <strong>Authorities and others</strong> when we believe disclosure is
-            required or appropriate to comply with law or protect rights and
-            safety.
+            <strong>Authorities</strong> when required or permitted by law.
           </li>
           <li>
             <strong>Business transferees</strong> in connection with a merger,
-            acquisition, financing, or sale of assets.
+            acquisition, or sale of assets.
           </li>
         </ul>
-        <p>We do not sell your personal information for money.</p>
+        <p>We do not sell your personal information.</p>
+      </section>
+
+      <section className="content-section" aria-labelledby="pi-transfers">
+        <h2 id="pi-transfers">International data transfers</h2>
+        <p>
+          We are based in {OPERATOR_COUNTRY}. Some service providers (including
+          Vercel and Google) may process personal information in the United States
+          or other countries outside the EEA/UK. Where required, we rely on
+          appropriate safeguards such as the European Commission&apos;s Standard
+          Contractual Clauses or equivalent mechanisms. Contact us for more
+          information about transfer safeguards.
+        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="pi-retention">
+        <h2 id="pi-retention">Retention</h2>
+        <p>
+          We retain personal information only as long as needed for the purposes
+          described in this policy, including to comply with legal obligations
+          and resolve disputes. Analytics data retention is governed by our
+          service providers&apos; settings. Data stored in your browser
+          (localStorage) remains until you clear it.
+        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="eea-rights">
+        <h2 id="eea-rights">Your rights (EEA and UK)</h2>
+        <p>
+          If you are in the EEA or UK, you may have the right to access, correct,
+          delete, restrict, or object to certain processing of your personal
+          information, and to data portability where applicable. Where we rely on
+          consent, you may withdraw it at any time (for example, by declining
+          analytics cookies).
+        </p>
+        <p>
+          To exercise these rights, email{" "}
+          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a>.
+          We may need to verify your request before responding.
+        </p>
+        <p>
+          You may lodge a complaint with your local supervisory authority. In
+          Ireland, the supervisory authority is the{" "}
+          <a
+            href={DATA_PROTECTION_AUTHORITY_URL}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            {DATA_PROTECTION_AUTHORITY_NAME}
+          </a>
+          . EEA residents can find their authority via the{" "}
+          <a
+            href={EEA_SUPERVISORY_AUTHORITIES_URL}
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            European Data Protection Board
+          </a>
+          . UK residents may contact the Information Commissioner&apos;s Office
+          (ICO).
+        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="pi-controller">
+        <h2 id="pi-controller">Controller</h2>
+        <p>
+          {LEGAL_ENTITY_NAME}, operated from {OPERATOR_COUNTRY}, is the data
+          controller for personal information processed under this Privacy Policy
+          for users in the EEA and UK. Because we are established in Ireland, we
+          do not appoint a separate EU representative.
+        </p>
       </section>
 
       <section className="content-section" aria-labelledby="pi-choices">
@@ -225,10 +329,6 @@ export default function PrivacyPolicyContent() {
             Clear localStorage to remove theme and calculator preferences stored
             on your device.
           </li>
-          <li>
-            See State privacy rights notice below for additional rights that may
-            apply based on where you live.
-          </li>
         </ul>
       </section>
 
@@ -237,7 +337,7 @@ export default function PrivacyPolicyContent() {
         <p>
           We employ technical and organizational safeguards designed to protect
           personal information. However, no internet transmission or storage
-          system is completely secure, and we cannot guarantee absolute security.
+          system is completely secure.
         </p>
       </section>
 
@@ -245,9 +345,9 @@ export default function PrivacyPolicyContent() {
         <h2 id="pi-children">Children</h2>
         <p>
           The Service is not intended for anyone under 18 years of age. We do not
-          knowingly collect personal information from children. If you believe we
-          have collected information from a child, contact us at{" "}
-          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a>.
+          knowingly collect personal information from children. Contact us at{" "}
+          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a> if
+          you believe we have collected information from a child.
         </p>
       </section>
 
@@ -255,57 +355,36 @@ export default function PrivacyPolicyContent() {
         <h2 id="pi-changes">Changes to this Privacy Policy</h2>
         <p>
           We may update this Privacy Policy from time to time. The &ldquo;Last
-          updated&rdquo; date at the top reflects the latest version. Material
-          changes may be posted on the Service. Continued use after an update
-          means you acknowledge the revised policy.
+          updated&rdquo; date reflects the latest version. Material changes may
+          be posted on the Service.
         </p>
       </section>
 
       <section className="content-section" aria-labelledby="pi-contact">
         <h2 id="pi-contact">How to contact us</h2>
         <p>
-          Questions about this Privacy Policy or requests to exercise privacy
-          rights may be sent to{" "}
-          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a>.
+          Questions or privacy requests:{" "}
+          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a>
         </p>
       </section>
 
       <section className="content-section" aria-labelledby="state-rights">
-        <h2 id="state-rights">State privacy rights notice</h2>
+        <h2 id="state-rights">Additional notice for U.S. residents</h2>
         <p>
-          Depending on where you live, U.S. state privacy laws may grant you
-          rights regarding your personal information, such as rights to know,
-          access, correct, delete, or opt out of certain processing. Because we
-          do not sell personal information or use it for targeted advertising,
-          many opt-out rights may not apply to our current practices.
+          If you live in the United States, state privacy laws may grant
+          additional rights (such as access, correction, or deletion). We do not
+          sell personal information or use it for targeted advertising.
         </p>
         <p>
-          <strong>California residents.</strong> You may have rights under the
-          California Consumer Privacy Act (CCPA), as amended by the CPRA,
-          including the right to know what personal information we collect, the
-          right to delete personal information, and the right to correct
-          inaccurate personal information. We do not sell or share personal
-          information for cross-context behavioral advertising. To exercise
-          rights, email{" "}
-          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a>.
-          We may need to verify your request before responding.
+          <strong>California residents</strong> may have rights under the CCPA/CPRA.
+          Contact{" "}
+          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a> to
+          exercise them.
         </p>
         <p>
-          <strong>Colorado, Connecticut, Virginia, and other states.</strong>{" "}
-          Residents of states with comprehensive privacy laws may have similar
-          rights. Contact us at{" "}
-          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a>{" "}
-          for requests. We will respond as required by applicable law.
-        </p>
-        <p>
-          <strong>Nevada residents.</strong> We do not sell covered information
-          as defined under Nevada law. You may still contact us at{" "}
-          <a href={`mailto:${LEGAL_CONTACT_EMAIL}`}>{LEGAL_CONTACT_EMAIL}</a> with
-          questions.
-        </p>
-        <p>
-          We will not discriminate against you for exercising privacy rights
-          permitted by law.
+          Residents of Colorado, Connecticut, Virginia, Nevada, and other states
+          with privacy laws may contact us at the same address for applicable
+          requests.
         </p>
       </section>
 
