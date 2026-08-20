@@ -34,8 +34,8 @@ export default function GoogleAdsBreakEvenPage() {
       <p className="intro">
         Google Ads reports conversion value ROAS — not profit ROAS. Before you
         set <strong>target ROAS (tROAS)</strong> bidding on Search, Shopping, or
-        Performance Max, calculate the minimum ROAS where your margin covers ad
-        spend.
+        Performance Max, calculate the Google Ads break-even point: the minimum
+        ROAS where your margin covers ad spend.
       </p>
 
       <section className="content-section" aria-labelledby="find-margin">
@@ -56,8 +56,13 @@ export default function GoogleAdsBreakEvenPage() {
         </ul>
       </section>
 
-      <section className="content-section" aria-labelledby="calculate-floor">
-        <h2 id="calculate-floor">Step 2: Calculate break-even ROAS</h2>
+      <section className="content-section" aria-labelledby="from-margin">
+        <h2 id="from-margin">Google Ads break-even ROAS from margin</h2>
+        <p>
+          Your Google Ads break-even ROAS from margin is the floor before you set
+          tROAS. Platform ROAS is revenue ÷ spend; break-even ROAS also accounts
+          for COGS and per-order fees.
+        </p>
         <p className="formula-block">
           Break-even ROAS = AOV ÷ [(AOV × margin%) − fixed cost per order]
         </p>
@@ -68,16 +73,20 @@ export default function GoogleAdsBreakEvenPage() {
           </p>
         </div>
         <p>
-          Use the{" "}
-          <Link href="/break-even-roas-calculator">Break Even ROAS Calculator</Link>{" "}
-          for instant results, or the{" "}
+          <strong>tROAS vs break-even:</strong> break-even is the minimum; Target
+          ROAS (tROAS) should usually sit 10–25% above that floor so campaigns
+          stay profitable under variance. Use the{" "}
+          <Link href="/break-even-roas-calculator">
+            Break Even ROAS Calculator
+          </Link>{" "}
+          for the floor, then the{" "}
           <Link href="/target-roas-calculator">Target ROAS Calculator</Link> to
-          add a profit buffer before you set tROAS.
+          add a buffer before you set tROAS.
         </p>
       </section>
 
       <section className="content-section" aria-labelledby="set-troas">
-        <h2 id="set-troas">Step 3: Set target ROAS in Google Ads</h2>
+        <h2 id="set-troas">Step 2: Set target ROAS in Google Ads</h2>
         <ol>
           <li>
             Open campaign → <strong>Settings</strong> → <strong>Bidding</strong>.

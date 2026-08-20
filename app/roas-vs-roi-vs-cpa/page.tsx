@@ -29,6 +29,11 @@ const PAGE_FAQ = [
     answer:
       "Optimize to the metric your bid strategy uses. Target CPA needs a max CPA ceiling; Target ROAS needs a break-even ROAS floor. Max CPC is for manual or CPC-capped bids.",
   },
+  {
+    question: "Target CPA vs Target ROAS — which should I use?",
+    answer:
+      "Use Target CPA when you bid on cost per conversion in dollars (stable AOV or leads). Use Target ROAS when conversion value varies and you optimize to a revenue multiple. Same contribution math: max CPA = contribution; break-even ROAS = AOV ÷ contribution.",
+  },
 ] as const;
 
 export const metadata: Metadata = buildPageMetadata(PAGE);
@@ -246,8 +251,10 @@ export default function RoasVsRoiVsCpaPage() {
           <Link href="/break-even-roas-calculator">
             Break Even ROAS Calculator
           </Link>{" "}
-          when bidding on Target ROAS. Do not mix a ROAS floor with a CPA bid
-          without converting units first.
+          when bidding on Target ROAS. For Target CPA vs Target ROAS in practice,
+          see the{" "}
+          <Link href="/target-roas-calculator">Target ROAS Calculator</Link>. Do
+          not mix a ROAS floor with a CPA bid without converting units first.
         </p>
       </section>
 

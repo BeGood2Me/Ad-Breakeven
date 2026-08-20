@@ -48,6 +48,11 @@ const PAGE_FAQ = [
     answer: CONTRIBUTION_MARGIN_DEFINITION,
   },
   {
+    question: "What is contribution margin break-even ROAS?",
+    answer:
+      "Contribution margin break-even ROAS is AOV ÷ contribution per order. Contribution = (AOV × gross margin %) − fixed cost. That is the minimum ROAS after product costs — use the Break Even ROAS Calculator for an instant number.",
+  },
+  {
     question: "Does conversion rate affect break-even ROAS?",
     answer:
       "No. Break-even ROAS depends on margin and value per conversion. Conversion rate affects max CPC and how much traffic you can afford at a given bid.",
@@ -119,20 +124,21 @@ export default function HowToCalculateRoasPage() {
         aria-labelledby="contribution-margin"
       >
         <h2 id="contribution-margin">
-          Contribution margin: the source of break-even ROAS
+          Contribution margin break-even ROAS
         </h2>
         <p>
-          For ecommerce, contribution margin per order is what you keep after
-          product costs and per-order fees — before ads:
+          Break-even ROAS always starts from{" "}
+          <strong>contribution margin</strong> — what you keep after product
+          costs and per-order fees, before ads. For ecommerce:
         </p>
         <p className="formula-block">
           Contribution = (AOV × gross margin %) − fixed cost per order
         </p>
         <p>
           That contribution is also your{" "}
-          <Link href="/max-cpa-calculator">max CPA</Link>. Break-even ROAS is
-          simply how much revenue you need per dollar of ad spend so that
-          contribution covers the spend:
+          <Link href="/max-cpa-calculator">max CPA</Link>. Contribution margin
+          break-even ROAS is how much revenue you need per dollar of ad spend so
+          that contribution covers the spend:
         </p>
         <p className="formula-block">
           Break-even ROAS = AOV ÷ contribution per order

@@ -15,7 +15,7 @@ import {
 const PAGE = {
   title: "Max CPA Calculator (Free) | Break-Even Cost Per Acquisition",
   description:
-    "Free max CPA calculator: (AOV × margin) − fixed costs. Set Target CPA for Google Ads & Meta. Ecommerce + lead gen. No signup.",
+    "Free max CPA calculator for ecommerce and lead gen. Find your break-even CPA / max cost per acquisition from margin — set Target CPA in Google Ads or Meta. No signup.",
   path: "/max-cpa-calculator",
 };
 
@@ -23,6 +23,11 @@ const PAGE_FAQ = [
   {
     question: "What is max CPA?",
     answer: MAX_CPA_DEFINITION,
+  },
+  {
+    question: "Is break-even CPA the same as max CPA?",
+    answer:
+      "Yes. Break-even CPA and max CPA are the same number: contribution margin per conversion. This max CPA calculator returns that break-even ceiling for ecommerce purchases or lead gen cost per lead.",
   },
   {
     question: "How do you calculate max CPA?",
@@ -65,10 +70,10 @@ export default function MaxCpaPage() {
 
       <h1>Max CPA Calculator</h1>
       <p className="intro">
-        Find the highest cost per acquisition you can afford before ads lose
-        money. Max CPA equals your contribution margin per conversion — for
-        ecommerce that is a purchase cap; for lead gen (toggle below) it is max
-        cost per lead. Free, no signup.
+        Free max CPA calculator — find the highest cost per acquisition (also
+        called break-even CPA) you can afford before ads lose money. Max CPA
+        equals contribution margin per conversion: a purchase cap for ecommerce,
+        or max cost per lead in lead gen mode. No signup.
       </p>
 
       <QuickAnswer>
@@ -91,6 +96,22 @@ export default function MaxCpaPage() {
           </Link>{" "}
           or the{" "}
           <Link href="/max-cpa-guide">How to Set Target CPA</Link> guide.
+        </p>
+      </section>
+
+      <section className="content-section" aria-labelledby="breakeven-cpa">
+        <h2 id="breakeven-cpa">Break-even CPA = max CPA</h2>
+        <p>
+          Searchers often look for a <strong>break-even CPA</strong> or{" "}
+          <strong>CPA breakeven ads calculator</strong>. That number is the same
+          as max CPA from this calculator: contribution per conversion after
+          margin and fixed costs. If your live CPA sits above that ceiling, the
+          campaign loses money after product costs — even when ROAS looks
+          acceptable.
+        </p>
+        <p>
+          Use the result as a Target CPA ceiling in Google Ads or Meta, or as a
+          benchmark for cost per purchase / cost per lead reporting.
         </p>
       </section>
 
@@ -138,6 +159,28 @@ export default function MaxCpaPage() {
             against it.
           </p>
         </div>
+      </section>
+
+      <section className="content-section" aria-labelledby="max-cost-per-lead">
+        <h2 id="max-cost-per-lead">
+          Max cost per lead calculator (lead gen)
+        </h2>
+        <p>
+          For lead gen, this max CPA calculator is your{" "}
+          <strong>max cost per lead calculator</strong>. Toggle{" "}
+          <strong>lead gen</strong> mode, enter customer value, close rate,
+          margin, and any fixed cost per lead. The result is max cost per lead —
+          not max cost per closed deal.
+        </p>
+        <p className="formula-block">
+          Max cost per lead = (customer value × close rate × margin%) − fixed
+          cost per lead
+        </p>
+        <p>
+          CRM closed-deal cap = max cost per lead ÷ close rate. Compare ad
+          platform cost per lead to the calculator result; use the closed-deal
+          cap only in your CRM or sales reporting.
+        </p>
       </section>
 
       <section className="content-section" aria-labelledby="leadgen-example">

@@ -59,12 +59,12 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "What is max CPA?",
-    plainAnswer: MAX_CPA_DEFINITION,
+    plainAnswer: `${MAX_CPA_DEFINITION} Also called break-even CPA — use the Max CPA Calculator for your number.`,
     answer: (
       <>
-        {MAX_CPA_DEFINITION} See{" "}
-        <Link href="/max-cpa-guide">How to Set Target CPA</Link> or calculate it
-        with the <Link href="/max-cpa-calculator">Max CPA Calculator</Link>.
+        {MAX_CPA_DEFINITION} It is the same as break-even CPA. Calculate it with
+        the <Link href="/max-cpa-calculator">max CPA calculator</Link>, or read{" "}
+        <Link href="/max-cpa-guide">How to Set Target CPA</Link>.
       </>
     ),
   },
@@ -73,9 +73,10 @@ export const FAQ_ITEMS: FaqItem[] = [
     plainAnswer: `${MAX_CPC_DEFINITION} Example: $50 max CPA at 2% conversion → $1.00 max CPC.`,
     answer: (
       <>
-        {MAX_CPC_DEFINITION} Example: $50 max CPA at 2% conversion → $1.00 max
-        CPC. Try the <Link href="/max-cpc-calculator">Max CPC Calculator</Link>{" "}
-        with your numbers.
+        Find max CPA first, then multiply by conversion rate (as a decimal).
+        Example: $50 max CPA at 2% conversion → $1.00 max CPC. Use the{" "}
+        <Link href="/max-cpc-calculator">Max CPC Calculator</Link> to calculate
+        max CPC from your margin and conversion rate.
       </>
     ),
   },

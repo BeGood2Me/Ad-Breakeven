@@ -16,9 +16,9 @@ import { BREAK_EVEN_ROAS_DEFINITION } from "@/lib/snippet-definitions";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
 const PAGE = {
-  title: "Break-even ROAS by Margin (Table) | Free Reference",
+  title: "Break-even ROAS by Margin Table | 10%–80% Reference",
   description:
-    "Break-even ROAS for 10%–80% gross margin. Full table, formula, and worked examples. See how shipping and fees raise your floor. Free calculator.",
+    "Break-even ROAS by margin for 10%–80% gross margin. Full table, formula, and worked examples with shipping and fees. Free calculator.",
   path: "/break-even-roas-by-margin",
 };
 
@@ -78,10 +78,13 @@ export default function BreakEvenRoasByMarginPage() {
       />
       <JsonLd data={faqSchema([...PAGE_FAQ])} />
 
-      <h1>Break-even ROAS by margin</h1>
+      <h1>Break-even ROAS by margin table</h1>
       <p className="intro">
+        Look up break-even ROAS by margin from 10% to 80%.{" "}
         {BREAK_EVEN_ROAS_DEFINITION} Use this table as a quick reference, then{" "}
-        <Link href="/break-even-roas-calculator">calculate your exact floor</Link>{" "}
+        <Link href="/break-even-roas-calculator">
+          calculate your exact break-even ROAS
+        </Link>{" "}
         with AOV and fixed costs.
       </p>
 

@@ -51,6 +51,11 @@ const PAGE_FAQ = [
     answer:
       "Yes. Ad Breakeven’s break even ROAS calculator is free, with no signup. Results are shareable via URL.",
   },
+  {
+    question: "Can I use this as a break even calculator for dropshipping?",
+    answer:
+      "Yes. Enter your product sell price as AOV, real landed gross margin, and shipping or payment fees as fixed cost per order. Thin dropshipping margins often need a much higher break-even ROAS than a generic 3× target.",
+  },
 ] as const;
 
 export const metadata: Metadata = buildPageMetadata(PAGE);
@@ -115,6 +120,34 @@ export default function BreakEvenRoasPage() {
         </div>
       </section>
 
+      <section className="content-section" aria-labelledby="dropshipping">
+        <h2 id="dropshipping">Dropshipping break-even ROAS</h2>
+        <p>
+          Dropshipping margins are often thin once product cost, shipping, and
+          payment fees are included. A generic “3× ROAS” target can still lose
+          money. Use this break even calculator for dropshipping by entering
+          your real landed margin and per-order shipping.
+        </p>
+        <div className="example-box">
+          <ul>
+            <li>Product sell price (AOV) = $25</li>
+            <li>Gross margin after product cost = 20%</li>
+            <li>Shipping + payment fees = $4 fixed cost per order</li>
+          </ul>
+          <p>
+            Contribution = ($25 × 20%) − $4 = $5 − $4 = <strong>$1</strong>
+          </p>
+          <p>
+            Break-even ROAS = $25 ÷ $1 = <strong>25×</strong>
+          </p>
+          <p>
+            At that margin, ads must return $25 of revenue for every $1 of ad
+            spend just to break even — which is why low-margin dropshipping
+            rarely works on paid traffic without raising price or cutting costs.
+          </p>
+        </div>
+      </section>
+
       <section className="content-section" aria-labelledby="quick-table">
         <h2 id="quick-table">Quick break-even ROAS by margin</h2>
         <div className="table-wrap">
@@ -138,7 +171,7 @@ export default function BreakEvenRoasPage() {
         <p>
           Full table:{" "}
           <Link href="/break-even-roas-by-margin">
-            break-even ROAS by margin
+            break-even ROAS by margin table
           </Link>
           .
         </p>
@@ -175,12 +208,12 @@ export default function BreakEvenRoasPage() {
           },
           {
             before: "Convert your floor to a purchase cap with the ",
-            linkText: "Max CPA Calculator",
+            linkText: "max CPA calculator",
             href: "/max-cpa-calculator",
-            after: ".",
+            after: " (break-even CPA).",
           },
           {
-            before: "Turn CPA into a click bid with the ",
+            before: "Learn how to calculate max CPC with the ",
             linkText: "Max CPC Calculator",
             href: "/max-cpc-calculator",
             after: ".",

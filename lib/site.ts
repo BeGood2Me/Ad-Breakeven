@@ -63,7 +63,7 @@ export const ALL_PAGES = [
   { href: "/max-cpc-calculator", title: "Max CPC Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/ad-profit-calculator", title: "Ad Profit Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/how-to-calculate-break-even-roas", title: "How to Calculate Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
-  { href: "/break-even-roas-by-margin", title: "Break-even ROAS by Margin", changefreq: "monthly" as const, priority: 0.9 },
+  { href: "/break-even-roas-by-margin", title: "Break-even ROAS by Margin Table", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/what-is-a-good-roas", title: "What Is a Good ROAS?", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/max-cpa-guide", title: "How to Set Target CPA", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/google-ads-break-even", title: "Google Ads Break-even ROAS", changefreq: "monthly" as const, priority: 0.85 },
@@ -93,25 +93,25 @@ export const TOOL_LINKS = [
     href: "/max-cpa-calculator",
     title: "Max CPA Calculator",
     description:
-      "Highest CPA (ecommerce) or cost per lead (lead gen) from margin, AOV or deal value, and close rate.",
+      "Free max CPA calculator — break-even CPA or max cost per lead from margin, AOV or deal value, and close rate.",
   },
   {
     href: "/max-cpc-calculator",
     title: "Max CPC Calculator",
     description:
-      "Break-even CPC from margin, max CPA, and conversion rate — bid planning for Google and Meta ads.",
+      "How to calculate max CPC from max CPA and conversion rate — break-even bid ceilings for Google Ads and Meta.",
   },
   {
     href: "/ad-profit-calculator",
     title: "Ad Profit Calculator",
     description:
-      "Net ad profit after spend and costs, compared to your break-even ROAS — with tailored next steps.",
+      "Ecommerce real ROAS after product costs — net ad profit vs break-even, with tailored next steps.",
   },
 ] as const;
 
 export const GUIDE_DESCRIPTIONS: Record<string, string> = {
   "/break-even-roas-by-margin":
-    "Full break-even ROAS table for 10%–80% gross margin with formula and fixed-cost examples",
+    "Break-even ROAS by margin table for 10%–80% gross margin with formula and fixed-cost examples",
   "/how-to-calculate-break-even-roas":
     "Break-even ROAS formula walkthrough from contribution margin — ecommerce and lead gen examples (use the calculator for instant results)",
   "/what-is-a-good-roas":

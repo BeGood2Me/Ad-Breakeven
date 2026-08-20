@@ -13,9 +13,9 @@ import {
 } from "@/lib/snippet-definitions";
 
 const PAGE = {
-  title: "Max CPC Calculator (Free) | Break-Even Bid From Your CPA",
+  title: "Max CPC Calculator (Free) | How to Calculate Break-Even CPC",
   description:
-    "Free max CPC calculator from max CPA and conversion rate. Set Google Ads & Meta bid ceilings that still break even. No signup.",
+    "Free max CPC calculator: learn how to calculate max CPC from max CPA and conversion rate. Set Google Ads and Meta bid ceilings that still break even. No signup.",
   path: "/max-cpc-calculator",
 };
 
@@ -23,6 +23,11 @@ const PAGE_FAQ = [
   {
     question: "What is max CPC?",
     answer: MAX_CPC_DEFINITION,
+  },
+  {
+    question: "How do I calculate max CPC from margin?",
+    answer:
+      "First find max CPA from AOV (or lead value), margin, and fixed costs. Then max CPC = max CPA × conversion rate (as a decimal). Example: $40 max CPA at 2% CVR → $0.80 max CPC.",
   },
   {
     question: "How do you calculate max CPC?",
@@ -59,10 +64,10 @@ export default function MaxCpcPage() {
 
       <h1>Max CPC Calculator</h1>
       <p className="intro">
-        Calculate the highest cost per click you can afford before ads lose
-        money. Max CPC comes from your{" "}
-        <Link href="/max-cpa-calculator">max CPA</Link> and conversion rate —
-        free, no signup.
+        Free max CPC calculator — learn how to calculate max CPC from your{" "}
+        <Link href="/max-cpa-calculator">max CPA</Link> and conversion rate.
+        Get a break-even bid ceiling for Google Ads or Meta before you scale.
+        No signup.
       </p>
 
       <QuickAnswer>
@@ -71,6 +76,39 @@ export default function MaxCpcPage() {
       </QuickAnswer>
 
       <MaxCpcCalculator />
+
+      <section className="content-section" aria-labelledby="how-to-calc">
+        <h2 id="how-to-calc">How to calculate max CPC</h2>
+        <p>
+          Calculating max CPC is a two-step process: get your break-even cost
+          per conversion, then scale it by conversion rate.
+        </p>
+        <ol>
+          <li>
+            Find{" "}
+            <Link href="/max-cpa-calculator">max CPA</Link> from margin and AOV
+            (or lead value × close rate). That is your break-even cost per
+            conversion.
+          </li>
+          <li>Measure landing-page conversion rate for the campaign.</li>
+          <li>
+            Multiply: <strong>max CPC = max CPA × conversion rate</strong>{" "}
+            (use a decimal — 2% = 0.02).
+          </li>
+          <li>
+            Cap manual bids near that number, or use it as a sanity check under
+            Smart Bidding.
+          </li>
+        </ol>
+        <div className="example-box">
+          <p>
+            Example: max CPA <strong>$50</strong>, conversion rate{" "}
+            <strong>2%</strong> → max CPC = $50 × 0.02 = <strong>$1.00</strong>.
+            At $1.20 CPC with the same conversion rate, you are above break-even
+            on a cost-per-click basis.
+          </p>
+        </div>
+      </section>
 
       <section className="content-section" aria-labelledby="what-is-max-cpc">
         <h2 id="what-is-max-cpc">What is max CPC?</h2>
@@ -93,29 +131,6 @@ export default function MaxCpcPage() {
           gen: it is max cost per lead. Conversion rate is a decimal (2% =
           0.02).
         </p>
-      </section>
-
-      <section className="content-section" aria-labelledby="how-to-calc">
-        <h2 id="how-to-calc">How to calculate max CPC</h2>
-        <ol>
-          <li>
-            Find{" "}
-            <Link href="/max-cpa-calculator">max CPA</Link> from margin and AOV
-            (or lead value × close rate).
-          </li>
-          <li>Measure landing-page conversion rate for the campaign.</li>
-          <li>Multiply: max CPC = max CPA × conversion rate.</li>
-          <li>
-            Cap manual bids near that number, or use it as a sanity check under
-            Smart Bidding.
-          </li>
-        </ol>
-        <div className="example-box">
-          <p>
-            Example: max CPA <strong>$50</strong>, conversion rate{" "}
-            <strong>2%</strong> → max CPC = $50 × 0.02 = <strong>$1.00</strong>.
-          </p>
-        </div>
       </section>
 
       <section className="content-section" aria-labelledby="max-cpc-vs-cpa">

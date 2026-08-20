@@ -9,8 +9,8 @@ import { QUICK_ANSWERS } from "@/lib/snippet-definitions";
 
 const HOME_GUIDES = [
   { href: "/how-to-calculate-break-even-roas", label: "ROAS formula" },
-  { href: "/max-cpa-calculator", label: "Max CPA" },
-  { href: "/max-cpc-calculator", label: "Max CPC" },
+  { href: "/max-cpa-calculator", label: "Max CPA calculator" },
+  { href: "/max-cpc-calculator", label: "How to calculate max CPC" },
   { href: "/what-is-a-good-roas", label: "Good ROAS?" },
 ] as const;
 
@@ -45,9 +45,11 @@ export default function HomePage() {
           signup. Need only break-even ROAS? Use the{" "}
           <Link href="/break-even-roas-calculator">
             Break Even ROAS Calculator
-          </Link>{" "}
-          or add the{" "}
-          <Link href="/widgets">free widget</Link>.
+          </Link>
+          . For a purchase or lead cap, open the{" "}
+          <Link href="/max-cpa-calculator">max CPA calculator</Link>
+          {" "}or{" "}
+          <Link href="/widgets">free widgets</Link>.
         </p>
       </header>
 
