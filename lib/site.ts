@@ -49,6 +49,9 @@ export const NAV_LINKS = [...CALCULATOR_NAV_LINKS, ...GUIDE_NAV_LINKS] as const;
 
 export const WIDGETS_PAGE_PATH = "/widgets";
 
+export const CHROME_EXTENSION_URL =
+  "https://chromewebstore.google.com/detail/ad-breakeven/dibkhghkhakogmoipomajmpoolapojim";
+
 export const WIDGETS_NAV_LINK = {
   href: WIDGETS_PAGE_PATH,
   label: "Free Widgets",
@@ -70,6 +73,7 @@ export const ALL_PAGES = [
   { href: "/roas-vs-roi-vs-cpa", title: "ROAS vs ROI vs CPA", changefreq: "monthly" as const, priority: 0.85 },
   { href: "/guides", title: "Ad Breakeven Guides", changefreq: "monthly" as const, priority: 0.8 },
   { href: WIDGETS_PAGE_PATH, title: "Free Ad Breakeven Widgets", changefreq: "monthly" as const, priority: 0.75 },
+  { href: "/extension", title: "Chrome Extension", changefreq: "yearly" as const, priority: 0.5 },
   { href: "/faq", title: FAQ_PAGE_TITLE, changefreq: "monthly" as const, priority: 0.7 },
   { href: "/about", title: "About Ad Breakeven", changefreq: "yearly" as const, priority: 0.5 },
   { href: "/privacy", title: "Privacy Policy", changefreq: "yearly" as const, priority: 0.3 },

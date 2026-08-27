@@ -37,12 +37,12 @@ How to use
 Permissions
 storage — remembers AOV, margin, and related inputs on this device. Nothing is sent to a server.
 
-Website: https://adbreakeven.com/widgets
+Website: https://adbreakeven.com/extension
 Privacy: https://adbreakeven.com/privacy
 
 ## Official / homepage URL
 
-https://adbreakeven.com/widgets
+https://adbreakeven.com/extension
 
 ## Support URL
 

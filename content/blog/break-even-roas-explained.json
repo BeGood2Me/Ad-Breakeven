@@ -5,7 +5,7 @@
   "publishedAt": "2026-07-16",
   "updatedAt": "2026-08-06",
   "seo": {
-    "title": "What Is Break-Even ROAS? Meaning, Formula & Calculator",
+    "title": "What Is Break-Even ROAS? Meaning and Formula",
     "description": "What is break-even ROAS (breakeven ROAS)? Meaning, contribution-margin formula, ecommerce examples, and free calculator. Platform ROAS is not the same.",
     "keywords": [
       "what is break even roas",
@@ -28,6 +28,13 @@
       "id": "definition",
       "heading": "What is break-even ROAS? (breakeven ROAS meaning)",
       "blocks": [
+        {
+          "type": "link",
+          "before": "To run your numbers, use the ",
+          "linkText": "Break Even ROAS Calculator",
+          "href": "/break-even-roas-calculator",
+          "after": "."
+        },
         {
           "type": "paragraph",
           "text": "ROAS (return on ad spend) is revenue divided by ad spend. Break-even ROAS is the ROAS where contribution margin equals ad spend — profit after product costs is zero. Any ROAS below that threshold means you lose money on each conversion, even when revenue looks healthy."
@@ -79,11 +86,8 @@
           ]
         },
         {
-          "type": "link",
-          "before": "Run your own numbers in the ",
-          "linkText": "Break-even ROAS Calculator",
-          "href": "/break-even-roas-calculator",
-          "after": "."
+          "type": "paragraph",
+          "text": "Apply the formula above with your own AOV, margin, and fixed costs per order."
         }
       ]
     },

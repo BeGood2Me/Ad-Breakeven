@@ -56,6 +56,21 @@ const PAGE_FAQ = [
     answer:
       "Yes. Enter your product sell price as AOV, real landed gross margin, and shipping or payment fees as fixed cost per order. Thin dropshipping margins often need a much higher break-even ROAS than a generic 3× target.",
   },
+  {
+    question: "Is a 3× ROAS always profitable?",
+    answer:
+      "No. Whether 3× is profitable depends on margin. At 40% margin with no fixed costs, break-even ROAS is 2.5×, so 3× is profit. At 20% margin, break-even is 5×, so 3× loses money on every sale. Use this calculator with your real margin instead of a generic 3× target.",
+  },
+  {
+    question: "Does break-even ROAS include shipping and fees?",
+    answer:
+      "Yes, if you enter them as fixed cost per order. Contribution is (AOV × gross margin %) minus that fixed cost. Leaving shipping and payment fees out understates the floor. With no fixed costs, the formula simplifies to 1 ÷ margin.",
+  },
+  {
+    question: "Should I set Google Ads tROAS at break-even?",
+    answer:
+      "No. Break-even ROAS is the floor, not the bid target. Set Target ROAS above break-even so there is room for profit, returns, and attribution gaps. Use the Target ROAS Calculator for that number: /target-roas-calculator",
+  },
 ] as const;
 
 export const metadata: Metadata = buildPageMetadata(PAGE);
