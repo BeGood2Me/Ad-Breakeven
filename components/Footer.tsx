@@ -19,7 +19,7 @@ export default function Footer() {
           <h2>Calculators</h2>
           <ul className="footer-links">
             <li>
-              <Link href="/">Break-even Ads Calculator</Link>
+              <Link href="/">Calculator Hub</Link>
             </li>
             {TOOL_LINKS.map(({ href, title }) => (
               <li key={href}>

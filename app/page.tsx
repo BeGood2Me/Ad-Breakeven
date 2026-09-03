@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import BreakEvenAdsCalculator from "@/components/calculators/BreakEvenAdsCalculator";
+import JsonLd from "@/components/JsonLd";
 import { QuickAnswer } from "@/components/QuickAnswer";
 import { ToolsSection } from "@/components/ToolsSection";
 import { PILLAR_INDEX } from "@/generated/content-manifest";
-import { buildPageMetadata, CalculatorJsonLd } from "@/lib/page-metadata";
+import { buildPageMetadata } from "@/lib/page-metadata";
+import { breadcrumbSchema } from "@/lib/schema";
 import { QUICK_ANSWERS } from "@/lib/snippet-definitions";
 
 const HOME_GUIDES = [
@@ -22,9 +24,9 @@ const HOME_BLOG_LABELS: Record<string, string> = {
 };
 
 const PAGE = {
-  title: "Break-even Ads Calculator (Free) | ROAS + CPA + CPC Hub",
+  title: "Ad Calculator Hub (Free) | ROAS, CPA & CPC Tools",
   description:
-    "Free hub calculator for break-even ad planning: ROAS, max CPA, and max CPC from your margin. For a ROAS-only floor, use the Break Even ROAS Calculator. No signup.",
+    "Free hub for break-even ad planning across ROAS, max CPA, and max CPC. For a dedicated ROAS floor, use the Break Even ROAS Calculator. No signup.",
   path: "/",
 };
 
@@ -33,16 +35,14 @@ export const metadata: Metadata = buildPageMetadata(PAGE);
 export default function HomePage() {
   return (
     <article className="page-content home-page">
-      <CalculatorJsonLd
-        title="Break-even Ads Calculator"
-        description={PAGE.description}
-        path={PAGE.path}
+      <JsonLd
+        data={breadcrumbSchema([{ name: "Ad Calculator Hub", path: "/" }])}
       />
       <header className="home-hero">
-        <h1>Break-even Ads Calculator</h1>
+        <h1>Ad Calculator Hub</h1>
         <p className="intro intro--short">
           One hub for ROAS, CPA, and CPC floors from your margin — free, no
-          signup. Need only break-even ROAS? Use the{" "}
+          signup. For break-even ROAS only, use the{" "}
           <Link href="/break-even-roas-calculator">
             Break Even ROAS Calculator
           </Link>

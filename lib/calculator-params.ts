@@ -51,6 +51,23 @@ export const CALCULATOR_PARAM_KEYS = [
   "sales",
 ] as const;
 
+/** True when URL params represent a user-shared calculation (not defaults). */
+export function hasMeaningfulCalculatorParams(
+  search: string | URLSearchParams | Record<string, string>
+): boolean {
+  const params =
+    typeof search === "string"
+      ? parseParamsFromSearch(search.startsWith("?") ? search : `?${search}`)
+      : search instanceof URLSearchParams
+        ? Object.fromEntries(search.entries())
+        : search;
+
+  return CALCULATOR_PARAM_KEYS.some((key) => {
+    if (key === "model") return params[key] === "leadgen";
+    return (params[key] ?? "").trim() !== "";
+  });
+}
+
 export function extractCalculatorParams(
   search: string | Record<string, string>
 ): Record<string, string> {
@@ -66,11 +83,7 @@ export function extractCalculatorParams(
 }
 
 export function serializeParams(params: Record<string, string>): string {
-  const hasContent = CALCULATOR_PARAM_KEYS.some((key) => {
-    if (key === "model") return params.model === "leadgen";
-    return (params[key] ?? "").trim() !== "";
-  });
-  if (!hasContent) return "";
+  if (!hasMeaningfulCalculatorParams(params)) return "";
 
   const search = new URLSearchParams();
   Object.entries(params).forEach(([key, value]) => {

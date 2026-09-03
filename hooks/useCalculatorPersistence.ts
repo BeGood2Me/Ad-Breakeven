@@ -16,9 +16,11 @@ export function useCalculatorPersistence(
 ) {
   const [hydrated, setHydrated] = useState(false);
   const onLoadRef = useRef(onLoad);
+  const skipShareUrlSync = useRef(true);
   onLoadRef.current = onLoad;
 
   useEffect(() => {
+    skipShareUrlSync.current = true;
     onLoadRef.current(mergeCalculatorState(defaults, id));
     setHydrated(true);
   }, [id, defaults]);
@@ -26,6 +28,10 @@ export function useCalculatorPersistence(
   useEffect(() => {
     if (!hydrated) return;
     saveCalculatorState(id, values);
+    if (skipShareUrlSync.current) {
+      skipShareUrlSync.current = false;
+      return;
+    }
     updateShareUrl(values);
   }, [id, values, hydrated]);
 

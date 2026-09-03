@@ -1,6 +1,6 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
-import { CALCULATOR_PARAM_KEYS } from "@/lib/calculator-params";
+import { hasMeaningfulCalculatorParams } from "@/lib/calculator-params";
 
 const CALCULATOR_PATHS = new Set([
   "/",
@@ -9,10 +9,6 @@ const CALCULATOR_PATHS = new Set([
   "/max-cpc-calculator",
   "/ad-profit-calculator",
 ]);
-
-function hasCalculatorShareParams(searchParams: URLSearchParams): boolean {
-  return CALCULATOR_PARAM_KEYS.some((key) => searchParams.has(key));
-}
 
 export function middleware(request: NextRequest) {
   const { pathname, searchParams } = request.nextUrl;
@@ -25,7 +21,7 @@ export function middleware(request: NextRequest) {
 
   if (
     CALCULATOR_PATHS.has(pathname) &&
-    hasCalculatorShareParams(searchParams)
+    hasMeaningfulCalculatorParams(searchParams)
   ) {
     response.headers.set("X-Robots-Tag", "noindex, follow");
   }

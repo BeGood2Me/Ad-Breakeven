@@ -217,7 +217,7 @@ export default function BreakEvenRoasPage() {
           },
           {
             before: "See ROAS, CPA, and CPC together on the ",
-            linkText: "Break-even Ads Calculator",
+            linkText: "Calculator Hub",
             href: "/",
             after: ".",
           },

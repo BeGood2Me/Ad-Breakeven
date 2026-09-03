@@ -10,7 +10,7 @@ export const GA_MEASUREMENT_ID =
   process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "G-777FR0Y1TN";
 
 export const CALCULATOR_NAV_LINKS = [
-  { href: "/", label: "Break-even Calculator", shortLabel: "Break-even" },
+  { href: "/", label: "Calculator Hub", shortLabel: "Hub" },
   { href: "/break-even-roas-calculator", label: "Break Even ROAS Calculator", shortLabel: "ROAS" },
   { href: "/max-cpa-calculator", label: "Max CPA Calculator", shortLabel: "Max CPA" },
   { href: "/max-cpc-calculator", label: "Max CPC Calculator", shortLabel: "Max CPC" },
@@ -59,8 +59,8 @@ export const WIDGETS_NAV_LINK = {
 } as const;
 
 export const ALL_PAGES = [
-  { href: "/", title: "Break-even Ads Calculator", changefreq: "weekly" as const, priority: 1.0 },
-  { href: "/break-even-roas-calculator", title: "Break Even ROAS Calculator", changefreq: "monthly" as const, priority: 0.9 },
+  { href: "/", title: "Ad Calculator Hub", changefreq: "weekly" as const, priority: 0.95 },
+  { href: "/break-even-roas-calculator", title: "Break Even ROAS Calculator", changefreq: "weekly" as const, priority: 1.0 },
   { href: "/target-roas-calculator", title: "Target ROAS Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/max-cpa-calculator", title: "Max CPA Calculator", changefreq: "monthly" as const, priority: 0.9 },
   { href: "/max-cpc-calculator", title: "Max CPC Calculator", changefreq: "monthly" as const, priority: 0.9 },

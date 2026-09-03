@@ -10,6 +10,26 @@ export function websiteSchema() {
         url: SITE_URL,
         description:
           "Free break-even calculators for paid media: ROAS, CPA, CPC, and ad profit.",
+        hasPart: [
+          {
+            "@type": "WebApplication",
+            name: "Break Even ROAS Calculator",
+            url: `${SITE_URL}/break-even-roas-calculator`,
+            applicationCategory: "BusinessApplication",
+          },
+          {
+            "@type": "WebApplication",
+            name: "Max CPA Calculator",
+            url: `${SITE_URL}/max-cpa-calculator`,
+            applicationCategory: "BusinessApplication",
+          },
+          {
+            "@type": "WebApplication",
+            name: "Max CPC Calculator",
+            url: `${SITE_URL}/max-cpc-calculator`,
+            applicationCategory: "BusinessApplication",
+          },
+        ],
       },
       {
         "@type": "Organization",
