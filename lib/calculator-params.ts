@@ -87,7 +87,9 @@ export function serializeParams(params: Record<string, string>): string {
 
   const search = new URLSearchParams();
   Object.entries(params).forEach(([key, value]) => {
-    if (value.trim() !== "") search.set(key, value);
+    if (value.trim() === "") return;
+    if (key === "model" && value !== "leadgen") return;
+    search.set(key, value);
   });
   return search.toString();
 }
@@ -119,9 +121,12 @@ function buildUrlWithParams(params: Record<string, string>): string {
     search.delete(key);
   }
 
-  Object.entries(params).forEach(([key, value]) => {
-    if (value.trim() !== "") search.set(key, value);
-  });
+  const calcQuery = serializeParams(params);
+  if (calcQuery) {
+    for (const [key, value] of new URLSearchParams(calcQuery)) {
+      search.set(key, value);
+    }
+  }
 
   const query = search.toString();
   return query

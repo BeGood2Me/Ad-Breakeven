@@ -24,6 +24,15 @@ test("hasMeaningfulCalculatorParams detects shared calculator state", () => {
 
 test("serializeParams matches meaningful param detection", () => {
   assert.equal(serializeParams({}), "");
+  assert.equal(serializeParams({ model: "ecommerce" }), "");
   assert.equal(serializeParams({ model: "ecommerce", margin: "" }), "");
   assert.equal(serializeParams({ margin: "40", value: "100" }), "margin=40&value=100");
+  assert.equal(
+    serializeParams({ model: "ecommerce", margin: "40", value: "100" }),
+    "margin=40&value=100"
+  );
+  assert.equal(
+    serializeParams({ model: "leadgen", margin: "40" }),
+    "model=leadgen&margin=40"
+  );
 });
